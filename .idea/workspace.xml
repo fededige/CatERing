@@ -2,10 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0937ec8d-40ed-4369-a5ac-483e61b54cb6" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_j_8_0_33.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CatERing.iml" beforeDir="false" afterPath="$PROJECT_DIR$/CatERing.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TestCatERing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TestCatERing.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/businesslogic/CatERing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/businesslogic/CatERing.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/businesslogic/menu/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/businesslogic/menu/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/businesslogic/menu/MenuEventReceiver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/businesslogic/menu/MenuEventReceiver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/businesslogic/menu/MenuItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/businesslogic/menu/MenuItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/businesslogic/menu/MenuManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/businesslogic/menu/MenuManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/businesslogic/menu/Section.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/businesslogic/menu/Section.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/businesslogic/recipe/Recipe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/businesslogic/recipe/Recipe.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/businesslogic/recipe/RecipeManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/businesslogic/recipe/RecipeManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/businesslogic/user/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/businesslogic/user/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/persistence/PersistenceManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/persistence/PersistenceManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/menu/MenuContent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/menu/MenuContent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/menu/MenuList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/menu/MenuList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/menu/MenuManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/menu/MenuManagement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/menu/menu-content.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/menu/menu-content.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/menu/menu-list.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/menu/menu-list.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,8 +43,9 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/informatica/anno2023/SAS/temp/javafx-sdk-20.0.1/lib&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/informatica/anno2023/SAS/temp/mysql-connector-j-8.0.33/mysql-connector-j-8.0.33.jar&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.27471265&quot;,
@@ -37,7 +53,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.UI">
+  <component name="RunManager" selected="Application.Test">
     <configuration name="Test" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="TestCatERing" />
       <module name="CatERing" />
@@ -68,6 +84,9 @@
       <updated>1685869676511</updated>
       <workItem from="1685869687117" duration="3435000" />
       <workItem from="1685874571484" duration="1147000" />
+      <workItem from="1685885348390" duration="81000" />
+      <workItem from="1685888193719" duration="1989000" />
+      <workItem from="1685890404290" duration="622000" />
     </task>
     <servers />
   </component>
