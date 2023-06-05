@@ -1,7 +1,9 @@
 import businesslogic.CatERing;
+import businesslogic.KitchenException;
 import businesslogic.UseCaseLogicException;
 import businesslogic.event.EventInfo;
 import businesslogic.event.ServiceInfo;
+import businesslogic.kitchenTask.SummarySheet;
 import businesslogic.menu.Menu;
 import businesslogic.menu.Section;
 import businesslogic.recipe.Recipe;
@@ -69,8 +71,16 @@ public class TestCatERing {
             CatERing.getInstance().getMenuManager().publish();
             System.out.println(m.testString());
 
+            System.out.println("\nTEST CREATE SUMMARY SHEET");
+            EventInfo event = EventInfo.loadAllEventInfo().get(0);
+            ServiceInfo service = event.getServices().get(0);
+            CatERing.getInstance().getKitchenTaskManager().createSummarySheet(service, event);
+
         } catch (UseCaseLogicException e) {
+            e.printStackTrace();
             System.out.println("Errore di logica nello use case");
+        } catch (KitchenException e) {
+            throw new RuntimeException(e);
         }
     }
 }

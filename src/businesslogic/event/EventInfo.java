@@ -17,10 +17,17 @@ public class EventInfo implements EventItemInfo {
     private Date dateEnd;
     private int participants;
     private User organizer;
+    private User chef;
 
     private ObservableList<ServiceInfo> services;
 
     public EventInfo(String name) {
+        this.name = name;
+        id = 0;
+    }
+
+    public EventInfo(String name, User chef) {
+        this.chef = chef;
         this.name = name;
         id = 0;
     }
@@ -57,5 +64,17 @@ public class EventInfo implements EventItemInfo {
             e.services = ServiceInfo.loadServiceInfoForEvent(e.id);
         }
         return all;
+    }
+
+    public User getChef() {
+        return chef;
+    }
+
+    public void setChef(User chef) {
+        this.chef = chef;
+    }
+
+    public boolean containsService(ServiceInfo service){
+        return this.services.contains(service);
     }
 }

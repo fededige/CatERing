@@ -1,7 +1,13 @@
 package businesslogic.event;
 
+import businesslogic.kitchenTask.SummarySheet;
+import businesslogic.menu.Menu;
+import businesslogic.menu.MenuItem;
+import businesslogic.menu.Section;
+import businesslogic.recipe.KitchenProcedure;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.scene.control.TextFormatter;
 import persistence.PersistenceManager;
 import persistence.ResultHandler;
 
@@ -9,6 +15,8 @@ import java.sql.Date;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Time;
+import java.util.ArrayList;
+import java.util.Objects;
 
 public class ServiceInfo implements EventItemInfo {
     private int id;
@@ -17,9 +25,13 @@ public class ServiceInfo implements EventItemInfo {
     private Time timeStart;
     private Time timeEnd;
     private int participants;
-
+    private String state;
+    private Menu menu;
+    private SummarySheet sheet;
+    private ArrayList<Change> changes;
     public ServiceInfo(String name) {
         this.name = name;
+        this.state = "planned";
     }
 
 
@@ -48,5 +60,48 @@ public class ServiceInfo implements EventItemInfo {
         });
 
         return result;
+    }
+
+    public boolean isConfirmed() {
+        return this.state.equals("confirmed");
+    }
+
+    public ArrayList<KitchenProcedure> getRecipies() {
+
+        ArrayList<KitchenProcedure> kProcedures = new ArrayList<>();
+        for(Section section: menu.getSections()){
+            for(MenuItem menuItem: section.getItems()){
+                for(Change change: changes){
+                    if(change.isAddition() && change.getMenuItem().equals(menuItem)){
+                        kProcedures.add(menuItem.getItemRecipe());
+                        ArrayList<KitchenProcedure> subProcedures = menuItem.getItemRecipe().getProcedures();
+                        kProcedures.addAll(subProcedures);
+                    }
+                }
+            }
+        }
+
+        for(MenuItem freeItem: menu.getFreeItems()){
+            for(Change change: changes){
+                if(change.isAddition() && change.getMenuItem().equals(freeItem)){
+                    kProcedures.add(freeItem.getItemRecipe());
+                    ArrayList<KitchenProcedure> subProcedures = freeItem.getItemRecipe().getProcedures();
+                    kProcedures.addAll(subProcedures);
+                }
+            }
+        }
+
+        for(Change change: changes){
+            if(change.isAddition()){
+                ArrayList<KitchenProcedure> subProcedures = change.getMenuItem().getItemRecipe().getProcedures();
+                kProcedures.addAll(subProcedures);
+            }
+        }
+
+        return kProcedures;
+    }
+
+    public void addSummarySheet(SummarySheet sheet) {
+        this.sheet = sheet;
     }
 }

@@ -1,5 +1,6 @@
 package businesslogic.recipe;
 
+import businesslogic.KitchenException;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import persistence.PersistenceManager;
@@ -9,7 +10,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.*;
 
-public class Recipe {
+public class Recipe extends KitchenProcedure{
     private static Map<Integer, Recipe> all = new HashMap<>();
 
     private int id;
@@ -84,4 +85,8 @@ public class Recipe {
     }
 
 
+    @Override
+    public ArrayList<KitchenProcedure> getProcedures() {
+        return new ArrayList<>(); //TODO: prendere le sottoprocedure di ogni ricetta
+    }
 }

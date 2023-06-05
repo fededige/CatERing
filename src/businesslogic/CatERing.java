@@ -1,6 +1,7 @@
 package businesslogic;
 
 import businesslogic.event.EventManager;
+import businesslogic.kitchenTask.KitchenTaskManager;
 import businesslogic.menu.Menu;
 import businesslogic.menu.MenuManager;
 import businesslogic.recipe.RecipeManager;
@@ -22,6 +23,7 @@ public class CatERing {
     private RecipeManager recipeMgr;
     private UserManager userMgr;
     private EventManager eventMgr;
+    private KitchenTaskManager kTaskMgr;
 
     private MenuPersistence menuPersistence;
 
@@ -30,6 +32,9 @@ public class CatERing {
         recipeMgr = new RecipeManager();
         userMgr = new UserManager();
         eventMgr = new EventManager();
+        kTaskMgr = new KitchenTaskManager();
+
+
         menuPersistence = new MenuPersistence();
         menuMgr.addEventReceiver(menuPersistence);
     }
@@ -48,5 +53,7 @@ public class CatERing {
     }
 
     public EventManager getEventManager() { return eventMgr; }
+
+    public KitchenTaskManager getKitchenTaskManager() { return kTaskMgr; }
 
 }
