@@ -61,4 +61,22 @@ public class KitchenTaskManager {
     public void addEventReceiver(KitchenTaskEventReceiver rec) {
         this.eventReceivers.add(rec);
     }
+
+    public SummarySheet openSummarySheet(EventInfo event, ServiceInfo service) throws UseCaseLogicException {
+        User user = CatERing.getInstance().getUserManager().getCurrentUser();
+        if(!user.isChef()){
+            throw new UseCaseLogicException();
+        }
+        if(!event.containsService(service)){
+            throw new UseCaseLogicException();
+        }
+        if(!service.hasSheet()){
+            throw new UseCaseLogicException();
+        }
+        if (event.getChef() != user) {
+            throw new UseCaseLogicException();
+        }
+        currentSheet = service.getSummarySheet();
+        return currentSheet;
+    }
 }

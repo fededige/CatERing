@@ -397,7 +397,7 @@ layer=5</panel_attributes>
       <h>32</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
-1a.1 apreFoglioEsistente(FoglioRiepilogativo)
+1a.1 apreFoglioEsistente(evento, servizio)
 fg=BLACK
 layer=6</panel_attributes>
     <additional_attributes>10.0;20.0;480.0;20.0</additional_attributes>

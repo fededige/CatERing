@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0937ec8d-40ed-4369-a5ac-483e61b54cb6" name="Changes" comment="" />
+    <list default="true" id="0937ec8d-40ed-4369-a5ac-483e61b54cb6" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documenti ProgettoSAS/dcd_in_costruzione.uxf" beforeDir="false" afterPath="$PROJECT_DIR$/documenti ProgettoSAS/dcd_in_costruzione.uxf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documenti ProgettoSAS/documenti progetto cucina/dsd/passo 1/1a.1-openSummarySheet.uxf" beforeDir="false" afterPath="$PROJECT_DIR$/documenti ProgettoSAS/documenti progetto cucina/dsd/passo 1/1a.1-openSummarySheet.uxf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documenti ProgettoSAS/documenti progetto cucina/ssd/SSD Estensioni al passo 1 (1a, 1b) e relative eccezioni (1a.1a, 1b.1a).uxf" beforeDir="false" afterPath="$PROJECT_DIR$/documenti ProgettoSAS/documenti progetto cucina/ssd/SSD Estensioni al passo 1 (1a, 1b) e relative eccezioni (1a.1a, 1b.1a).uxf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/businesslogic/event/ServiceInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/businesslogic/event/ServiceInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/businesslogic/kitchenTask/KitchenTaskManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/businesslogic/kitchenTask/KitchenTaskManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/businesslogic/menu/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/businesslogic/menu/Menu.java" afterDir="false" />
+    </list>
     <list id="ba9790ac-75d7-4c37-aefe-5d00f5bd2e45" name="Changes by emanu" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +87,7 @@
       <workItem from="1685890404290" duration="622000" />
       <workItem from="1685956072743" duration="5118000" />
       <workItem from="1685978222446" duration="8705000" />
-      <workItem from="1686037456017" duration="7501000" />
+      <workItem from="1686037456017" duration="10595000" />
     </task>
     <servers />
   </component>

@@ -127,4 +127,12 @@ public class ServiceInfo implements EventItemInfo {
     public int getId(){
         return id;
     }
+
+    public SummarySheet getSummarySheet() {
+        return sheet;
+    }
+
+    public boolean hasSheet() {
+        return sheet != null;
+    }
 }
