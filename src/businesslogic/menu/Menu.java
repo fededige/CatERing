@@ -81,6 +81,11 @@ public class Menu {
 
     }
 
+    public static Menu loadMenuById(int menu_id) throws MenuException {
+        loadAllMenus();
+        return loadedMenus.get(menu_id);
+    }
+
     public boolean getFeatureValue(String feature) {
         return this.featuresMap.get(feature);
     }

@@ -73,8 +73,10 @@ public class TestCatERing {
 
             System.out.println("\nTEST CREATE SUMMARY SHEET");
             EventInfo event = EventInfo.loadAllEventInfo().get(0);
-            ServiceInfo service = event.getServices().get(0);
-            CatERing.getInstance().getKitchenTaskManager().createSummarySheet(service, event);
+            ServiceInfo service = ServiceInfo.loadServiceInfoForEvent(event.getId()).get(0);
+            service.approveMenu();
+            SummarySheet s = CatERing.getInstance().getKitchenTaskManager().createSummarySheet(service, event);
+            System.out.println(s.testString());
 
         } catch (UseCaseLogicException e) {
             e.printStackTrace();

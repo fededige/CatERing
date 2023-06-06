@@ -56,6 +56,7 @@ public class SummarySheet {
     public String testString() {
         String result = this.toString() + "\n";
 
+
         for (Task tsk : tasks) {
             result += tsk.testString();
             result += "\n";

@@ -5,8 +5,10 @@ import businesslogic.KitchenException;
 import businesslogic.UseCaseLogicException;
 import businesslogic.event.EventInfo;
 import businesslogic.event.ServiceInfo;
+import businesslogic.menu.MenuEventReceiver;
 import businesslogic.recipe.KitchenProcedure;
 import businesslogic.user.User;
+import persistence.KitchenTaskPersistence;
 
 import java.util.ArrayList;
 
@@ -20,10 +22,16 @@ public class KitchenTaskManager {
 
     public SummarySheet createSummarySheet(ServiceInfo service, EventInfo event) throws UseCaseLogicException, KitchenException {
         User user = CatERing.getInstance().getUserManager().getCurrentUser();
-        if (!user.isChef() || event.getChef() != user || !(event.containsService(service))) {
+        if(!user.isChef()){
             throw new UseCaseLogicException();
         }
-        if(!service.isConfirmed()){
+        if (event.getChef() != user) {
+            throw new UseCaseLogicException();
+        }
+        if (!(event.containsService(service))){
+            throw new UseCaseLogicException();
+        }
+        if(!service.isActive()){
             throw new KitchenException();
         }
 
@@ -41,7 +49,6 @@ public class KitchenTaskManager {
         currentSheet = newSheet;
 
         notifySummarySheetCreated(currentSheet);
-
         return currentSheet;
     }
 
@@ -49,5 +56,9 @@ public class KitchenTaskManager {
         for(KitchenTaskEventReceiver kTaskReceiver: eventReceivers){
             kTaskReceiver.updateSheetCreated(currentSheet);
         }
+    }
+
+    public void addEventReceiver(KitchenTaskEventReceiver rec) {
+        this.eventReceivers.add(rec);
     }
 }

@@ -1,13 +1,11 @@
 package businesslogic.event;
 
+import businesslogic.KitchenException;
 import businesslogic.kitchenTask.SummarySheet;
-import businesslogic.menu.Menu;
-import businesslogic.menu.MenuItem;
-import businesslogic.menu.Section;
+import businesslogic.menu.*;
 import businesslogic.recipe.KitchenProcedure;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
-import javafx.scene.control.TextFormatter;
 import persistence.PersistenceManager;
 import persistence.ResultHandler;
 
@@ -16,7 +14,6 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Time;
 import java.util.ArrayList;
-import java.util.Objects;
 
 public class ServiceInfo implements EventItemInfo {
     private int id;
@@ -43,7 +40,7 @@ public class ServiceInfo implements EventItemInfo {
 
     public static ObservableList<ServiceInfo> loadServiceInfoForEvent(int event_id) {
         ObservableList<ServiceInfo> result = FXCollections.observableArrayList();
-        String query = "SELECT id, name, service_date, time_start, time_end, expected_participants " +
+        String query = "SELECT * " +
                 "FROM Services WHERE event_id = " + event_id;
         PersistenceManager.executeQuery(query, new ResultHandler() {
             @Override
@@ -55,6 +52,14 @@ public class ServiceInfo implements EventItemInfo {
                 serv.timeStart = rs.getTime("time_start");
                 serv.timeEnd = rs.getTime("time_end");
                 serv.participants = rs.getInt("expected_participants");
+                int menu_id = rs.getInt("proposed_menu_id");
+                if(menu_id == 0)
+                    menu_id = rs.getInt("approved_menu_id");
+                try {
+                    serv.menu = Menu.loadMenuById(menu_id);
+                } catch (MenuException e) {
+                    serv.menu = null;
+                }
                 result.add(serv);
             }
         });
@@ -62,8 +67,12 @@ public class ServiceInfo implements EventItemInfo {
         return result;
     }
 
-    public boolean isConfirmed() {
-        return this.state.equals("confirmed");
+    public boolean isActive() {
+        return this.state.equals("active");
+    }
+
+    public void approveMenu(){
+        state = "active";
     }
 
     public ArrayList<KitchenProcedure> getRecipies() {
@@ -71,37 +80,51 @@ public class ServiceInfo implements EventItemInfo {
         ArrayList<KitchenProcedure> kProcedures = new ArrayList<>();
         for(Section section: menu.getSections()){
             for(MenuItem menuItem: section.getItems()){
-                for(Change change: changes){
-                    if(change.isAddition() && change.getMenuItem().equals(menuItem)){
-                        kProcedures.add(menuItem.getItemRecipe());
-                        ArrayList<KitchenProcedure> subProcedures = menuItem.getItemRecipe().getProcedures();
-                        kProcedures.addAll(subProcedures);
-                    }
-                }
-            }
-        }
-
-        for(MenuItem freeItem: menu.getFreeItems()){
-            for(Change change: changes){
-                if(change.isAddition() && change.getMenuItem().equals(freeItem)){
-                    kProcedures.add(freeItem.getItemRecipe());
-                    ArrayList<KitchenProcedure> subProcedures = freeItem.getItemRecipe().getProcedures();
+                if(changes == null || !toRemove(menuItem)){
+                    kProcedures.add(menuItem.getItemRecipe());
+                    ArrayList<KitchenProcedure> subProcedures = menuItem.getItemRecipe().getProcedures();
                     kProcedures.addAll(subProcedures);
                 }
             }
         }
 
-        for(Change change: changes){
-            if(change.isAddition()){
-                ArrayList<KitchenProcedure> subProcedures = change.getMenuItem().getItemRecipe().getProcedures();
+        for(MenuItem freeItem: menu.getFreeItems()){
+            if(changes == null || !toRemove(freeItem)) {
+                kProcedures.add(freeItem.getItemRecipe());
+                ArrayList<KitchenProcedure> subProcedures = freeItem.getItemRecipe().getProcedures();
                 kProcedures.addAll(subProcedures);
             }
         }
 
+        if(changes != null) {
+            for (Change change : changes) {
+                if (change.isAddition()) {
+                    ArrayList<KitchenProcedure> subProcedures = change.getMenuItem().getItemRecipe().getProcedures();
+                    kProcedures.addAll(subProcedures);
+                }
+            }
+        }
         return kProcedures;
+    }
+
+    private boolean toRemove(MenuItem menuItem) {
+        for(Change change: changes){
+            if(change.isAddition() && change.getMenuItem().getId() == menuItem.getId()){
+                return true;
+            }
+        }
+        return false;
     }
 
     public void addSummarySheet(SummarySheet sheet) {
         this.sheet = sheet;
+    }
+
+    public boolean isPlanned() {
+        return state.equals("planned");
+    }
+
+    public int getId(){
+        return id;
     }
 }
