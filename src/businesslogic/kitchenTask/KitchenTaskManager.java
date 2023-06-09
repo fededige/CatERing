@@ -5,11 +5,9 @@ import businesslogic.KitchenException;
 import businesslogic.UseCaseLogicException;
 import businesslogic.event.EventInfo;
 import businesslogic.event.ServiceInfo;
-import businesslogic.menu.MenuEventReceiver;
 import businesslogic.recipe.KitchenProcedure;
 import businesslogic.user.User;
-import persistence.KitchenTaskPersistence;
-import persistence.MenuPersistence;
+import persistence.PersistenceManager;
 
 import java.util.ArrayList;
 
@@ -35,10 +33,12 @@ public class KitchenTaskManager {
         if(!service.isActive()){
             throw new KitchenException();
         }
-        SummarySheet existingSheet;
-        if((existingSheet = SummarySheet.loadSummarySheetByServiceID(service.getId())) != null){ //controlliamo che il servizio non abbia già un summarySheet
-            return existingSheet; //TODO: TEMPORANEO, risolvere
-        }
+        SummarySheet existingSheet = null;
+        try {
+            existingSheet = SummarySheet.loadSummarySheetByServiceId(service.getId());
+            return existingSheet;
+        } catch (KitchenException e){};
+
         ArrayList<KitchenProcedure> kProcedures = service.getRecipies();
 
         SummarySheet newSheet = new SummarySheet();
@@ -66,7 +66,7 @@ public class KitchenTaskManager {
         this.eventReceivers.add(rec);
     }
 
-    public SummarySheet openSummarySheet(EventInfo event, ServiceInfo service) throws UseCaseLogicException {
+    public SummarySheet openSummarySheet(EventInfo event, ServiceInfo service) throws UseCaseLogicException, KitchenException {
         User user = CatERing.getInstance().getUserManager().getCurrentUser();
         if(!user.isChef()){
             throw new UseCaseLogicException();
@@ -77,7 +77,26 @@ public class KitchenTaskManager {
         if (event.getChef() != user) {
             throw new UseCaseLogicException();
         }
-        currentSheet = SummarySheet.loadSummarySheetByServiceID(service.getId());
+        currentSheet = SummarySheet.loadSummarySheetByServiceId(service.getId());
+        if(currentSheet == null){
+            throw new KitchenException();
+        }
         return currentSheet;
+    }
+
+    public void deleteSummarySheet(EventInfo event, SummarySheet summarySheet) throws UseCaseLogicException {
+        User user = CatERing.getInstance().getUserManager().getCurrentUser();
+        if(!user.isChef()){
+            throw new UseCaseLogicException();
+        }
+        if (event.getChef() != user) {
+            throw new UseCaseLogicException();
+        }
+
+        String delTasks = "DELETE FROM tasks WHERE summarysheet_id = " + summarySheet.getId();
+        PersistenceManager.executeUpdate(delTasks);
+
+        String del = "DELETE FROM SummarySheets WHERE id = " + summarySheet.getId();
+        PersistenceManager.executeUpdate(del);
     }
 }

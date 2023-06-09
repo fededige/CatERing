@@ -1,11 +1,6 @@
 package businesslogic.kitchenTask;
 
 import businesslogic.KitchenException;
-import businesslogic.event.ServiceInfo;
-import businesslogic.menu.Menu;
-import businesslogic.menu.MenuException;
-import businesslogic.menu.MenuItem;
-import businesslogic.menu.Section;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import persistence.BatchUpdateHandler;
@@ -56,7 +51,7 @@ public class SummarySheet {
         }
     }
 
-    public static SummarySheet loadSummarySheetByServiceID(int service_id) {
+    public static SummarySheet loadSummarySheetByServiceId(int service_id) throws KitchenException {
         ArrayList<SummarySheet> sheetByID = new ArrayList<>();
         String query = "SELECT * FROM SummarySheets WHERE service_id = " + service_id;
         PersistenceManager.executeQuery(query, new ResultHandler() {
@@ -70,7 +65,27 @@ public class SummarySheet {
             }
         });
         if(sheetByID.size() == 0){
-            return null;
+            throw new KitchenException();
+        }
+
+        return sheetByID.get(0);
+    }
+
+    public static SummarySheet loadSummarySheetById(int id) throws KitchenException {
+        ArrayList<SummarySheet> sheetByID = new ArrayList<>();
+        String query = "SELECT * FROM SummarySheets WHERE id = " + id;
+        PersistenceManager.executeQuery(query, new ResultHandler() {
+            @Override
+            public void handle(ResultSet rs) throws SQLException {
+                SummarySheet sheet = new SummarySheet();
+                sheet.id = rs.getInt("id");
+                sheet.serviceId = rs.getInt("service_id");
+                sheet.tasks = Task.loadTasksBySheetId(sheet.id);
+                sheetByID.add(sheet);
+            }
+        });
+        if(sheetByID.size() == 0){
+            throw new KitchenException();
         }
 
         return sheetByID.get(0);
@@ -104,4 +119,9 @@ public class SummarySheet {
     public void addServiceId(int id) {
         this.serviceId = id;
     }
+
+    public int getId() {
+        return this.id;
+    }
+
 }
