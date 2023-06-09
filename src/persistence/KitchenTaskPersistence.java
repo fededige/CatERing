@@ -9,4 +9,9 @@ public class KitchenTaskPersistence implements KitchenTaskEventReceiver {
     public void updateSheetCreated(SummarySheet currentSheet) {
         SummarySheet.saveNewSheet(currentSheet);
     }
+
+    @Override
+    public void updateSheetDeleted(SummarySheet deleteSheet) {
+        SummarySheet.deleteSummarySheet(deleteSheet);
+    }
 }

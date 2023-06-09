@@ -91,6 +91,15 @@ public class SummarySheet {
         return sheetByID.get(0);
     }
 
+
+    public static void deleteSummarySheet(SummarySheet summarySheet){
+        String delTasks = "DELETE FROM tasks WHERE summarysheet_id = " + summarySheet.getId();
+        PersistenceManager.executeUpdate(delTasks);
+
+        String del = "DELETE FROM SummarySheets WHERE id = " + summarySheet.getId();
+        PersistenceManager.executeUpdate(del);
+    }
+
     private int getServiceId() {
         return this.serviceId;
     }

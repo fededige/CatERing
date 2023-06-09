@@ -92,11 +92,13 @@ public class KitchenTaskManager {
         if (event.getChef() != user) {
             throw new UseCaseLogicException();
         }
-
-        String delTasks = "DELETE FROM tasks WHERE summarysheet_id = " + summarySheet.getId();
-        PersistenceManager.executeUpdate(delTasks);
-
-        String del = "DELETE FROM SummarySheets WHERE id = " + summarySheet.getId();
-        PersistenceManager.executeUpdate(del);
+        this.notifySummarySheetDeleted(summarySheet);
     }
+
+    private void notifySummarySheetDeleted(SummarySheet summarySheet) {
+        for(KitchenTaskEventReceiver er: this.eventReceivers){
+            er.updateSheetDeleted(summarySheet);
+        }
+    }
+
 }

@@ -2,12 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0937ec8d-40ed-4369-a5ac-483e61b54cb6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/TestTaskExtensions/TestCatERing1b.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documenti ProgettoSAS/dcd_in_costruzione.uxf" beforeDir="false" afterPath="$PROJECT_DIR$/documenti ProgettoSAS/dcd_in_costruzione.uxf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TestTaskExtensions/TestCatERing1a.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TestTaskExtensions/TestCatERing1a.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documenti ProgettoSAS/documenti progetto cucina/dsd/passo 2/2- addProcedure.uxf" beforeDir="false" afterPath="$PROJECT_DIR$/documenti ProgettoSAS/documenti progetto cucina/dsd/passo 2/2- addProcedure.uxf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TestTaskExtensions/TestCatERing1b.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TestTaskExtensions/TestCatERing1b.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/businesslogic/kitchenTask/KitchenTaskEventReceiver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/businesslogic/kitchenTask/KitchenTaskEventReceiver.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/businesslogic/kitchenTask/KitchenTaskManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/businesslogic/kitchenTask/KitchenTaskManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/businesslogic/kitchenTask/SummarySheet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/businesslogic/kitchenTask/SummarySheet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/persistence/KitchenTaskPersistence.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/persistence/KitchenTaskPersistence.java" afterDir="false" />
     </list>
     <list id="ba9790ac-75d7-4c37-aefe-5d00f5bd2e45" name="Changes by emanu" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -105,7 +106,7 @@
       <workItem from="1685978222446" duration="8705000" />
       <workItem from="1686037456017" duration="10763000" />
       <workItem from="1686233290162" duration="1881000" />
-      <workItem from="1686316082339" duration="12860000" />
+      <workItem from="1686316082339" duration="13597000" />
     </task>
     <servers />
   </component>
