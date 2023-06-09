@@ -82,21 +82,9 @@ public class Menu {
     }
 
     public static Menu loadMenuById(int menu_id) throws MenuException {
-//        String query = "SELECT * FROM Menus WHERE id =" + menu_id;
-//        Menu menu = new Menu();
-//        PersistenceManager.executeQuery(query, new ResultHandler() {
-//            @Override
-//            public void handle(ResultSet rs) throws SQLException {
-//                int id = rs.getInt("id");
-//                menu.id = id;
-//                menu.title = rs.getString("title");
-//                menu.published = rs.getBoolean("published");
-//
-//            }
-//        });
-//        if(loadedMenus == null)
-//            loadAllMenus();
-        loadAllMenus(); //TODO: risolvere sto schifo
+        if(loadedMenus == null || loadedMenus.size() <= 1) {
+            loadAllMenus();
+        }
         return loadedMenus.get(menu_id);
     }
 

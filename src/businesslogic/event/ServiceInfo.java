@@ -24,7 +24,6 @@ public class ServiceInfo implements EventItemInfo {
     private int participants;
     private String state;
     private Menu menu;
-    private SummarySheet sheet;
     private ArrayList<Change> changes;
     public ServiceInfo(String name) {
         this.name = name;
@@ -56,7 +55,10 @@ public class ServiceInfo implements EventItemInfo {
                 if(menu_id == 0)
                     menu_id = rs.getInt("approved_menu_id");
                 try {
-                    serv.menu = Menu.loadMenuById(menu_id);
+                    if(menu_id != 0)
+                        serv.menu = Menu.loadMenuById(menu_id);
+                    else
+                        serv.menu = null;
                 } catch (MenuException e) {
                     serv.menu = null;
                 }
@@ -88,6 +90,7 @@ public class ServiceInfo implements EventItemInfo {
             }
         }
 
+
         for(MenuItem freeItem: menu.getFreeItems()){
             if(changes == null || !toRemove(freeItem)) {
                 kProcedures.add(freeItem.getItemRecipe());
@@ -95,6 +98,7 @@ public class ServiceInfo implements EventItemInfo {
                 kProcedures.addAll(subProcedures);
             }
         }
+
 
         if(changes != null) {
             for (Change change : changes) {
@@ -104,6 +108,8 @@ public class ServiceInfo implements EventItemInfo {
                 }
             }
         }
+
+
         return kProcedures;
     }
 
@@ -116,23 +122,11 @@ public class ServiceInfo implements EventItemInfo {
         return false;
     }
 
-    public void addSummarySheet(SummarySheet sheet) {
-        this.sheet = sheet;
-    }
-
     public boolean isPlanned() {
         return state.equals("planned");
     }
 
     public int getId(){
         return id;
-    }
-
-    public SummarySheet getSummarySheet() {
-        return sheet;
-    }
-
-    public boolean hasSheet() {
-        return sheet != null;
     }
 }

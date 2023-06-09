@@ -121,7 +121,6 @@ public class MenuItem {
         for (int i = 0; i < result.size(); i++) {
             result.get(i).itemRecipe = Recipe.loadRecipeById(recids.get(i));
         }
-
         return result;
     }
     public static void saveSection(int sec_id, MenuItem mi) {

@@ -17,4 +17,6 @@ public abstract class KitchenProcedure {
     public String toString() {
         return "Procedura di cucina: " + name + "autore: " + author + "instruction: " + instruction + "quantità: " + quantity;
     }
+
+    public abstract int getId();
 }

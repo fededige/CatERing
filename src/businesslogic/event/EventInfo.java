@@ -72,6 +72,30 @@ public class EventInfo implements EventItemInfo {
         return all;
     }
 
+    public static EventInfo loadEventById(int id) {
+        ObservableList<EventInfo> single = FXCollections.observableArrayList();
+        String query = "SELECT * FROM Events WHERE id = " + id;
+        PersistenceManager.executeQuery(query, new ResultHandler() {
+            @Override
+            public void handle(ResultSet rs) throws SQLException {
+                String n = rs.getString("name");
+                EventInfo e = new EventInfo(n);
+                e.id = rs.getInt("id");
+                e.dateStart = rs.getDate("date_start");
+                e.dateEnd = rs.getDate("date_end");
+                e.participants = rs.getInt("expected_participants");
+                int org = rs.getInt("organizer_id");
+                e.organizer = User.loadUserById(org);
+                int ch = rs.getInt("chef_id");
+                e.chef = User.loadUserById(ch);
+                single.add(e);
+            }
+        });
+        EventInfo event = single.get(0);
+        event.services = ServiceInfo.loadServiceInfoForEvent(event.id);
+        return event;
+    }
+
     public User getChef() {
         return chef;
     }

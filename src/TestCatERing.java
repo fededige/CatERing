@@ -24,6 +24,7 @@ public class TestCatERing {
 
             System.out.println("\nTEST CREATE MENU");
             Menu m = CatERing.getInstance().getMenuManager().createMenu("Menu Pinco Pallino");
+            System.out.println(m.testString());
 
             System.out.println("\nTEST DEFINE SECTION");
             Section antipasti = CatERing.getInstance().getMenuManager().defineSection("Antipasti");

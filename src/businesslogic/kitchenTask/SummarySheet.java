@@ -1,12 +1,16 @@
 package businesslogic.kitchenTask;
 
+import businesslogic.KitchenException;
+import businesslogic.event.ServiceInfo;
 import businesslogic.menu.Menu;
+import businesslogic.menu.MenuException;
 import businesslogic.menu.MenuItem;
 import businesslogic.menu.Section;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import persistence.BatchUpdateHandler;
 import persistence.PersistenceManager;
+import persistence.ResultHandler;
 
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -18,16 +22,19 @@ public class SummarySheet {
     private static Map<Integer, SummarySheet> loadedSheets = FXCollections.observableHashMap();
     private ObservableList<Task> tasks;
     private int id;
+    private int serviceId;
+
     public SummarySheet(){
         tasks = FXCollections.observableArrayList();
     }
 
 
     public static void saveNewSheet(SummarySheet s) {
-        String sheetInsert = "INSERT INTO catering.SummarySheets () VALUES ();";
+        String sheetInsert = "INSERT INTO catering.SummarySheets (service_id) VALUES (?);";
         int[] result = PersistenceManager.executeBatchUpdate(sheetInsert, 1, new BatchUpdateHandler() {
             @Override
             public void handleBatchItem(PreparedStatement ps, int batchCount) throws SQLException {
+                ps.setInt(1, s.getServiceId());
             }
 
             @Override
@@ -49,6 +56,30 @@ public class SummarySheet {
         }
     }
 
+    public static SummarySheet loadSummarySheetByServiceID(int service_id) {
+        ArrayList<SummarySheet> sheetByID = new ArrayList<>();
+        String query = "SELECT * FROM SummarySheets WHERE service_id = " + service_id;
+        PersistenceManager.executeQuery(query, new ResultHandler() {
+            @Override
+            public void handle(ResultSet rs) throws SQLException {
+                SummarySheet sheet = new SummarySheet();
+                sheet.id = rs.getInt("id");
+                sheet.serviceId = rs.getInt("service_id");
+                sheet.tasks = Task.loadTasksBySheetId(sheet.id);
+                sheetByID.add(sheet);
+            }
+        });
+        if(sheetByID.size() == 0){
+            return null;
+        }
+
+        return sheetByID.get(0);
+    }
+
+    private int getServiceId() {
+        return this.serviceId;
+    }
+
     public void addTask(Task newTask) {
         tasks.add(newTask);
     }
@@ -56,10 +87,11 @@ public class SummarySheet {
     public String testString() {
         String result = this.toString() + "\n";
 
-
-        for (Task tsk : tasks) {
-            result += tsk.testString();
-            result += "\n";
+        if(tasks != null){
+            for (Task tsk : tasks) {
+                result += tsk.testString();
+                result += "\n";
+            }
         }
 
         return result;
@@ -67,5 +99,9 @@ public class SummarySheet {
 
     public String toString() {
         return "id del foglio riepilogativo: " + id;
+    }
+
+    public void addServiceId(int id) {
+        this.serviceId = id;
     }
 }

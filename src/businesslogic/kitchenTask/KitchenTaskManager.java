@@ -9,6 +9,7 @@ import businesslogic.menu.MenuEventReceiver;
 import businesslogic.recipe.KitchenProcedure;
 import businesslogic.user.User;
 import persistence.KitchenTaskPersistence;
+import persistence.MenuPersistence;
 
 import java.util.ArrayList;
 
@@ -34,7 +35,10 @@ public class KitchenTaskManager {
         if(!service.isActive()){
             throw new KitchenException();
         }
-
+        SummarySheet existingSheet;
+        if((existingSheet = SummarySheet.loadSummarySheetByServiceID(service.getId())) != null){ //controlliamo che il servizio non abbia già un summarySheet
+            return existingSheet; //TODO: TEMPORANEO, risolvere
+        }
         ArrayList<KitchenProcedure> kProcedures = service.getRecipies();
 
         SummarySheet newSheet = new SummarySheet();
@@ -44,7 +48,7 @@ public class KitchenTaskManager {
             newSheet.addTask(newTask);
         }
 
-        service.addSummarySheet(newSheet);
+        newSheet.addServiceId(service.getId());
 
         currentSheet = newSheet;
 
@@ -70,13 +74,10 @@ public class KitchenTaskManager {
         if(!event.containsService(service)){
             throw new UseCaseLogicException();
         }
-        if(!service.hasSheet()){
-            throw new UseCaseLogicException();
-        }
         if (event.getChef() != user) {
             throw new UseCaseLogicException();
         }
-        currentSheet = service.getSummarySheet();
+        currentSheet = SummarySheet.loadSummarySheetByServiceID(service.getId());
         return currentSheet;
     }
 }
