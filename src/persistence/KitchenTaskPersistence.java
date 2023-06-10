@@ -1,5 +1,6 @@
 package persistence;
 
+import businesslogic.kitchenTask.CookingJob;
 import businesslogic.kitchenTask.KitchenTaskEventReceiver;
 import businesslogic.kitchenTask.SummarySheet;
 import businesslogic.recipe.KitchenProcedure;
@@ -20,5 +21,10 @@ public class KitchenTaskPersistence implements KitchenTaskEventReceiver {
     @Override
     public void updateKitchenProcedureAdded(KitchenProcedure kProc) {
         Recipe.saveNewKitchenProcedure((Recipe) kProc);
+    }
+
+    @Override
+    public void updateCookingJobAdded(CookingJob job, int task_id) {
+        CookingJob.saveNewCookingJob(job, task_id);
     }
 }

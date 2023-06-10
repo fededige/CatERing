@@ -8,4 +8,6 @@ public interface KitchenTaskEventReceiver {
     public void updateSheetDeleted(SummarySheet deleteSheet);
 
     public void updateKitchenProcedureAdded(KitchenProcedure kProc);
+
+    void updateCookingJobAdded(CookingJob job, int task_id);
 }

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <diagram program="umlet" version="15.1">
-  <zoom_level>3</zoom_level>
+  <zoom_level>9</zoom_level>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>357</x>
-      <y>309</y>
-      <w>126</w>
-      <h>12</h>
+      <x>810</x>
+      <y>0</y>
+      <w>378</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes>halign=center
 *5 - createNewCookingJob*
@@ -19,10 +19,10 @@ fontsize=25
   <element>
     <id>UMLPackage</id>
     <coordinates>
-      <x>105</x>
-      <y>342</y>
-      <w>27</w>
-      <h>21</h>
+      <x>54</x>
+      <y>99</y>
+      <w>81</w>
+      <h>63</h>
     </coordinates>
     <panel_attributes>UI</panel_attributes>
     <additional_attributes/>
@@ -30,10 +30,10 @@ fontsize=25
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>114</x>
-      <y>360</y>
-      <w>9</w>
-      <h>333</h>
+      <x>81</x>
+      <y>153</y>
+      <w>27</w>
+      <h>999</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;1090.0</additional_attributes>
@@ -41,10 +41,10 @@ fontsize=25
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>420</x>
-      <y>348</y>
-      <w>51</w>
-      <h>12</h>
+      <x>999</x>
+      <y>117</y>
+      <w>153</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes>kTaskMgr.currentSheet: SummarySheet
 style=wordwrap</panel_attributes>
@@ -53,10 +53,10 @@ style=wordwrap</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>441</x>
-      <y>357</y>
-      <w>9</w>
-      <h>336</h>
+      <x>1062</x>
+      <y>144</y>
+      <w>27</w>
+      <h>1008</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;1100.0</additional_attributes>
@@ -64,10 +64,10 @@ style=wordwrap</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>255</x>
-      <y>438</y>
-      <w>195</w>
-      <h>12</h>
+      <x>504</x>
+      <y>387</y>
+      <w>585</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
 createNewCookingJob(task, kitchenShift, amount, estimatedTime)</panel_attributes>
@@ -76,10 +76,10 @@ createNewCookingJob(task, kitchenShift, amount, estimatedTime)</panel_attributes
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>441</x>
-      <y>444</y>
-      <w>6</w>
-      <h>138</h>
+      <x>1062</x>
+      <y>405</y>
+      <w>18</w>
+      <h>414</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -87,10 +87,10 @@ createNewCookingJob(task, kitchenShift, amount, estimatedTime)</panel_attributes
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>87</x>
-      <y>381</y>
-      <w>648</w>
-      <h>291</h>
+      <x>0</x>
+      <y>216</y>
+      <w>1944</w>
+      <h>873</h>
     </coordinates>
     <panel_attributes>*alt [ kTaskMgr.currentSheet == null]*
 --
@@ -108,10 +108,10 @@ createNewCookingJob(task, kitchenShift, amount, estimatedTime)</panel_attributes
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>114</x>
-      <y>390</y>
-      <w>147</w>
-      <h>12</h>
+      <x>81</x>
+      <y>243</y>
+      <w>441</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 throw UseCaseLogicException</panel_attributes>
@@ -120,10 +120,10 @@ throw UseCaseLogicException</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>552</x>
-      <y>480</y>
-      <w>9</w>
-      <h>213</h>
+      <x>1395</x>
+      <y>513</y>
+      <w>27</w>
+      <h>639</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;690.0</additional_attributes>
@@ -131,10 +131,10 @@ throw UseCaseLogicException</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>234</x>
-      <y>348</y>
-      <w>48</w>
-      <h>12</h>
+      <x>441</x>
+      <y>117</y>
+      <w>144</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes>kTaskMgr: KitchenTaskManager
 style=wordwrap</panel_attributes>
@@ -143,10 +143,10 @@ style=wordwrap</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>255</x>
-      <y>357</y>
-      <w>9</w>
-      <h>336</h>
+      <x>504</x>
+      <y>144</y>
+      <w>27</w>
+      <h>1008</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;1100.0</additional_attributes>
@@ -154,10 +154,10 @@ style=wordwrap</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>114</x>
-      <y>366</y>
-      <w>150</w>
-      <h>12</h>
+      <x>81</x>
+      <y>171</y>
+      <w>450</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
 createNewCookingJob(task, kitchenShift, amount, estimatedTime)</panel_attributes>
@@ -166,10 +166,10 @@ createNewCookingJob(task, kitchenShift, amount, estimatedTime)</panel_attributes
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>222</x>
-      <y>618</y>
-      <w>141</w>
-      <h>39</h>
+      <x>405</x>
+      <y>927</y>
+      <w>423</w>
+      <h>117</h>
     </coordinates>
     <panel_attributes>for kTaskReceiver in kTaskReceivers</panel_attributes>
     <additional_attributes/>
@@ -177,10 +177,10 @@ createNewCookingJob(task, kitchenShift, amount, estimatedTime)</panel_attributes
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>327</x>
-      <y>348</y>
-      <w>51</w>
-      <h>12</h>
+      <x>720</x>
+      <y>117</y>
+      <w>153</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes>kTaskReceiver: KitcheTaskEventReceiver
 style=wordwrap</panel_attributes>
@@ -189,10 +189,10 @@ style=wordwrap</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>348</x>
-      <y>357</y>
-      <w>9</w>
-      <h>336</h>
+      <x>783</x>
+      <y>144</y>
+      <w>27</w>
+      <h>1008</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;1100.0</additional_attributes>
@@ -200,10 +200,10 @@ style=wordwrap</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>255</x>
-      <y>372</y>
-      <w>6</w>
-      <h>297</h>
+      <x>504</x>
+      <y>189</y>
+      <w>18</w>
+      <h>891</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -211,10 +211,10 @@ style=wordwrap</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>258</x>
-      <y>597</y>
-      <w>78</w>
-      <h>21</h>
+      <x>513</x>
+      <y>864</y>
+      <w>234</w>
+      <h>63</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
 notifyCookingJobAdded(job)</panel_attributes>
@@ -223,10 +223,10 @@ notifyCookingJobAdded(job)</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>258</x>
-      <y>612</y>
-      <w>6</w>
-      <h>51</h>
+      <x>513</x>
+      <y>909</y>
+      <w>18</w>
+      <h>153</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -234,10 +234,10 @@ notifyCookingJobAdded(job)</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>261</x>
-      <y>630</y>
-      <w>96</w>
-      <h>12</h>
+      <x>522</x>
+      <y>963</y>
+      <w>288</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
 updateCookingJobAdded(job)</panel_attributes>
@@ -246,10 +246,10 @@ updateCookingJobAdded(job)</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>348</x>
-      <y>636</y>
-      <w>6</w>
-      <h>15</h>
+      <x>783</x>
+      <y>981</y>
+      <w>18</w>
+      <h>45</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -257,10 +257,10 @@ updateCookingJobAdded(job)</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>387</x>
-      <y>459</y>
-      <w>330</w>
-      <h>126</h>
+      <x>900</x>
+      <y>450</y>
+      <w>990</w>
+      <h>378</h>
     </coordinates>
     <panel_attributes>for t in currentSheet.tasks</panel_attributes>
     <additional_attributes/>
@@ -268,10 +268,10 @@ updateCookingJobAdded(job)</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>390</x>
-      <y>468</y>
-      <w>324</w>
-      <h>114</h>
+      <x>909</x>
+      <y>477</y>
+      <w>972</w>
+      <h>342</h>
     </coordinates>
     <panel_attributes>alt t == task
 lw=2
@@ -281,10 +281,10 @@ lw=2
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>531</x>
-      <y>471</y>
-      <w>51</w>
-      <h>12</h>
+      <x>1332</x>
+      <y>486</y>
+      <w>153</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes>job: CookingJob
 style=wordwrap</panel_attributes>
@@ -293,10 +293,10 @@ style=wordwrap</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>636</x>
-      <y>357</y>
-      <w>9</w>
-      <h>336</h>
+      <x>1647</x>
+      <y>144</y>
+      <w>27</w>
+      <h>1008</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;1100.0</additional_attributes>
@@ -304,10 +304,10 @@ style=wordwrap</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>615</x>
-      <y>348</y>
-      <w>51</w>
-      <h>12</h>
+      <x>1584</x>
+      <y>117</y>
+      <w>153</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes>t: Task
 style=wordwrap</panel_attributes>
@@ -316,10 +316,10 @@ style=wordwrap</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>444</x>
-      <y>471</y>
-      <w>93</w>
-      <h>12</h>
+      <x>1071</x>
+      <y>486</y>
+      <w>279</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
 create(kitchenShift, amount, estimatedTime)</panel_attributes>
@@ -328,10 +328,10 @@ create(kitchenShift, amount, estimatedTime)</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>552</x>
-      <y>483</y>
-      <w>6</w>
-      <h>54</h>
+      <x>1395</x>
+      <y>522</y>
+      <w>18</w>
+      <h>162</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -339,10 +339,10 @@ create(kitchenShift, amount, estimatedTime)</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>555</x>
-      <y>483</y>
-      <w>72</w>
-      <h>15</h>
+      <x>1404</x>
+      <y>522</y>
+      <w>216</w>
+      <h>45</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
 this.kitchenShift = kitchenShift</panel_attributes>
@@ -351,10 +351,10 @@ this.kitchenShift = kitchenShift</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>555</x>
-      <y>495</y>
-      <w>57</w>
-      <h>15</h>
+      <x>1404</x>
+      <y>558</y>
+      <w>171</w>
+      <h>45</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
 this.amount = amount</panel_attributes>
@@ -363,10 +363,10 @@ this.amount = amount</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>555</x>
-      <y>510</y>
-      <w>84</w>
-      <h>15</h>
+      <x>1404</x>
+      <y>603</y>
+      <w>252</w>
+      <h>45</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
 this.estimatedTime = estimatedTime</panel_attributes>
@@ -375,10 +375,10 @@ this.estimatedTime = estimatedTime</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>444</x>
-      <y>528</y>
-      <w>114</w>
-      <h>12</h>
+      <x>1071</x>
+      <y>657</y>
+      <w>342</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes>lt=&lt;..
 job</panel_attributes>
@@ -387,10 +387,10 @@ job</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>444</x>
-      <y>540</y>
-      <w>201</w>
-      <h>12</h>
+      <x>1071</x>
+      <y>693</y>
+      <w>603</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
 addJob(job)</panel_attributes>
@@ -399,10 +399,10 @@ addJob(job)</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>681</x>
-      <y>348</y>
-      <w>51</w>
-      <h>12</h>
+      <x>1782</x>
+      <y>117</y>
+      <w>153</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes>t.jobs: ArrayList&lt;CookingJob&gt;
 style=wordwrap</panel_attributes>
@@ -411,10 +411,10 @@ style=wordwrap</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>702</x>
-      <y>357</y>
-      <w>9</w>
-      <h>336</h>
+      <x>1845</x>
+      <y>144</y>
+      <w>27</w>
+      <h>1008</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;1100.0</additional_attributes>
@@ -422,10 +422,10 @@ style=wordwrap</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>639</x>
-      <y>552</y>
-      <w>72</w>
-      <h>12</h>
+      <x>1656</x>
+      <y>729</y>
+      <w>216</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
 add(job)</panel_attributes>
@@ -434,10 +434,10 @@ add(job)</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>702</x>
-      <y>558</y>
-      <w>6</w>
-      <h>15</h>
+      <x>1845</x>
+      <y>747</y>
+      <w>18</w>
+      <h>45</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -445,10 +445,10 @@ add(job)</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>636</x>
-      <y>546</y>
-      <w>6</w>
-      <h>15</h>
+      <x>1647</x>
+      <y>711</y>
+      <w>18</w>
+      <h>45</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -456,10 +456,10 @@ add(job)</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>258</x>
-      <y>570</y>
-      <w>189</w>
-      <h>12</h>
+      <x>513</x>
+      <y>783</y>
+      <w>567</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes>lt=&lt;..
 job</panel_attributes>
@@ -468,10 +468,10 @@ job</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>555</x>
-      <y>522</y>
-      <w>45</w>
-      <h>15</h>
+      <x>1404</x>
+      <y>639</y>
+      <w>135</w>
+      <h>45</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
 this.cook = null</panel_attributes>
@@ -480,10 +480,10 @@ this.cook = null</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>114</x>
-      <y>414</y>
-      <w>147</w>
-      <h>12</h>
+      <x>81</x>
+      <y>315</y>
+      <w>441</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 throw KitchenException</panel_attributes>
@@ -492,10 +492,10 @@ throw KitchenException</panel_attributes>
   <element>
     <id>Text</id>
     <coordinates>
-      <x>87</x>
-      <y>405</y>
-      <w>150</w>
-      <h>9</h>
+      <x>0</x>
+      <y>288</y>
+      <w>450</w>
+      <h>27</h>
     </coordinates>
     <panel_attributes>* !(kTaskMgr.currentSheet.hasTask(task))*
 style=wordwrap</panel_attributes>

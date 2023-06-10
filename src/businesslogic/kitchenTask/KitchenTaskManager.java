@@ -6,8 +6,8 @@ import businesslogic.UseCaseLogicException;
 import businesslogic.event.EventInfo;
 import businesslogic.event.ServiceInfo;
 import businesslogic.recipe.KitchenProcedure;
+import businesslogic.shift.KitchenShift;
 import businesslogic.user.User;
-import persistence.PersistenceManager;
 
 import java.util.ArrayList;
 
@@ -108,11 +108,18 @@ public class KitchenTaskManager {
         }
         ArrayList<KitchenProcedure> newKProcs = newKProc.getProcedures();
         newKProcs.add(newKProc);
-//        this.notifyKitchenProceduresAdded(newKProcs);
         currentSheet.addProcedure(newKProcs);
 
         return currentSheet;
     }
+
+//    public SummarySheet removeProcedure(KitchenProcedure oldKProc) throws UseCaseLogicException {
+//        if(currentSheet == null){
+//            throw new UseCaseLogicException();
+//        }
+//        currentSheet.removeProcedure(oldKProc);
+//        return currentSheet;
+//    }
 
     private void notifyKitchenProceduresAdded(ArrayList<KitchenProcedure> newKProcs) {
         for(KitchenTaskEventReceiver er: this.eventReceivers){
@@ -123,7 +130,21 @@ public class KitchenTaskManager {
 
     }
 
-    public SummarySheet getSummarySheet() {
-        return this.currentSheet;
+    public void createNewCookingJob(Task t, KitchenShift kShift, int amount, float estimatedTime) throws UseCaseLogicException, KitchenException {
+        if(currentSheet == null){
+            throw new UseCaseLogicException();
+        }
+        if(!currentSheet.hasTask(t)){
+            throw new KitchenException();
+        }
+        CookingJob job = currentSheet.createCookingJob(t, kShift, amount, estimatedTime);
+        this.notifyCookingJobAdded(job, t.getId());
+
+    }
+
+    private void notifyCookingJobAdded(CookingJob job, int task_id) {
+        for(KitchenTaskEventReceiver er: this.eventReceivers){
+            er.updateCookingJobAdded(job, task_id);
+        }
     }
 }

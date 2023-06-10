@@ -23,6 +23,7 @@ public class Task {
     private boolean toDo;
     private int summarySheetId;
     private KitchenProcedure procedure;
+    private ArrayList<CookingJob> jobs;
     private int id;
 
     public Task(KitchenProcedure kProc){
@@ -30,6 +31,7 @@ public class Task {
         estimatedTime = 0;
         toDo = true;
         procedure = kProc;
+        jobs = new ArrayList<>();
     }
 
     public static void saveAllNewTasks(int summarysheet_id, List<Task> tasks) {
@@ -82,7 +84,26 @@ public class Task {
     }
 
     public String toString() {
-        return "Task: " + id + " recipe: " + procedure+ " quantità: " + amount + "tempo stimato: " + estimatedTime + (toDo ? " da " : "da non ") +
+        return "Task: " + id + " sheetId: " + summarySheetId + " recipe: " + procedure + " quantità: " + amount + "tempo stimato: " + estimatedTime + (toDo ? " da " : "da non ") +
                 "farsi";
+    }
+
+    public KitchenProcedure getProcedure() {
+        return procedure;
+    }
+
+    public void addJob(CookingJob newJob) {
+        this.jobs.add(newJob);
+    }
+
+    public int getId() {
+        return this.id;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if(obj instanceof Task)
+            return ((Task) obj).getId() == this.id;
+        return false;
     }
 }

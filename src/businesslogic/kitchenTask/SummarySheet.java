@@ -2,6 +2,7 @@ package businesslogic.kitchenTask;
 
 import businesslogic.KitchenException;
 import businesslogic.recipe.KitchenProcedure;
+import businesslogic.shift.KitchenShift;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import persistence.BatchUpdateHandler;
@@ -12,6 +13,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Map;
 
 public class SummarySheet {
@@ -146,4 +148,27 @@ public class SummarySheet {
         Task.saveAllNewTasks(this.id, newTasks);
         tasks.addAll(newTasks);
     }
+
+    public boolean hasTask(Task t){
+        return tasks.contains(t);
+    }
+
+    public CookingJob createCookingJob(Task t, KitchenShift kShift, int amount, float estimatedTime) throws KitchenException {
+        for(Task task: tasks){
+            if(task.equals(t)){
+                CookingJob newJob = new CookingJob(kShift, amount, estimatedTime);
+                t.addJob(newJob);
+                return newJob;
+            }
+        }
+        throw new KitchenException();
+    }
+
+//    public void removeProcedure(KitchenProcedure oldKProc) {
+//        for(Task task: tasks){
+//            if(task.getProcedure().equals(oldKProc)){
+//                for()
+//            }
+//        }
+//    }
 }
