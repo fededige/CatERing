@@ -147,4 +147,25 @@ public class KitchenTaskManager {
             er.updateCookingJobAdded(job, task_id, shift_id);
         }
     }
+
+    public void deleteCookingJob(Task t, CookingJob oldJob) throws KitchenException, UseCaseLogicException {
+        if(currentSheet == null){
+            throw new UseCaseLogicException();
+        }
+        if(!currentSheet.hasTask(t)){
+            throw new KitchenException();
+        }
+        if(!t.hasJob(oldJob)){
+            throw new KitchenException();
+        }
+
+        currentSheet.deleteCookingJob(t, oldJob);
+        notifyCookingJobDeleted(oldJob);
+    }
+
+    private void notifyCookingJobDeleted(CookingJob oldJob) {
+        for(KitchenTaskEventReceiver er: this.eventReceivers){
+            er.updateCookingJobDeleted(oldJob);
+        }
+    }
 }

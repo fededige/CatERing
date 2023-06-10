@@ -96,8 +96,8 @@ public class SummarySheet {
 
 
     public static void deleteSummarySheet(SummarySheet summarySheet){
-        String delTasks = "DELETE FROM tasks WHERE summarysheet_id = " + summarySheet.getId();
-        PersistenceManager.executeUpdate(delTasks);
+        String delSheet = "DELETE FROM tasks WHERE summarysheet_id = " + summarySheet.getId();
+        PersistenceManager.executeUpdate(delSheet);
 
         String del = "DELETE FROM SummarySheets WHERE id = " + summarySheet.getId();
         PersistenceManager.executeUpdate(del);
@@ -162,6 +162,15 @@ public class SummarySheet {
             }
         }
         throw new KitchenException();
+    }
+
+    public void deleteCookingJob(Task t, CookingJob oldJob) {
+        for(Task task: tasks){
+            if(task.equals(t)){
+                task.deleteCookingJob(oldJob);
+                return;
+            }
+        }
     }
 
 //    public void removeProcedure(KitchenProcedure oldKProc) {

@@ -68,6 +68,7 @@ public class Task {
                 t.amount = rs.getInt("amount");
                 t.estimatedTime = rs.getFloat("estimatedTime");
                 t.toDo = rs.getBoolean("toDo");
+                t.jobs = CookingJob.loadCookingJobByTaskId(t.id);
                 tasks.add(t);
             }
         });
@@ -105,5 +106,14 @@ public class Task {
         if(obj instanceof Task)
             return ((Task) obj).getId() == this.id;
         return false;
+    }
+
+    public boolean hasJob(CookingJob oldJob) {
+        return jobs.contains(oldJob);
+    }
+
+    public void deleteCookingJob(CookingJob oldJob) {
+        oldJob.getkShift().freeTime(oldJob.getEstimatedTime());
+        this.jobs.remove(oldJob);
     }
 }
