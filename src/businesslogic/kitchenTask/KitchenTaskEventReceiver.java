@@ -9,5 +9,5 @@ public interface KitchenTaskEventReceiver {
 
     public void updateKitchenProcedureAdded(KitchenProcedure kProc);
 
-    void updateCookingJobAdded(CookingJob job, int task_id);
+    void updateCookingJobAdded(CookingJob job, int task_id, int shift_id);
 }

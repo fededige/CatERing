@@ -27,16 +27,17 @@ public class CookingJob {
         this.cook = null;
     }
 
-    public static void saveNewCookingJob(CookingJob job, int task_id) {
-        String jobInsert = "INSERT INTO catering.cookingjobs (task_id, cook_id, amount, estimatedTime, completed) VALUES (?, ?, ?, ?, ?);";
+    public static void saveNewCookingJob(CookingJob job, int task_id, int shift_id) {
+        String jobInsert = "INSERT INTO catering.cookingjobs (task_id, cook_id, shift_id, amount, estimatedTime, completed) VALUES (?, ?, ?, ?, ?, ?);";
         int[] result = PersistenceManager.executeBatchUpdate(jobInsert, 1, new BatchUpdateHandler() {
             @Override
             public void handleBatchItem(PreparedStatement ps, int batchCount) throws SQLException {
                 ps.setInt(1, task_id);
                 ps.setInt(2, job.getCook() == null ? 0 : job.getCook().getId());
-                ps.setInt(3, job.getAmount());
-                ps.setFloat(4, job.getEstimatedTime());
-                ps.setBoolean(5, job.isCompleted());
+                ps.setInt(3, shift_id);
+                ps.setInt(4, job.getAmount());
+                ps.setFloat(5, job.getEstimatedTime());
+                ps.setBoolean(6, job.isCompleted());
             }
 
             @Override

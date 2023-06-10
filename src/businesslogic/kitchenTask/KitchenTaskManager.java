@@ -138,13 +138,13 @@ public class KitchenTaskManager {
             throw new KitchenException();
         }
         CookingJob job = currentSheet.createCookingJob(t, kShift, amount, estimatedTime);
-        this.notifyCookingJobAdded(job, t.getId());
+        this.notifyCookingJobAdded(job, t.getId(), kShift.getId());
 
     }
 
-    private void notifyCookingJobAdded(CookingJob job, int task_id) {
+    private void notifyCookingJobAdded(CookingJob job, int task_id, int shift_id) {
         for(KitchenTaskEventReceiver er: this.eventReceivers){
-            er.updateCookingJobAdded(job, task_id);
+            er.updateCookingJobAdded(job, task_id, shift_id);
         }
     }
 }

@@ -24,7 +24,7 @@ public class KitchenTaskPersistence implements KitchenTaskEventReceiver {
     }
 
     @Override
-    public void updateCookingJobAdded(CookingJob job, int task_id) {
-        CookingJob.saveNewCookingJob(job, task_id);
+    public void updateCookingJobAdded(CookingJob job, int task_id, int shift_id) {
+        CookingJob.saveNewCookingJob(job, task_id, shift_id);
     }
 }
