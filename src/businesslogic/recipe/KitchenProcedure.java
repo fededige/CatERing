@@ -8,6 +8,7 @@ public abstract class KitchenProcedure {
     private String instruction;
     private int quantity;
 
+
     public abstract ArrayList<KitchenProcedure> getProcedures();
 
     public String testString() {
@@ -19,4 +20,6 @@ public abstract class KitchenProcedure {
     }
 
     public abstract int getId();
+
+    public abstract String getName();
 }

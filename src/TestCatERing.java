@@ -72,18 +72,9 @@ public class TestCatERing {
             CatERing.getInstance().getMenuManager().publish();
             System.out.println(m.testString());
 
-            System.out.println("\nTEST CREATE SUMMARY SHEET");
-            EventInfo event = EventInfo.loadAllEventInfo().get(0);
-            ServiceInfo service = ServiceInfo.loadServiceInfoForEvent(event.getId()).get(0);
-            service.approveMenu();
-            SummarySheet s = CatERing.getInstance().getKitchenTaskManager().createSummarySheet(service, event);
-            System.out.println(s.testString());
-
         } catch (UseCaseLogicException e) {
             e.printStackTrace();
             System.out.println("Errore di logica nello use case");
-        } catch (KitchenException e) {
-            throw new RuntimeException(e);
         }
     }
 }

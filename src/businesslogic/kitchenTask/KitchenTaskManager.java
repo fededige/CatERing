@@ -12,7 +12,7 @@ import persistence.PersistenceManager;
 import java.util.ArrayList;
 
 public class KitchenTaskManager {
-    private SummarySheet currentSheet;
+    private static SummarySheet currentSheet;
     private ArrayList<KitchenTaskEventReceiver> eventReceivers;
 
     public KitchenTaskManager() {
@@ -36,6 +36,7 @@ public class KitchenTaskManager {
         SummarySheet existingSheet = null;
         try {
             existingSheet = SummarySheet.loadSummarySheetByServiceId(service.getId());
+            currentSheet = existingSheet;
             return existingSheet;
         } catch (KitchenException e){};
 
@@ -101,4 +102,28 @@ public class KitchenTaskManager {
         }
     }
 
+    public SummarySheet addProcedure(KitchenProcedure newKProc) throws UseCaseLogicException {
+        if(currentSheet == null){
+            throw new UseCaseLogicException();
+        }
+        ArrayList<KitchenProcedure> newKProcs = newKProc.getProcedures();
+        newKProcs.add(newKProc);
+//        this.notifyKitchenProceduresAdded(newKProcs);
+        currentSheet.addProcedure(newKProcs);
+
+        return currentSheet;
+    }
+
+    private void notifyKitchenProceduresAdded(ArrayList<KitchenProcedure> newKProcs) {
+        for(KitchenTaskEventReceiver er: this.eventReceivers){
+            for(KitchenProcedure kProc: newKProcs){
+                er.updateKitchenProcedureAdded(kProc);
+            }
+        }
+
+    }
+
+    public SummarySheet getSummarySheet() {
+        return this.currentSheet;
+    }
 }

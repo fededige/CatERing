@@ -82,7 +82,7 @@ public class Task {
     }
 
     public String toString() {
-        return "Task: " + id + " quantità: " + amount + "tempo stimato: " + estimatedTime + (toDo ? " da " : "da non ") +
+        return "Task: " + id + " recipe: " + procedure+ " quantità: " + amount + "tempo stimato: " + estimatedTime + (toDo ? " da " : "da non ") +
                 "farsi";
     }
 }

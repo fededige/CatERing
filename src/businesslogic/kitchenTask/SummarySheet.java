@@ -1,6 +1,7 @@
 package businesslogic.kitchenTask;
 
 import businesslogic.KitchenException;
+import businesslogic.recipe.KitchenProcedure;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import persistence.BatchUpdateHandler;
@@ -100,6 +101,7 @@ public class SummarySheet {
         PersistenceManager.executeUpdate(del);
     }
 
+
     private int getServiceId() {
         return this.serviceId;
     }
@@ -133,4 +135,15 @@ public class SummarySheet {
         return this.id;
     }
 
+    public void addProcedure(ArrayList<KitchenProcedure> newKProcs) {
+        ArrayList<Task> newTasks = new ArrayList<>();
+        for(KitchenProcedure newKProc: newKProcs){
+            Task newTask = new Task(newKProc);
+            System.out.println(newTask);
+            newTasks.add(newTask);
+        }
+
+        Task.saveAllNewTasks(this.id, newTasks);
+        tasks.addAll(newTasks);
+    }
 }

@@ -3,9 +3,11 @@ package businesslogic.recipe;
 import businesslogic.KitchenException;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import persistence.BatchUpdateHandler;
 import persistence.PersistenceManager;
 import persistence.ResultHandler;
 
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.*;
@@ -16,7 +18,7 @@ public class Recipe extends KitchenProcedure{
     private int id;
     private String name;
 
-    private Recipe() {
+    private Recipe(){
 
     }
 
@@ -84,6 +86,21 @@ public class Recipe extends KitchenProcedure{
         return rec;
     }
 
+    public static void saveNewKitchenProcedure(Recipe kProc){
+        String kProcInsert = "INSERT INTO catering.Recipes (name) VALUES (?);";
+
+        int[] result = PersistenceManager.executeBatchUpdate(kProcInsert, 1, new BatchUpdateHandler() {
+            @Override
+            public void handleBatchItem(PreparedStatement ps, int batchCount) throws SQLException {
+                ps.setString(1, kProc.getName());
+            }
+
+            @Override
+            public void handleGeneratedIds(ResultSet rs, int count) throws SQLException {
+                kProc.id = rs.getInt(1);
+            }
+        });
+    }
 
     @Override
     public ArrayList<KitchenProcedure> getProcedures() {

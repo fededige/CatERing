@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <diagram program="umlet" version="15.1">
-  <zoom_level>5</zoom_level>
+  <zoom_level>9</zoom_level>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>525</x>
-      <y>50</y>
-      <w>210</w>
-      <h>20</h>
+      <x>945</x>
+      <y>0</y>
+      <w>378</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes>halign=center
 *2-addProcedure*
@@ -19,10 +19,10 @@ fontsize=25
   <element>
     <id>UMLPackage</id>
     <coordinates>
-      <x>45</x>
-      <y>100</y>
-      <w>45</w>
-      <h>35</h>
+      <x>81</x>
+      <y>90</y>
+      <w>81</w>
+      <h>63</h>
     </coordinates>
     <panel_attributes>UI</panel_attributes>
     <additional_attributes/>
@@ -30,10 +30,10 @@ fontsize=25
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>60</x>
-      <y>130</y>
-      <w>15</w>
-      <h>740</h>
+      <x>108</x>
+      <y>144</y>
+      <w>27</w>
+      <h>1332</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;1460.0</additional_attributes>
@@ -41,10 +41,10 @@ fontsize=25
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>490</x>
-      <y>110</y>
-      <w>85</w>
-      <h>20</h>
+      <x>882</x>
+      <y>108</y>
+      <w>153</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes>kTaskMgr.currentSheet: SummarySheet
 style=wordwrap</panel_attributes>
@@ -53,10 +53,10 @@ style=wordwrap</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>525</x>
-      <y>125</y>
-      <w>15</w>
-      <h>745</h>
+      <x>945</x>
+      <y>135</y>
+      <w>27</w>
+      <h>1341</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;1470.0</additional_attributes>
@@ -64,10 +64,10 @@ style=wordwrap</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>215</x>
-      <y>230</y>
-      <w>325</w>
-      <h>20</h>
+      <x>387</x>
+      <y>324</y>
+      <w>585</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
 addProcedure(newProcedure)</panel_attributes>
@@ -76,10 +76,10 @@ addProcedure(newProcedure)</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>525</x>
-      <y>240</y>
-      <w>10</w>
-      <h>405</h>
+      <x>945</x>
+      <y>342</y>
+      <w>18</w>
+      <h>729</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -88,9 +88,9 @@ addProcedure(newProcedure)</panel_attributes>
     <id>UMLFrame</id>
     <coordinates>
       <x>0</x>
-      <y>160</y>
-      <w>1095</w>
-      <h>680</h>
+      <y>198</y>
+      <w>1971</w>
+      <h>1224</h>
     </coordinates>
     <panel_attributes>*alt [ kTaskMgr.currentSheet == null ]*
 --
@@ -103,10 +103,10 @@ addProcedure(newProcedure)</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>60</x>
-      <y>175</y>
-      <w>170</w>
-      <h>20</h>
+      <x>108</x>
+      <y>225</y>
+      <w>306</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 throw UseCaseLogicException</panel_attributes>
@@ -115,10 +115,10 @@ throw UseCaseLogicException</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>650</x>
-      <y>270</y>
-      <w>80</w>
-      <h>20</h>
+      <x>1170</x>
+      <y>396</y>
+      <w>144</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes>kProcs: ArrayList&lt;kitchenProcedure&gt;
 style=wordwrap</panel_attributes>
@@ -127,10 +127,10 @@ style=wordwrap</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>530</x>
-      <y>270</y>
-      <w>130</w>
-      <h>20</h>
+      <x>954</x>
+      <y>396</y>
+      <w>234</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
 create()</panel_attributes>
@@ -139,10 +139,10 @@ create()</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>685</x>
-      <y>285</y>
-      <w>15</w>
-      <h>585</h>
+      <x>1233</x>
+      <y>423</y>
+      <w>27</w>
+      <h>1053</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;1150.0</additional_attributes>
@@ -150,10 +150,10 @@ create()</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>685</x>
-      <y>290</y>
-      <w>10</w>
-      <h>20</h>
+      <x>1233</x>
+      <y>432</y>
+      <w>18</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -161,10 +161,10 @@ create()</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>530</x>
-      <y>290</y>
-      <w>165</w>
-      <h>20</h>
+      <x>954</x>
+      <y>432</y>
+      <w>297</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 kProcs</panel_attributes>
@@ -173,10 +173,10 @@ kProcs</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>530</x>
-      <y>310</y>
-      <w>165</w>
-      <h>20</h>
+      <x>954</x>
+      <y>468</y>
+      <w>297</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
 add(newProcedure)</panel_attributes>
@@ -185,10 +185,10 @@ add(newProcedure)</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>685</x>
-      <y>320</y>
-      <w>10</w>
-      <h>15</h>
+      <x>1233</x>
+      <y>486</y>
+      <w>18</w>
+      <h>27</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -196,10 +196,10 @@ add(newProcedure)</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>515</x>
-      <y>365</y>
-      <w>250</w>
-      <h>50</h>
+      <x>927</x>
+      <y>567</y>
+      <w>450</w>
+      <h>90</h>
     </coordinates>
     <panel_attributes>for subProc in subProcedures:</panel_attributes>
     <additional_attributes/>
@@ -207,10 +207,10 @@ add(newProcedure)</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>530</x>
-      <y>375</y>
-      <w>170</w>
-      <h>20</h>
+      <x>954</x>
+      <y>585</y>
+      <w>306</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
 add(subProc)</panel_attributes>
@@ -219,10 +219,10 @@ add(subProc)</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>685</x>
-      <y>385</y>
-      <w>10</w>
-      <h>15</h>
+      <x>1233</x>
+      <y>603</y>
+      <w>18</w>
+      <h>27</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -230,10 +230,10 @@ add(subProc)</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>530</x>
-      <y>330</y>
-      <w>395</w>
-      <h>20</h>
+      <x>954</x>
+      <y>504</y>
+      <w>711</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
 getProcedures()</panel_attributes>
@@ -242,10 +242,10 @@ getProcedures()</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>530</x>
-      <y>350</y>
-      <w>395</w>
-      <h>20</h>
+      <x>954</x>
+      <y>540</y>
+      <w>711</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;..
 subProcedures</panel_attributes>
@@ -254,10 +254,10 @@ subProcedures</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>875</x>
-      <y>110</y>
-      <w>80</w>
-      <h>20</h>
+      <x>1575</x>
+      <y>108</y>
+      <w>144</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes>newProcedure: kitchenProcedure
 style=wordwrap</panel_attributes>
@@ -266,10 +266,10 @@ style=wordwrap</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>910</x>
-      <y>125</y>
-      <w>15</w>
-      <h>745</h>
+      <x>1638</x>
+      <y>135</y>
+      <w>27</w>
+      <h>1341</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;1470.0</additional_attributes>
@@ -277,10 +277,10 @@ style=wordwrap</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>490</x>
-      <y>430</y>
-      <w>460</w>
-      <h>175</h>
+      <x>882</x>
+      <y>684</y>
+      <w>828</w>
+      <h>315</h>
     </coordinates>
     <panel_attributes>for proc in kProcs:</panel_attributes>
     <additional_attributes/>
@@ -288,10 +288,10 @@ style=wordwrap</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>805</x>
-      <y>455</y>
-      <w>80</w>
-      <h>20</h>
+      <x>1449</x>
+      <y>729</y>
+      <w>144</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes>task: Task
 style=wordwrap</panel_attributes>
@@ -300,10 +300,10 @@ style=wordwrap</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>840</x>
-      <y>470</y>
-      <w>15</w>
-      <h>400</h>
+      <x>1512</x>
+      <y>756</y>
+      <w>27</w>
+      <h>720</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;780.0</additional_attributes>
@@ -311,10 +311,10 @@ style=wordwrap</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>530</x>
-      <y>455</y>
-      <w>285</w>
-      <h>20</h>
+      <x>954</x>
+      <y>729</y>
+      <w>513</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
 create()</panel_attributes>
@@ -323,10 +323,10 @@ create()</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>845</x>
-      <y>480</y>
-      <w>80</w>
-      <h>25</h>
+      <x>1521</x>
+      <y>774</y>
+      <w>144</w>
+      <h>45</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
 this.amount = 0</panel_attributes>
@@ -335,10 +335,10 @@ this.amount = 0</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>845</x>
-      <y>500</y>
-      <w>105</w>
-      <h>25</h>
+      <x>1521</x>
+      <y>810</y>
+      <w>189</w>
+      <h>45</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
 this.estimatedTime = 0</panel_attributes>
@@ -347,10 +347,10 @@ this.estimatedTime = 0</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>845</x>
-      <y>520</y>
-      <w>80</w>
-      <h>25</h>
+      <x>1521</x>
+      <y>846</y>
+      <w>144</w>
+      <h>45</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
 this.toDo = true</panel_attributes>
@@ -359,10 +359,10 @@ this.toDo = true</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>845</x>
-      <y>540</y>
-      <w>100</w>
-      <h>25</h>
+      <x>1521</x>
+      <y>882</y>
+      <w>180</w>
+      <h>45</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
 this.procedure = proc</panel_attributes>
@@ -371,10 +371,10 @@ this.procedure = proc</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>840</x>
-      <y>475</y>
-      <w>10</w>
-      <h>95</h>
+      <x>1512</x>
+      <y>765</y>
+      <w>18</w>
+      <h>171</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -382,10 +382,10 @@ this.procedure = proc</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>530</x>
-      <y>550</y>
-      <w>320</w>
-      <h>20</h>
+      <x>954</x>
+      <y>900</y>
+      <w>576</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;..
 task</panel_attributes>
@@ -394,10 +394,10 @@ task</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>530</x>
-      <y>570</y>
-      <w>525</w>
-      <h>20</h>
+      <x>954</x>
+      <y>936</y>
+      <w>945</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
 add(task)</panel_attributes>
@@ -406,10 +406,10 @@ add(task)</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>180</x>
-      <y>115</y>
-      <w>80</w>
-      <h>20</h>
+      <x>324</x>
+      <y>117</y>
+      <w>144</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes>kTaskMgr: KitchenTaskManager
 style=wordwrap</panel_attributes>
@@ -418,10 +418,10 @@ style=wordwrap</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>215</x>
-      <y>130</y>
-      <w>15</w>
-      <h>740</h>
+      <x>387</x>
+      <y>144</y>
+      <w>27</w>
+      <h>1332</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;1460.0</additional_attributes>
@@ -429,10 +429,10 @@ style=wordwrap</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>60</x>
-      <y>140</y>
-      <w>170</w>
-      <h>20</h>
+      <x>108</x>
+      <y>162</y>
+      <w>306</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
 addProcedure(newProcedure)</panel_attributes>
@@ -441,10 +441,10 @@ addProcedure(newProcedure)</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>160</x>
-      <y>690</y>
-      <w>235</w>
-      <h>100</h>
+      <x>306</x>
+      <y>1152</y>
+      <w>405</w>
+      <h>180</h>
     </coordinates>
     <panel_attributes>for kTaskReceiver in kTaskReceivers</panel_attributes>
     <additional_attributes/>
@@ -452,10 +452,10 @@ addProcedure(newProcedure)</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>335</x>
-      <y>110</y>
-      <w>85</w>
-      <h>20</h>
+      <x>603</x>
+      <y>108</y>
+      <w>153</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes>kTaskReceiver: KitcheTaskEventReceiver
 style=wordwrap</panel_attributes>
@@ -464,10 +464,10 @@ style=wordwrap</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>370</x>
-      <y>125</y>
-      <w>15</w>
-      <h>680</h>
+      <x>666</x>
+      <y>135</y>
+      <w>27</w>
+      <h>1224</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;1340.0</additional_attributes>
@@ -475,22 +475,22 @@ style=wordwrap</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>215</x>
-      <y>625</y>
-      <w>320</w>
-      <h>20</h>
+      <x>396</x>
+      <y>1035</y>
+      <w>567</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;..
 kProcs</panel_attributes>
-    <additional_attributes>10.0;20.0;620.0;20.0</additional_attributes>
+    <additional_attributes>10.0;20.0;610.0;20.0</additional_attributes>
   </element>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>215</x>
-      <y>150</y>
-      <w>10</w>
-      <h>680</h>
+      <x>387</x>
+      <y>180</y>
+      <w>18</w>
+      <h>1224</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -498,10 +498,10 @@ kProcs</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>220</x>
-      <y>655</y>
-      <w>165</w>
-      <h>35</h>
+      <x>396</x>
+      <y>1089</y>
+      <w>297</w>
+      <h>63</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
 notifyKitchenProceduresAdded(kProcs)</panel_attributes>
@@ -510,10 +510,10 @@ notifyKitchenProceduresAdded(kProcs)</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>220</x>
-      <y>680</y>
-      <w>10</w>
-      <h>120</h>
+      <x>396</x>
+      <y>1134</y>
+      <w>18</w>
+      <h>216</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -521,44 +521,33 @@ notifyKitchenProceduresAdded(kProcs)</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>225</x>
-      <y>710</y>
-      <w>160</w>
-      <h>20</h>
+      <x>405</x>
+      <y>1206</y>
+      <w>288</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
-updateKitchenProcedureAdded(kProcs)</panel_attributes>
+updateKitchenProcedureAdded(kProc)</panel_attributes>
     <additional_attributes>300.0;20.0;10.0;20.0</additional_attributes>
   </element>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>370</x>
-      <y>720</y>
-      <w>10</w>
-      <h>25</h>
+      <x>666</x>
+      <y>1224</y>
+      <w>18</w>
+      <h>45</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
   </element>
   <element>
-    <id>UMLFrame</id>
-    <coordinates>
-      <x>155</x>
-      <y>645</y>
-      <w>245</w>
-      <h>150</h>
-    </coordinates>
-    <panel_attributes>for task in tasks</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
     <id>Relation</id>
     <coordinates>
-      <x>60</x>
-      <y>805</y>
-      <w>165</w>
-      <h>20</h>
+      <x>108</x>
+      <y>1359</y>
+      <w>297</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;..
 currentSheet</panel_attributes>
@@ -567,10 +556,10 @@ currentSheet</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>910</x>
-      <y>340</y>
-      <w>10</w>
-      <h>20</h>
+      <x>1638</x>
+      <y>522</y>
+      <w>18</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -578,10 +567,10 @@ currentSheet</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1005</x>
-      <y>110</y>
-      <w>80</w>
-      <h>20</h>
+      <x>1809</x>
+      <y>108</y>
+      <w>144</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes>currentSheet.tasks: ArrayList&lt;Tasl&gt;
 style=wordwrap</panel_attributes>
@@ -590,10 +579,10 @@ style=wordwrap</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1040</x>
-      <y>125</y>
-      <w>15</w>
-      <h>745</h>
+      <x>1872</x>
+      <y>135</y>
+      <w>27</w>
+      <h>1341</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;1470.0</additional_attributes>
@@ -601,12 +590,23 @@ style=wordwrap</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1040</x>
-      <y>580</y>
-      <w>10</w>
-      <h>15</h>
+      <x>1872</x>
+      <y>954</y>
+      <w>18</w>
+      <h>27</h>
     </coordinates>
     <panel_attributes/>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLFrame</id>
+    <coordinates>
+      <x>315</x>
+      <y>1179</y>
+      <w>387</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>for kProc in kProcs</panel_attributes>
     <additional_attributes/>
   </element>
 </diagram>
