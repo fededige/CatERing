@@ -12,4 +12,6 @@ public interface KitchenTaskEventReceiver {
     void updateCookingJobAdded(CookingJob job, int task_id, int shift_id);
 
     void updateCookingJobDeleted(CookingJob oldJob);
+
+    void updateCookingJobChanged(CookingJob c);
 }

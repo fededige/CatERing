@@ -12,6 +12,7 @@ import persistence.ResultHandler;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.SQLOutput;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Map;
@@ -169,6 +170,24 @@ public class SummarySheet {
             if(task.equals(t)){
                 task.deleteCookingJob(oldJob);
                 return;
+            }
+        }
+    }
+
+    public void modifyCookingJob(Task t, CookingJob c, Integer amount, Float estimatedTime) {
+        int i = 0;
+        for(Task task : tasks){
+            if(task.equals(t)){
+                for(CookingJob job: t.getJobs()){
+                    i++;
+                    if(job.equals(c)){
+                        if(amount != null)
+                            c.setAmount(amount);
+                        if(estimatedTime != null)
+                            c.setEstimatedTime(estimatedTime);
+                        return;
+                    }
+                }
             }
         }
     }

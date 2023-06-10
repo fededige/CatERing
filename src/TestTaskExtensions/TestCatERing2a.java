@@ -1,2 +1,5 @@
-package TestTaskExtensions;public class TestCatERing2a {
+package TestTaskExtensions;
+
+public class TestCatERing2a {
+
 }

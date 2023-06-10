@@ -83,8 +83,25 @@ public class CookingJob {
         return jobs;
     }
 
+    public static void updateCookingJob(CookingJob c) {
+        String upd = "UPDATE cookingjobs SET amount = " + c.getAmount() +
+                " WHERE id = " + c.getId();
+        PersistenceManager.executeUpdate(upd);
+        upd = "UPDATE cookingjobs SET estimatedTime = " + c.getEstimatedTime() +
+                " WHERE id = " + c.getId();
+        PersistenceManager.executeUpdate(upd);
+    }
+
     public int getAmount() {
         return amount;
+    }
+
+    public void setAmount(int a){
+        this.amount = a;
+    }
+
+    public void setEstimatedTime(float e){
+        this.estimatedTime = e;
     }
 
     public float getEstimatedTime() {
@@ -101,8 +118,9 @@ public class CookingJob {
 
     @Override
     public boolean equals(Object obj) {
-        if(obj instanceof CookingJob)
+        if(obj instanceof CookingJob){
             return ((CookingJob) obj).getId() == this.id;
+        }
         return false;
     }
 

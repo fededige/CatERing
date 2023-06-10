@@ -130,7 +130,7 @@ public class KitchenTaskManager {
 
     }
 
-    public void createNewCookingJob(Task t, KitchenShift kShift, int amount, float estimatedTime) throws UseCaseLogicException, KitchenException {
+    public CookingJob createNewCookingJob(Task t, KitchenShift kShift, int amount, float estimatedTime) throws UseCaseLogicException, KitchenException {
         if(currentSheet == null){
             throw new UseCaseLogicException();
         }
@@ -139,7 +139,7 @@ public class KitchenTaskManager {
         }
         CookingJob job = currentSheet.createCookingJob(t, kShift, amount, estimatedTime);
         this.notifyCookingJobAdded(job, t.getId(), kShift.getId());
-
+        return job;
     }
 
     private void notifyCookingJobAdded(CookingJob job, int task_id, int shift_id) {
@@ -168,4 +168,31 @@ public class KitchenTaskManager {
             er.updateCookingJobDeleted(oldJob);
         }
     }
+
+    public void modifyCookingJob(Task t, CookingJob c, Integer amount, Float estimatedTime) throws UseCaseLogicException, KitchenException {
+        if(currentSheet == null){
+            throw new UseCaseLogicException();
+        }
+        if(!currentSheet.hasTask(t)){
+            throw new KitchenException();
+        }
+        if(!t.hasJob(c)){
+            throw new KitchenException();
+        }
+        currentSheet.modifyCookingJob(t, c, amount, estimatedTime);
+        notifyCookingJobChanged(c);
+    }
+    public void modifyCookingJob(Task t, CookingJob c, Integer amount) throws KitchenException, UseCaseLogicException {
+        modifyCookingJob(t, c, amount, null);
+    }
+    public void modifyCookingJob(Task t, CookingJob c, Float estimatedTime) throws KitchenException, UseCaseLogicException {
+        modifyCookingJob(t, c, null, estimatedTime);
+    }
+
+    private void notifyCookingJobChanged(CookingJob c) {
+        for(KitchenTaskEventReceiver er: this.eventReceivers){
+            er.updateCookingJobChanged(c);
+        }
+    }
+
 }

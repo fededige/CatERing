@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0937ec8d-40ed-4369-a5ac-483e61b54cb6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/TestTaskExtensions/TestCatERing5a.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TestTaskExtensions/TestCatERing5b.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documenti ProgettoSAS/dcd_in_costruzione.uxf" beforeDir="false" afterPath="$PROJECT_DIR$/documenti ProgettoSAS/dcd_in_costruzione.uxf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documenti ProgettoSAS/documenti progetto cucina/dsd/passo 5/5a - deleteCookingJob.uxf" beforeDir="false" afterPath="$PROJECT_DIR$/documenti ProgettoSAS/documenti progetto cucina/dsd/passo 5/5a - deleteCookingJob.uxf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documenti ProgettoSAS/documenti progetto cucina/dsd/passo 5/5b - modifyCookingJob.uxf" beforeDir="false" afterPath="$PROJECT_DIR$/documenti ProgettoSAS/documenti progetto cucina/dsd/passo 5/5b - modifyCookingJob.uxf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TestTaskExtensions/TestCatERing2a.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TestTaskExtensions/TestCatERing2a.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/businesslogic/kitchenTask/CookingJob.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/businesslogic/kitchenTask/CookingJob.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/businesslogic/kitchenTask/KitchenTaskEventReceiver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/businesslogic/kitchenTask/KitchenTaskEventReceiver.java" afterDir="false" />
@@ -56,7 +55,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.Test5a">
+  <component name="RunManager" selected="Application.Test5b">
     <configuration name="Test1a" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="TestTaskExtensions.TestCatERing1a" />
       <module name="CatERing" />
@@ -73,6 +72,13 @@
     </configuration>
     <configuration name="Test5a" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="TestTaskExtensions.TestCatERing5a" />
+      <module name="CatERing" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test5b" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="TestTaskExtensions.TestCatERing5b" />
       <module name="CatERing" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -104,6 +110,7 @@
       <item itemvalue="Application.TestOriginal" />
       <item itemvalue="Application.TestKTskPrc" />
       <item itemvalue="Application.Test5a" />
+      <item itemvalue="Application.Test5b" />
       <item itemvalue="Application.UI" />
       <item itemvalue="Application.Test1a" />
       <item itemvalue="Application.Test1b" />
@@ -128,7 +135,7 @@
       <workItem from="1686233290162" duration="1881000" />
       <workItem from="1686316082339" duration="17192000" />
       <workItem from="1686390436559" duration="3058000" />
-      <workItem from="1686400784135" duration="10600000" />
+      <workItem from="1686400784135" duration="14659000" />
     </task>
     <servers />
   </component>

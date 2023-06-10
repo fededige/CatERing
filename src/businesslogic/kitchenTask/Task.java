@@ -116,4 +116,8 @@ public class Task {
         oldJob.getkShift().freeTime(oldJob.getEstimatedTime());
         this.jobs.remove(oldJob);
     }
+
+    public ArrayList<CookingJob> getJobs() {
+        return this.jobs;
+    }
 }

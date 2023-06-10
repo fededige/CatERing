@@ -32,4 +32,9 @@ public class KitchenTaskPersistence implements KitchenTaskEventReceiver {
     public void updateCookingJobDeleted(CookingJob oldJob) {
         CookingJob.deleteCookingJob(oldJob);
     }
+
+    @Override
+    public void updateCookingJobChanged(CookingJob c) {
+        CookingJob.updateCookingJob(c);
+    }
 }
