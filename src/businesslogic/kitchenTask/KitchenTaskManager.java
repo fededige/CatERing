@@ -195,4 +195,18 @@ public class KitchenTaskManager {
         }
     }
 
+    public void addCook(CookingJob c, User cook) throws UseCaseLogicException {
+        if(currentSheet == null){
+            throw new UseCaseLogicException();
+        }
+        if(!currentSheet.hasJob(c)){
+            throw new UseCaseLogicException();
+        }
+        try {
+            c = currentSheet.addCook(c, cook);
+        } catch (KitchenException e) {
+            System.err.println("job non trovato");
+        }
+        notifyCookingJobChanged(c);
+    }
 }

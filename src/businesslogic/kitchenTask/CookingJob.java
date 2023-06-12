@@ -77,6 +77,7 @@ public class CookingJob {
 
                 CookingJob job = new CookingJob(kShift, amount, estimatedTime);
                 job.id = rs.getInt("id");
+                job.cook = rs.getInt("cook_id") != 0 ? User.loadUserById(rs.getInt("cook_id")) : null;
                 jobs.add(job);
             }
         });
@@ -90,6 +91,11 @@ public class CookingJob {
         upd = "UPDATE cookingjobs SET estimatedTime = " + c.getEstimatedTime() +
                 " WHERE id = " + c.getId();
         PersistenceManager.executeUpdate(upd);
+        if(c.getCook() != null){
+            upd = "UPDATE cookingjobs SET cook_id = " + c.getCook().getId() +
+                    " WHERE id = " + c.getId();
+            PersistenceManager.executeUpdate(upd);
+        }
     }
 
     public int getAmount() {
@@ -130,5 +136,15 @@ public class CookingJob {
 
     public KitchenShift getkShift() {
         return kShift;
+    }
+
+    public void setCook(User cook) {
+        System.out.println("precook: " + this.cook);
+        this.cook = cook;
+        System.out.println("postcook: " + this.cook);
+    }
+
+    public String testString() {
+        return "Job: " + this.id + " amount: " + this.amount + " estimatedTIme: " + this.estimatedTime + " cook: " + (this.cook != null ? this.cook.toString() : "null");
     }
 }

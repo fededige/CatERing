@@ -3,6 +3,7 @@ package businesslogic.kitchenTask;
 import businesslogic.KitchenException;
 import businesslogic.recipe.KitchenProcedure;
 import businesslogic.shift.KitchenShift;
+import businesslogic.user.User;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import persistence.BatchUpdateHandler;
@@ -190,6 +191,27 @@ public class SummarySheet {
                 }
             }
         }
+    }
+
+    public boolean hasJob(CookingJob c) {
+        for(Task t: tasks){
+            if(t.hasJob(c))
+                return true;
+        }
+        return false;
+    }
+
+    public CookingJob addCook(CookingJob c, User cook) throws KitchenException {
+        for(Task t: tasks){
+            for(CookingJob j: t.getJobs()){
+                if(j.equals(c)){
+                    j.setCook(cook);
+                    System.out.println(j.testString());
+                    return j;
+                }
+            }
+        }
+        throw new KitchenException();
     }
 
 //    public void removeProcedure(KitchenProcedure oldKProc) {
