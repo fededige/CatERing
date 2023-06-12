@@ -75,6 +75,24 @@ public class Task {
         return tasks;
     }
 
+    public static void updateTask(Task t) {
+        String upd = "UPDATE tasks SET amount = " + t.getAmount() +
+                " WHERE id = " + t.getId();
+        PersistenceManager.executeUpdate(upd);
+        upd = "UPDATE tasks SET estimatedTime = " + t.getEstimatedTime() +
+                " WHERE id = " + t.getId();
+        PersistenceManager.executeUpdate(upd);
+
+    }
+
+    private float getEstimatedTime() {
+        return this.estimatedTime;
+    }
+
+    private int getAmount() {
+        return this.amount;
+    }
+
     public String testString() {
         String result = this.toString() + "\n";
 
@@ -119,5 +137,13 @@ public class Task {
 
     public ArrayList<CookingJob> getJobs() {
         return this.jobs;
+    }
+
+    public void setAmount(Integer amount) {
+        this.amount = amount;
+    }
+
+    public void setEstimatedTime(Float estimatedTime) {
+        this.estimatedTime = estimatedTime;
     }
 }

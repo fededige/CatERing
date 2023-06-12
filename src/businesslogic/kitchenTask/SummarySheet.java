@@ -214,6 +214,21 @@ public class SummarySheet {
         throw new KitchenException();
     }
 
+    public Task modifyTask(Task t, Integer amount, Float estimatedTime) throws KitchenException {
+        for(Task task: tasks){
+            if(task.equals(t)){
+                if(amount != null){
+                    t.setAmount(amount);
+                }
+                if(estimatedTime != null){
+                    t.setEstimatedTime(estimatedTime);
+                }
+                return t;
+            }
+        }
+        throw new KitchenException();
+    }
+
 //    public void removeProcedure(KitchenProcedure oldKProc) {
 //        for(Task task: tasks){
 //            if(task.getProcedure().equals(oldKProc)){

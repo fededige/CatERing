@@ -32,8 +32,9 @@ public class TestCatERing {
 
         System.out.println("TEST CREATE COOKING JOB");
         Task task = Task.loadTasksBySheetId(s.getId()).get(0);
-        System.out.println(KitchenShift.loadKitchenShiftById(1));
         CatERing.getInstance().getKitchenTaskManager().createNewCookingJob(task, KitchenShift.loadKitchenShiftById(1), 0, 0);
-    }
 
+        System.out.println("TEST MODIFY TASK");
+        CatERing.getInstance().getKitchenTaskManager().modifyTask(task, 32, (float) 4.2);
+    }
 }

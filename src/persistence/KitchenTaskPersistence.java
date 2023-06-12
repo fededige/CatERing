@@ -3,8 +3,11 @@ package persistence;
 import businesslogic.kitchenTask.CookingJob;
 import businesslogic.kitchenTask.KitchenTaskEventReceiver;
 import businesslogic.kitchenTask.SummarySheet;
+import businesslogic.kitchenTask.Task;
 import businesslogic.recipe.KitchenProcedure;
 import businesslogic.recipe.Recipe;
+
+import java.util.ArrayList;
 
 public class KitchenTaskPersistence implements KitchenTaskEventReceiver {
 
@@ -36,5 +39,10 @@ public class KitchenTaskPersistence implements KitchenTaskEventReceiver {
     @Override
     public void updateCookingJobChanged(CookingJob c) {
         CookingJob.updateCookingJob(c);
+    }
+
+    @Override
+    public void updateTaskChanged(Task t) {
+        Task.updateTask(t);
     }
 }
