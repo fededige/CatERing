@@ -11,6 +11,8 @@ import businesslogic.recipe.KitchenProcedure;
 import businesslogic.recipe.Recipe;
 import businesslogic.shift.KitchenShift;
 
+import java.util.ArrayList;
+
 
 public class TestCatERing {
     public static void main(String[] args) throws KitchenException, UseCaseLogicException {
@@ -29,6 +31,10 @@ public class TestCatERing {
 //        KitchenProcedure newKProc = Recipe.loadRecipeById(14);
 //        CatERing.getInstance().getKitchenTaskManager().addProcedure(newKProc);
 //        System.out.println(s.testString());
+
+        System.out.println("TEST GET SHIFT TABLE");
+        ArrayList<KitchenShift> sTable = CatERing.getInstance().getKitchenTaskManager().getShiftTable();
+        System.out.println(sTable);
 
         System.out.println("TEST CREATE COOKING JOB");
         Task task = Task.loadTasksBySheetId(s.getId()).get(0);

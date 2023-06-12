@@ -238,4 +238,8 @@ public class KitchenTaskManager {
             er.updateTaskChanged(t);
         }
     }
+
+    public ArrayList<KitchenShift> getShiftTable(){
+        return CatERing.getInstance().getShiftManager().getShiftTable();
+    }
 }

@@ -2,24 +2,43 @@ package businesslogic.shift;
 
 import businesslogic.KitchenException;
 import businesslogic.UseCaseLogicException;
-import businesslogic.kitchenTask.SummarySheet;
-import businesslogic.kitchenTask.Task;
 import persistence.PersistenceManager;
 import persistence.ResultHandler;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.sql.Time;
-import java.time.LocalTime;
 import java.util.ArrayList;
+import java.util.Date;
 
 public class KitchenShift extends Shift{
     private boolean isFull;
     private float availableTime;
     private int id;
+    private Date date;
+    private String shiftHours;
     public KitchenShift(float aTime){
         this.availableTime = aTime;
     }
+
+    public static ArrayList<KitchenShift> loadAllKShift() {
+        ArrayList<KitchenShift> shifts = new ArrayList<>();
+        String query = "SELECT * FROM kitchenshifts";
+        PersistenceManager.executeQuery(query, new ResultHandler() {
+            @Override
+            public void handle(ResultSet rs) throws SQLException {
+                float aTime = rs.getInt("availableTime");
+                KitchenShift shift = new KitchenShift(aTime);
+                shift.id = rs.getInt("id");
+                shift.setDate(rs.getDate("date"));
+                shift.setShiftHours(rs.getString("shiftHours"));
+                shift.setDate(rs.getDate("date"));
+                shifts.add(shift);
+            }
+        });
+
+        return shifts;
+    }
+
     public void freeTime(float duration){
         if(availableTime != 0 && duration > 0)
             this.isFull = false;
@@ -51,6 +70,7 @@ public class KitchenShift extends Shift{
                 shift.id = rs.getInt("id");
                 shift.setDate(rs.getDate("date"));
                 shift.setShiftHours(rs.getString("shiftHours"));
+                shift.setDate(rs.getDate("date"));
                 shifts.add(shift);
             }
         });
@@ -59,5 +79,20 @@ public class KitchenShift extends Shift{
         }
 
         return shifts.get(0);
+    }
+
+    @Override
+    public String toString() {
+        return "shift: " + this.id + ", il turno " + (this.isFull ? "non" : "" ) + " è pieno; " + "sono rimaste: " + this.availableTime + " ore" + " si svolge in data: " + this.date + " nelle ore: " + this.shiftHours;
+    }
+
+    @Override
+    public void setDate(Date date) {
+        this.date = date;
+    }
+
+    @Override
+    public void setShiftHours(String shiftHours) {
+        this.shiftHours = shiftHours;
     }
 }
