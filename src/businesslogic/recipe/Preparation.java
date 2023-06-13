@@ -1,5 +1,6 @@
 package businesslogic.recipe;
 
+import businesslogic.KitchenException;
 import businesslogic.kitchenTask.CookingJob;
 import businesslogic.kitchenTask.Task;
 import persistence.PersistenceManager;
@@ -32,6 +33,23 @@ public class Preparation extends KitchenProcedure{
             }
         });
         return  preps;
+    }
+
+    public static Preparation loadPreparationById(int id){
+        ArrayList<Preparation> preps = new ArrayList<>();
+        String query = "SELECT * " +
+                "FROM Preparations WHERE id = " + id;
+        System.out.println(query);
+        PersistenceManager.executeQuery(query, new ResultHandler() {
+            @Override
+            public void handle(ResultSet rs) throws SQLException {
+                String name = rs.getString("nome");
+                Preparation prep = new Preparation(name);
+                prep.id = rs.getInt("id");
+                preps.add(prep);
+            }
+        });
+        return  (preps.size() > 0) ? preps.get(0) : null;
     }
 
     @Override

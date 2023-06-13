@@ -6,6 +6,7 @@ import businesslogic.UseCaseLogicException;
 import businesslogic.event.EventInfo;
 import businesslogic.event.ServiceInfo;
 import businesslogic.recipe.KitchenProcedure;
+import businesslogic.recipe.Recipe;
 import businesslogic.shift.KitchenShift;
 import businesslogic.user.User;
 
@@ -38,7 +39,7 @@ public class KitchenTaskManager {
             existingSheet = SummarySheet.loadSummarySheetByServiceId(service.getId());
             currentSheet = existingSheet;
             return existingSheet;
-        } catch (KitchenException e){};
+        } catch (KitchenException ignored){}
 
         ArrayList<KitchenProcedure> kProcedures = service.getRecipies();
 
@@ -111,7 +112,7 @@ public class KitchenTaskManager {
 
         ArrayList<KitchenProcedure> newKProcs = new ArrayList<>();
         newKProcs.add(newKProc);
-        newKProcs.addAll(newKProc.getProcedures());
+        newKProcs.addAll(((Recipe) newKProc).getProcedures());
         ArrayList<Task> newTasks = currentSheet.addProcedure(newKProcs);
         notifyTasksAdded(currentSheet.getId(), newTasks);
         return currentSheet;

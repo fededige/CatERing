@@ -67,13 +67,16 @@ public class Task {
         PersistenceManager.executeQuery(query, new ResultHandler() {
             @Override
             public void handle(ResultSet rs) throws SQLException {
-                int recipe_id = rs.getInt("recipe_id");
-                if(recipe_id == 0){
-                    recipe_id = rs.getInt("preparation_id");
+                KitchenProcedure kProc = null;
+                if(rs.getInt("recipe_id") != 0){
+                    kProc = Recipe.loadRecipeById(rs.getInt("recipe_id"));
+                }
+                else if(rs.getInt("preparation_id") != 0){
+                    kProc = Preparation.loadPreparationById(rs.getInt("preparation_id"));
                 }
                 int position = rs.getInt("position");
-                Recipe recipe = Recipe.loadRecipeById(recipe_id);
-                Task t = new Task(recipe, position);
+
+                Task t = new Task(kProc, position);
                 t.id = rs.getInt("id");
                 t.summarySheetId = rs.getInt("summarysheet_id");
                 t.amount = rs.getInt("amount");

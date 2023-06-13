@@ -112,7 +112,6 @@ public class Recipe extends KitchenProcedure{
         PersistenceManager.executeUpdate(delRecipe);
     }
 
-    @Override
     public ArrayList<Preparation> getProcedures() {
         return this.subProcedures;
     }

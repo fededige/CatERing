@@ -1,9 +1,5 @@
 package businesslogic.recipe;
 
-import persistence.PersistenceManager;
-
-import java.util.ArrayList;
-
 public abstract class KitchenProcedure {
     private String name;
     private int id;
