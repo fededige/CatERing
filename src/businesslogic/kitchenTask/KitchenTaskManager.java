@@ -44,9 +44,11 @@ public class KitchenTaskManager {
 
         SummarySheet newSheet = new SummarySheet();
 
+        int pos = 0;
         for(KitchenProcedure kitchenProcedure: kProcedures){
-            Task newTask = new Task(kitchenProcedure);
+            Task newTask = new Task(kitchenProcedure, pos);
             newSheet.addTask(newTask);
+            pos++;
         }
 
         newSheet.addServiceId(service.getId());
@@ -267,6 +269,29 @@ public class KitchenTaskManager {
     private void notifyKitchenProcedureRemoved(KitchenProcedure oldProc) {
         for(KitchenTaskEventReceiver er: this.eventReceivers){
             er.updateKitchenProcedureRemoved(oldProc);
+        }
+    }
+
+    public void moveTask(Task t, int pos) throws UseCaseLogicException, KitchenException {
+        if(currentSheet == null){
+            throw new UseCaseLogicException();
+        }
+        if(!currentSheet.hasTask(t)){
+            throw new KitchenException();
+        }
+        if(pos < 0 || pos>=currentSheet.lengthTasks()){
+            throw new KitchenException();
+        }
+        ArrayList<Task> changedTask = currentSheet.moveTask(t, pos);
+        System.out.println(changedTask);
+        notifyTasksChanged(changedTask);
+    }
+
+    private void notifyTasksChanged(ArrayList<Task> changedTask) {
+        for(KitchenTaskEventReceiver er: this.eventReceivers){
+            for(Task t: changedTask){
+                er.updateTaskChanged(t);
+            }
         }
     }
 }

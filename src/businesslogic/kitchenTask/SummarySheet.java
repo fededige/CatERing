@@ -142,10 +142,11 @@ public class SummarySheet {
 
     public ArrayList<Task> addProcedure(ArrayList<KitchenProcedure> newKProcs) {
         ArrayList<Task> newTasks = new ArrayList<>();
+        int pos = tasks.get(tasks.size() - 1).getPosition() + 1;
         for(KitchenProcedure newKProc: newKProcs){
-            Task newTask = new Task(newKProc);
-            System.out.println(newTask);
+            Task newTask = new Task(newKProc, pos);
             newTasks.add(newTask);
+            pos++;
         }
 
         tasks.addAll(newTasks);
@@ -242,6 +243,29 @@ public class SummarySheet {
             }
         }
         throw new KitchenException();
+    }
+
+    public int lengthTasks() {
+        return this.tasks.size();
+    }
+
+    public ArrayList<Task> moveTask(Task t, int newPos){
+        ArrayList<Task> changeTasks = new ArrayList<>();
+        for(Task task: tasks){
+            if(task.equals(t)){
+                task.setPosition(newPos);
+                t.setPosition(newPos);
+                changeTasks.add(task);
+                break;
+            }
+        }
+        for(Task task: tasks){
+            if(!task.equals(t) && task.getPosition() >= newPos){
+                task.setPosition(task.getPosition() + 1);
+                changeTasks.add(task);
+            }
+        }
+        return changeTasks;
     }
 
 //    public void removeProcedure(KitchenProcedure oldKProc) {

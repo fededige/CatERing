@@ -17,20 +17,22 @@ import java.util.ArrayList;
 public class TestCatERing {
     public static void main(String[] args) throws KitchenException, UseCaseLogicException {
         System.out.println("TEST FAKE LOGIN");
-        CatERing.getInstance().getUserManager().fakeLogin("Lidia");
+        CatERing.getInstance().getUserManager().fakeLogin("Tony"); //Lidia
         System.out.println(CatERing.getInstance().getUserManager().getCurrentUser());
 
         System.out.println("\nTEST CREATE SUMMARY SHEET");
-        EventInfo event = EventInfo.loadAllEventInfo().get(0);
+        EventInfo event = EventInfo.loadEventById(2);
+        System.out.println(event);
         ServiceInfo service = ServiceInfo.loadServiceInfoForEvent(event.getId()).get(0);
         service.approveMenu();
+        System.out.println(service);
         SummarySheet s = CatERing.getInstance().getKitchenTaskManager().createSummarySheet(service, event);
         System.out.println(s.testString());
 
-        System.out.println("\nTEST ADD PROCEDURE");
-        KitchenProcedure newKProc = Recipe.loadRecipeById(46);
-        CatERing.getInstance().getKitchenTaskManager().addProcedure(newKProc);
-        System.out.println(s.testString());
+//        System.out.println("\nTEST ADD PROCEDURE");
+//        KitchenProcedure newKProc = Recipe.loadRecipeById(2);
+//        CatERing.getInstance().getKitchenTaskManager().addProcedure(newKProc);
+//        System.out.println(s.testString());
 
 //        System.out.println("TEST GET SHIFT TABLE");
 //        ArrayList<KitchenShift> sTable = CatERing.getInstance().getKitchenTaskManager().getShiftTable();
@@ -42,5 +44,10 @@ public class TestCatERing {
 //
 //        System.out.println("TEST MODIFY TASK");
 //        CatERing.getInstance().getKitchenTaskManager().modifyTask(task, 32, (float) 4.2);
+
+        System.out.println("\nTEST MOVE TASK");
+        Task t = Task.loadTaskById(266);
+        CatERing.getInstance().getKitchenTaskManager().moveTask(t, 4);
+        System.out.println(s);
     }
 }

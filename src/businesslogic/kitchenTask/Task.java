@@ -25,17 +25,19 @@ public class Task {
     private KitchenProcedure procedure;
     private ArrayList<CookingJob> jobs;
     private int id;
+    private int position;
 
-    public Task(KitchenProcedure kProc){
+    public Task(KitchenProcedure kProc, int pos){
         amount = 0;
         estimatedTime = 0;
         toDo = true;
         procedure = kProc;
         jobs = new ArrayList<>();
+        position = pos;
     }
 
     public static void saveAllNewTasks(int summarysheet_id, List<Task> tasks) {
-        String taskInsert = "INSERT INTO catering.Tasks (summarysheet_id, procedure_id, amount, estimatedTime, toDo) VALUES (?, ?, ?, ?, ?);";
+        String taskInsert = "INSERT INTO catering.Tasks (summarysheet_id, procedure_id, amount, estimatedTime, toDo, position) VALUES (?, ?, ?, ?, ?, ?);";
         PersistenceManager.executeBatchUpdate(taskInsert, tasks.size(), new BatchUpdateHandler() {
             @Override
             public void handleBatchItem(PreparedStatement ps, int batchCount) throws SQLException {
@@ -44,6 +46,7 @@ public class Task {
                 ps.setInt(3, tasks.get(batchCount).amount);
                 ps.setFloat(4, tasks.get(batchCount).estimatedTime);
                 ps.setBoolean(5, tasks.get(batchCount).toDo);
+                ps.setInt(6, tasks.get(batchCount).position);
             }
 
             @Override
@@ -61,8 +64,9 @@ public class Task {
             @Override
             public void handle(ResultSet rs) throws SQLException {
                 int recipe_id = rs.getInt("procedure_id");
+                int position = rs.getInt("position");
                 Recipe recipe = Recipe.loadRecipeById(recipe_id);
-                Task t = new Task(recipe);
+                Task t = new Task(recipe, position);
                 t.id = rs.getInt("id");
                 t.summarySheetId = rs.getInt("summarysheet_id");
                 t.amount = rs.getInt("amount");
@@ -82,12 +86,37 @@ public class Task {
         upd = "UPDATE tasks SET estimatedTime = " + t.getEstimatedTime() +
                 " WHERE id = " + t.getId();
         PersistenceManager.executeUpdate(upd);
-
+        upd = "UPDATE tasks SET position = " + t.getPosition() +
+                " WHERE id = " + t.getId();
+        PersistenceManager.executeUpdate(upd);
     }
 
     public static void deleteTask(Task t) {
         String delTask = "DELETE FROM Tasks WHERE id = " + t.getId();
         PersistenceManager.executeUpdate(delTask);
+    }
+
+    public static Task loadTaskById(int id) {
+        ObservableList<Task> tasks = FXCollections.observableArrayList();
+        String query = "SELECT * " +
+                "FROM Tasks WHERE id = " + id;
+        PersistenceManager.executeQuery(query, new ResultHandler() {
+            @Override
+            public void handle(ResultSet rs) throws SQLException {
+                int recipe_id = rs.getInt("procedure_id");
+                int position = rs.getInt("position");
+                Recipe recipe = Recipe.loadRecipeById(recipe_id);
+                Task t = new Task(recipe, position);
+                t.id = rs.getInt("id");
+                t.summarySheetId = rs.getInt("summarysheet_id");
+                t.amount = rs.getInt("amount");
+                t.estimatedTime = rs.getFloat("estimatedTime");
+                t.toDo = rs.getBoolean("toDo");
+                t.jobs = CookingJob.loadCookingJobByTaskId(t.id);
+                tasks.add(t);
+            }
+        });
+        return tasks.get(0);
     }
 
     private float getEstimatedTime() {
@@ -108,7 +137,7 @@ public class Task {
     }
 
     public String toString() {
-        return "Task: " + id + " sheetId: " + summarySheetId + " recipe: " + procedure + " quantità: " + amount + "tempo stimato: " + estimatedTime + (toDo ? " da " : "da non ") +
+        return "Task: " + id + " position: " + position + " sheetId: " + summarySheetId + " recipe: " + procedure + " quantità: " + amount + "tempo stimato: " + estimatedTime + (toDo ? " da " : "da non ") +
                 "farsi";
     }
 
@@ -150,5 +179,13 @@ public class Task {
 
     public void setEstimatedTime(Float estimatedTime) {
         this.estimatedTime = estimatedTime;
+    }
+
+    public int getPosition() {
+        return this.position;
+    }
+
+    public void setPosition(int newPos) {
+        this.position = newPos;
     }
 }
