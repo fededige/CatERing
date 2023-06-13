@@ -82,7 +82,7 @@ public class KitchenTaskManager {
             throw new UseCaseLogicException();
         }
         currentSheet = SummarySheet.loadSummarySheetByServiceId(service.getId());
-        if(currentSheet == null){
+        if(currentSheet == null){ //questo controllo nel DSD viene svolto allì'inizio. Per come abbiamo implementato Service conviene invece farlo in questo modo
             throw new KitchenException();
         }
         return currentSheet;

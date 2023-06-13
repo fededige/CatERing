@@ -5,10 +5,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/documenti ProgettoSAS/documenti progetto cucina/dsd/passo 1/1-createSummarySheet.uxf" beforeDir="false" afterPath="$PROJECT_DIR$/documenti ProgettoSAS/documenti progetto cucina/dsd/passo 1/1-createSummarySheet.uxf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/businesslogic/kitchenTask/KitchenTaskManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/businesslogic/kitchenTask/KitchenTaskManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/businesslogic/kitchenTask/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/businesslogic/kitchenTask/Task.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/businesslogic/recipe/KitchenProcedure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/businesslogic/recipe/KitchenProcedure.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/businesslogic/recipe/Preparation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/businesslogic/recipe/Preparation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/businesslogic/recipe/Recipe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/businesslogic/recipe/Recipe.java" afterDir="false" />
     </list>
     <list id="ba9790ac-75d7-4c37-aefe-5d00f5bd2e45" name="Changes by emanu" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -151,7 +147,7 @@
       <workItem from="1686400784135" duration="14850000" />
       <workItem from="1686569247007" duration="6827000" />
       <workItem from="1686642942486" duration="8012000" />
-      <workItem from="1686664400059" duration="6195000" />
+      <workItem from="1686664400059" duration="7159000" />
     </task>
     <servers />
   </component>
