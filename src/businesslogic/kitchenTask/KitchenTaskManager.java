@@ -108,8 +108,10 @@ public class KitchenTaskManager {
         if(currentSheet == null){
             throw new UseCaseLogicException();
         }
-        ArrayList<KitchenProcedure> newKProcs = newKProc.getProcedures();
+
+        ArrayList<KitchenProcedure> newKProcs = new ArrayList<>();
         newKProcs.add(newKProc);
+        newKProcs.addAll(newKProc.getProcedures());
         ArrayList<Task> newTasks = currentSheet.addProcedure(newKProcs);
         notifyTasksAdded(currentSheet.getId(), newTasks);
         return currentSheet;

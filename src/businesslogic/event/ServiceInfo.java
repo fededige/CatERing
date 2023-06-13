@@ -4,6 +4,7 @@ import businesslogic.KitchenException;
 import businesslogic.kitchenTask.SummarySheet;
 import businesslogic.menu.*;
 import businesslogic.recipe.KitchenProcedure;
+import businesslogic.recipe.Preparation;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import persistence.PersistenceManager;
@@ -78,13 +79,12 @@ public class ServiceInfo implements EventItemInfo {
     }
 
     public ArrayList<KitchenProcedure> getRecipies() {
-
         ArrayList<KitchenProcedure> kProcedures = new ArrayList<>();
         for(Section section: menu.getSections()){
             for(MenuItem menuItem: section.getItems()){
                 if(changes == null || !toRemove(menuItem)){
                     kProcedures.add(menuItem.getItemRecipe());
-                    ArrayList<KitchenProcedure> subProcedures = menuItem.getItemRecipe().getProcedures();
+                    ArrayList<Preparation> subProcedures = menuItem.getItemRecipe().getProcedures();
                     kProcedures.addAll(subProcedures);
                 }
             }
@@ -94,7 +94,7 @@ public class ServiceInfo implements EventItemInfo {
         for(MenuItem freeItem: menu.getFreeItems()){
             if(changes == null || !toRemove(freeItem)) {
                 kProcedures.add(freeItem.getItemRecipe());
-                ArrayList<KitchenProcedure> subProcedures = freeItem.getItemRecipe().getProcedures();
+                ArrayList<Preparation> subProcedures = freeItem.getItemRecipe().getProcedures();
                 kProcedures.addAll(subProcedures);
             }
         }
@@ -103,7 +103,7 @@ public class ServiceInfo implements EventItemInfo {
         if(changes != null) {
             for (Change change : changes) {
                 if (change.isAddition()) {
-                    ArrayList<KitchenProcedure> subProcedures = change.getMenuItem().getItemRecipe().getProcedures();
+                    ArrayList<Preparation> subProcedures = change.getMenuItem().getItemRecipe().getProcedures();
                     kProcedures.addAll(subProcedures);
                 }
             }

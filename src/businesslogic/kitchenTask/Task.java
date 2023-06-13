@@ -1,9 +1,7 @@
 package businesslogic.kitchenTask;
 
-import businesslogic.menu.Menu;
-import businesslogic.menu.MenuItem;
-import businesslogic.menu.Section;
 import businesslogic.recipe.KitchenProcedure;
+import businesslogic.recipe.Preparation;
 import businesslogic.recipe.Recipe;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -37,16 +35,22 @@ public class Task {
     }
 
     public static void saveAllNewTasks(int summarysheet_id, List<Task> tasks) {
-        String taskInsert = "INSERT INTO catering.Tasks (summarysheet_id, procedure_id, amount, estimatedTime, toDo, position) VALUES (?, ?, ?, ?, ?, ?);";
+        String taskInsert = "INSERT INTO catering.Tasks (summarysheet_id, recipe_id, preparation_id, amount, estimatedTime, toDo, position) VALUES (?, ?, ?, ?, ?, ?, ?);";
         PersistenceManager.executeBatchUpdate(taskInsert, tasks.size(), new BatchUpdateHandler() {
             @Override
             public void handleBatchItem(PreparedStatement ps, int batchCount) throws SQLException {
                 ps.setInt(1, summarysheet_id);
-                ps.setInt(2, tasks.get(batchCount).procedure.getId());
-                ps.setInt(3, tasks.get(batchCount).amount);
-                ps.setFloat(4, tasks.get(batchCount).estimatedTime);
-                ps.setBoolean(5, tasks.get(batchCount).toDo);
-                ps.setInt(6, tasks.get(batchCount).position);
+                if(tasks.get(batchCount).procedure instanceof Recipe){
+                    ps.setInt(2, tasks.get(batchCount).procedure.getId());
+                    ps.setInt(3, 0);
+                } else if (tasks.get(batchCount).procedure instanceof Preparation){
+                    ps.setInt(3, tasks.get(batchCount).procedure.getId());
+                    ps.setInt(2, 0);
+                }
+                ps.setInt(4, tasks.get(batchCount).amount);
+                ps.setFloat(5, tasks.get(batchCount).estimatedTime);
+                ps.setBoolean(6, tasks.get(batchCount).toDo);
+                ps.setInt(7, tasks.get(batchCount).position);
             }
 
             @Override
@@ -63,7 +67,10 @@ public class Task {
         PersistenceManager.executeQuery(query, new ResultHandler() {
             @Override
             public void handle(ResultSet rs) throws SQLException {
-                int recipe_id = rs.getInt("procedure_id");
+                int recipe_id = rs.getInt("recipe_id");
+                if(recipe_id == 0){
+                    recipe_id = rs.getInt("preparation_id");
+                }
                 int position = rs.getInt("position");
                 Recipe recipe = Recipe.loadRecipeById(recipe_id);
                 Task t = new Task(recipe, position);
@@ -103,7 +110,10 @@ public class Task {
         PersistenceManager.executeQuery(query, new ResultHandler() {
             @Override
             public void handle(ResultSet rs) throws SQLException {
-                int recipe_id = rs.getInt("procedure_id");
+                int recipe_id = rs.getInt("recipe_id");
+                if(recipe_id == 0){
+                    recipe_id = rs.getInt("preparation_id");
+                }
                 int position = rs.getInt("position");
                 Recipe recipe = Recipe.loadRecipeById(recipe_id);
                 Task t = new Task(recipe, position);

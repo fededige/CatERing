@@ -1,6 +1,5 @@
 package businesslogic.recipe;
 
-import businesslogic.KitchenException;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import persistence.BatchUpdateHandler;
@@ -17,6 +16,7 @@ public class Recipe extends KitchenProcedure{
 
     private int id;
     private String name;
+    private ArrayList<Preparation> subProcedures;
 
     private Recipe(){
 
@@ -25,6 +25,7 @@ public class Recipe extends KitchenProcedure{
     public Recipe(String name) {
         id = 0;
         this.name = name;
+        subProcedures = new ArrayList<>();
     }
 
     public String getName() {
@@ -36,7 +37,7 @@ public class Recipe extends KitchenProcedure{
     }
 
     public String toString() {
-        return name;
+        return "name: " + name;
     }
 
     // STATIC METHODS FOR PERSISTENCE
@@ -50,9 +51,11 @@ public class Recipe extends KitchenProcedure{
                 if (all.containsKey(id)) {
                     Recipe rec = all.get(id);
                     rec.name = rs.getString("name");
+                    rec.subProcedures.addAll(Preparation.loadPreparationsByRecipeId(id));
                 } else {
                     Recipe rec = new Recipe(rs.getString("name"));
                     rec.id = id;
+                    rec.subProcedures = Preparation.loadPreparationsByRecipeId(id);
                     all.put(rec.id, rec);
                 }
             }
@@ -110,8 +113,8 @@ public class Recipe extends KitchenProcedure{
     }
 
     @Override
-    public ArrayList<KitchenProcedure> getProcedures() {
-        return new ArrayList<>(); //TODO: prendere le sottoprocedure di ogni ricetta
+    public ArrayList<Preparation> getProcedures() {
+        return this.subProcedures;
     }
 
     @Override

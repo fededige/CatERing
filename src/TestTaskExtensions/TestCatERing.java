@@ -17,15 +17,13 @@ import java.util.ArrayList;
 public class TestCatERing {
     public static void main(String[] args) throws KitchenException, UseCaseLogicException {
         System.out.println("TEST FAKE LOGIN");
-        CatERing.getInstance().getUserManager().fakeLogin("Tony"); //Lidia
+        CatERing.getInstance().getUserManager().fakeLogin("Marinella"); //Lidia
         System.out.println(CatERing.getInstance().getUserManager().getCurrentUser());
 
         System.out.println("\nTEST CREATE SUMMARY SHEET");
-        EventInfo event = EventInfo.loadEventById(2);
-        System.out.println(event);
-        ServiceInfo service = ServiceInfo.loadServiceInfoForEvent(event.getId()).get(0);
+        EventInfo event = EventInfo.loadEventById(3);
+        ServiceInfo service = ServiceInfo.loadServiceInfoForEvent(event.getId()).get(2);
         service.approveMenu();
-        System.out.println(service);
         SummarySheet s = CatERing.getInstance().getKitchenTaskManager().createSummarySheet(service, event);
         System.out.println(s.testString());
 
@@ -45,9 +43,9 @@ public class TestCatERing {
 //        System.out.println("TEST MODIFY TASK");
 //        CatERing.getInstance().getKitchenTaskManager().modifyTask(task, 32, (float) 4.2);
 
-        System.out.println("\nTEST MOVE TASK");
-        Task t = Task.loadTaskById(266);
-        CatERing.getInstance().getKitchenTaskManager().moveTask(t, 4);
-        System.out.println(s);
+//        System.out.println("\nTEST MOVE TASK");
+//        Task t = Task.loadTaskById(266);
+//        CatERing.getInstance().getKitchenTaskManager().moveTask(t, 4);
+//        System.out.println(s);
     }
 }

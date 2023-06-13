@@ -418,7 +418,6 @@ fg=gray</panel_attributes>
 -
 
 -
-+getProcedures(): ArrayList&lt;KitchenProcedure&gt;
 
 fg=gray</panel_attributes>
     <additional_attributes/>
@@ -497,11 +496,7 @@ fg=gray</panel_attributes>
 {abstract}
 --
 -name: string
--author: string
--instruction: string
--quantity: int
 -
-+getProcedures(): ArrayList&lt;KitchenProcedure&gt;
 fg=gray</panel_attributes>
     <additional_attributes/>
   </element>
