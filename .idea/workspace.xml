@@ -3,13 +3,19 @@
   <component name="ChangeListManager">
     <list default="true" id="0937ec8d-40ed-4369-a5ac-483e61b54cb6" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documenti ProgettoSAS/documenti progetto cucina/dsd/passo 4/4 - getShiftTable.uxf" beforeDir="false" afterPath="$PROJECT_DIR$/documenti ProgettoSAS/documenti progetto cucina/dsd/passo 4/4 - getShiftTable.uxf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documenti ProgettoSAS/dcd_in_costruzione.uxf" beforeDir="false" afterPath="$PROJECT_DIR$/documenti ProgettoSAS/dcd_in_costruzione.uxf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documenti ProgettoSAS/documenti progetto cucina/dsd/passo 2/2- addProcedure.uxf" beforeDir="false" afterPath="$PROJECT_DIR$/documenti ProgettoSAS/documenti progetto cucina/dsd/passo 2/2- addProcedure.uxf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documenti ProgettoSAS/documenti progetto cucina/dsd/passo 2/2a.1-removeProcedure.uxf" beforeDir="false" afterPath="$PROJECT_DIR$/documenti ProgettoSAS/documenti progetto cucina/dsd/passo 2/2a.1-removeProcedure.uxf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TestTaskExtensions/TestCatERing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TestTaskExtensions/TestCatERing.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/businesslogic/CatERing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/businesslogic/CatERing.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TestTaskExtensions/TestCatERing2a.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TestTaskExtensions/TestCatERing2a.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/businesslogic/kitchenTask/KitchenTaskEventReceiver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/businesslogic/kitchenTask/KitchenTaskEventReceiver.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/businesslogic/kitchenTask/KitchenTaskManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/businesslogic/kitchenTask/KitchenTaskManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/businesslogic/shift/KitchenShift.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/businesslogic/shift/KitchenShift.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/businesslogic/kitchenTask/SummarySheet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/businesslogic/kitchenTask/SummarySheet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/businesslogic/kitchenTask/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/businesslogic/kitchenTask/Task.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/businesslogic/recipe/KitchenProcedure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/businesslogic/recipe/KitchenProcedure.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/businesslogic/recipe/Recipe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/businesslogic/recipe/Recipe.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/businesslogic/shift/ShiftManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/businesslogic/shift/ShiftManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/businesslogic/shift/ShiftTable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/persistence/KitchenTaskPersistence.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/persistence/KitchenTaskPersistence.java" afterDir="false" />
     </list>
     <list id="ba9790ac-75d7-4c37-aefe-5d00f5bd2e45" name="Changes by emanu" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -68,6 +74,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Test2a" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="TestTaskExtensions.TestCatERing2a" />
+      <module name="CatERing" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Test5a" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="TestTaskExtensions.TestCatERing5a" />
       <module name="CatERing" />
@@ -114,6 +127,7 @@
     <list>
       <item itemvalue="Application.TestOriginal" />
       <item itemvalue="Application.TestKTskPrc" />
+      <item itemvalue="Application.Test2a" />
       <item itemvalue="Application.Test5a" />
       <item itemvalue="Application.Test5b" />
       <item itemvalue="Application.Test5c" />
@@ -142,7 +156,8 @@
       <workItem from="1686316082339" duration="17192000" />
       <workItem from="1686390436559" duration="3058000" />
       <workItem from="1686400784135" duration="14850000" />
-      <workItem from="1686569247007" duration="6580000" />
+      <workItem from="1686569247007" duration="6827000" />
+      <workItem from="1686642942486" duration="4093000" />
     </task>
     <servers />
   </component>

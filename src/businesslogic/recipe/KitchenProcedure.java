@@ -1,5 +1,7 @@
 package businesslogic.recipe;
 
+import persistence.PersistenceManager;
+
 import java.util.ArrayList;
 
 public abstract class KitchenProcedure {

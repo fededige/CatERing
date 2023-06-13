@@ -85,6 +85,11 @@ public class Task {
 
     }
 
+    public static void deleteTask(Task t) {
+        String delTask = "DELETE FROM Tasks WHERE id = " + t.getId();
+        PersistenceManager.executeUpdate(delTask);
+    }
+
     private float getEstimatedTime() {
         return this.estimatedTime;
     }

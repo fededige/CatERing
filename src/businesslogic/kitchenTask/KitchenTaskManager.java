@@ -108,9 +108,15 @@ public class KitchenTaskManager {
         }
         ArrayList<KitchenProcedure> newKProcs = newKProc.getProcedures();
         newKProcs.add(newKProc);
-        currentSheet.addProcedure(newKProcs);
-
+        ArrayList<Task> newTasks = currentSheet.addProcedure(newKProcs);
+        notifyTasksAdded(currentSheet.getId(), newTasks);
         return currentSheet;
+    }
+
+    private void notifyTasksAdded(int sheet_id, ArrayList<Task> newTasks) {
+        for(KitchenTaskEventReceiver er: this.eventReceivers){
+            er.updateTasksAdded(sheet_id, newTasks);
+        }
     }
 
 //    public SummarySheet removeProcedure(KitchenProcedure oldKProc) throws UseCaseLogicException {
@@ -127,7 +133,6 @@ public class KitchenTaskManager {
                 er.updateKitchenProcedureAdded(kProc);
             }
         }
-
     }
 
     public CookingJob createNewCookingJob(Task t, KitchenShift kShift, int amount, float estimatedTime) throws UseCaseLogicException, KitchenException {
@@ -195,7 +200,7 @@ public class KitchenTaskManager {
         }
     }
 
-    public void addCook(CookingJob c, User cook) throws UseCaseLogicException {
+    public void addCook(CookingJob c, User cook) throws UseCaseLogicException, KitchenException {
         if(currentSheet == null){
             throw new UseCaseLogicException();
         }
@@ -206,6 +211,7 @@ public class KitchenTaskManager {
             c = currentSheet.addCook(c, cook);
         } catch (KitchenException e) {
             System.err.println("job non trovato");
+            throw new KitchenException();
         }
         notifyCookingJobChanged(c);
     }
@@ -221,6 +227,7 @@ public class KitchenTaskManager {
             t = currentSheet.modifyTask(t, amount, estimatedTime);
         } catch (KitchenException e) {
             System.err.println("task non trovato");
+            throw new KitchenException();
         }
         notifyTaskChanged(t);
     }
@@ -241,5 +248,25 @@ public class KitchenTaskManager {
 
     public ArrayList<KitchenShift> getShiftTable(){
         return CatERing.getInstance().getShiftManager().getShiftTable();
+    }
+
+    public SummarySheet removeProcedure(KitchenProcedure oldProc) throws UseCaseLogicException, KitchenException {
+        if(currentSheet == null){
+            throw new UseCaseLogicException();
+        }
+        try {
+            currentSheet.removeProcedure(oldProc);
+        } catch (KitchenException e) {
+            System.err.println("procedura non trovata");
+            throw new KitchenException();
+        }
+        notifyKitchenProcedureRemoved(oldProc);
+        return currentSheet;
+    }
+
+    private void notifyKitchenProcedureRemoved(KitchenProcedure oldProc) {
+        for(KitchenTaskEventReceiver er: this.eventReceivers){
+            er.updateKitchenProcedureRemoved(oldProc);
+        }
     }
 }

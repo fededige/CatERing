@@ -1,7 +1,5 @@
 package businesslogic.shift;
 
-import businesslogic.kitchenTask.KitchenTaskManager;
-
 import java.util.ArrayList;
 
 public class ShiftManager {

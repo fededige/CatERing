@@ -27,20 +27,20 @@ public class TestCatERing {
         SummarySheet s = CatERing.getInstance().getKitchenTaskManager().createSummarySheet(service, event);
         System.out.println(s.testString());
 
-//        System.out.println("\nTEST ADD PROCEDURE");
-//        KitchenProcedure newKProc = Recipe.loadRecipeById(14);
-//        CatERing.getInstance().getKitchenTaskManager().addProcedure(newKProc);
-//        System.out.println(s.testString());
+        System.out.println("\nTEST ADD PROCEDURE");
+        KitchenProcedure newKProc = Recipe.loadRecipeById(46);
+        CatERing.getInstance().getKitchenTaskManager().addProcedure(newKProc);
+        System.out.println(s.testString());
 
-        System.out.println("TEST GET SHIFT TABLE");
-        ArrayList<KitchenShift> sTable = CatERing.getInstance().getKitchenTaskManager().getShiftTable();
-        System.out.println(sTable);
-
-        System.out.println("TEST CREATE COOKING JOB");
-        Task task = Task.loadTasksBySheetId(s.getId()).get(0);
-        CatERing.getInstance().getKitchenTaskManager().createNewCookingJob(task, KitchenShift.loadKitchenShiftById(1), 0, 0);
-
-        System.out.println("TEST MODIFY TASK");
-        CatERing.getInstance().getKitchenTaskManager().modifyTask(task, 32, (float) 4.2);
+//        System.out.println("TEST GET SHIFT TABLE");
+//        ArrayList<KitchenShift> sTable = CatERing.getInstance().getKitchenTaskManager().getShiftTable();
+//        System.out.println(sTable);
+//
+//        System.out.println("TEST CREATE COOKING JOB");
+//        Task task = Task.loadTasksBySheetId(s.getId()).get(0);
+//        CatERing.getInstance().getKitchenTaskManager().createNewCookingJob(task, KitchenShift.loadKitchenShiftById(1), 0, 0);
+//
+//        System.out.println("TEST MODIFY TASK");
+//        CatERing.getInstance().getKitchenTaskManager().modifyTask(task, 32, (float) 4.2);
     }
 }

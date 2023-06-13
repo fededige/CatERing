@@ -2,6 +2,8 @@ package businesslogic.kitchenTask;
 
 import businesslogic.recipe.KitchenProcedure;
 
+import java.util.ArrayList;
+
 public interface KitchenTaskEventReceiver {
     public void updateSheetCreated(SummarySheet currentSheet);
 
@@ -16,4 +18,8 @@ public interface KitchenTaskEventReceiver {
     void updateCookingJobChanged(CookingJob c);
 
     void updateTaskChanged(Task t);
+
+    void updateKitchenProcedureRemoved(KitchenProcedure oldProc);
+
+    void updateTasksAdded(int sheet_id, ArrayList<Task> newTasks);
 }

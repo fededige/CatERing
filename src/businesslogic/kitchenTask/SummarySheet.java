@@ -2,6 +2,7 @@ package businesslogic.kitchenTask;
 
 import businesslogic.KitchenException;
 import businesslogic.recipe.KitchenProcedure;
+import businesslogic.recipe.Recipe;
 import businesslogic.shift.KitchenShift;
 import businesslogic.user.User;
 import javafx.collections.FXCollections;
@@ -139,7 +140,7 @@ public class SummarySheet {
         return this.id;
     }
 
-    public void addProcedure(ArrayList<KitchenProcedure> newKProcs) {
+    public ArrayList<Task> addProcedure(ArrayList<KitchenProcedure> newKProcs) {
         ArrayList<Task> newTasks = new ArrayList<>();
         for(KitchenProcedure newKProc: newKProcs){
             Task newTask = new Task(newKProc);
@@ -147,8 +148,8 @@ public class SummarySheet {
             newTasks.add(newTask);
         }
 
-        Task.saveAllNewTasks(this.id, newTasks);
         tasks.addAll(newTasks);
+        return newTasks;
     }
 
     public boolean hasTask(Task t){
@@ -224,6 +225,20 @@ public class SummarySheet {
                     t.setEstimatedTime(estimatedTime);
                 }
                 return t;
+            }
+        }
+        throw new KitchenException();
+    }
+
+    public void removeProcedure(KitchenProcedure oldProc) throws KitchenException {
+        for(Task t: tasks){
+            if(t.getProcedure().equals(oldProc)){
+                for(CookingJob j: t.getJobs()){
+                    t.deleteCookingJob(j);
+                }
+                tasks.remove(t);
+                Task.deleteTask(t);
+                return;
             }
         }
         throw new KitchenException();

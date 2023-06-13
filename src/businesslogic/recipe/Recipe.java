@@ -102,8 +102,23 @@ public class Recipe extends KitchenProcedure{
         });
     }
 
+    public static void deleteKProcedure(KitchenProcedure oldProc) {
+        String delMenuItems = "DELETE FROM MenuItems WHERE recipe_id = " + oldProc.getId();
+        PersistenceManager.executeUpdate(delMenuItems);
+        String delRecipe = "DELETE FROM Recipes WHERE id = " + oldProc.getId();
+        PersistenceManager.executeUpdate(delRecipe);
+    }
+
     @Override
     public ArrayList<KitchenProcedure> getProcedures() {
         return new ArrayList<>(); //TODO: prendere le sottoprocedure di ogni ricetta
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if(obj instanceof Recipe){
+            return ((Recipe) obj).getId() == this.id;
+        }
+        return false;
     }
 }
