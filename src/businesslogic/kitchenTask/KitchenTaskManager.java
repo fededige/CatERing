@@ -288,6 +288,7 @@ public class KitchenTaskManager {
             throw new KitchenException();
         }
         if(pos < 0 || pos>=currentSheet.lengthTasks()){
+            System.err.println("lunghezza out of bound");
             throw new KitchenException();
         }
         ArrayList<Task> changedTask = currentSheet.moveTask(t, pos);

@@ -32,6 +32,12 @@ public class TestCatERing {
         CatERing.getInstance().getKitchenTaskManager().addProcedure(newKProc);
         System.out.println(s.testString());
 
+        System.out.println("\nTEST MOVE TASK");
+        Task t = Task.loadTaskById(266);
+        CatERing.getInstance().getKitchenTaskManager().moveTask(t, 4);
+        System.out.println(s);
+
+
 //        System.out.println("TEST GET SHIFT TABLE");
 //        ArrayList<KitchenShift> sTable = CatERing.getInstance().getKitchenTaskManager().getShiftTable();
 //        System.out.println(sTable);
@@ -43,9 +49,5 @@ public class TestCatERing {
 //        System.out.println("TEST MODIFY TASK");
 //        CatERing.getInstance().getKitchenTaskManager().modifyTask(task, 32, (float) 4.2);
 
-//        System.out.println("\nTEST MOVE TASK");
-//        Task t = Task.loadTaskById(266);
-//        CatERing.getInstance().getKitchenTaskManager().moveTask(t, 4);
-//        System.out.println(s);
     }
 }

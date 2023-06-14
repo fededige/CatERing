@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0937ec8d-40ed-4369-a5ac-483e61b54cb6" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/documenti ProgettoSAS/documenti progetto cucina/dsd/passo 2/2- addProcedure.uxf" beforeDir="false" afterPath="$PROJECT_DIR$/documenti ProgettoSAS/documenti progetto cucina/dsd/passo 2/2- addProcedure.uxf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TestTaskExtensions/TestCatERing2a.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TestTaskExtensions/TestCatERing2a.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TestTaskExtensions/TestCatERing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TestTaskExtensions/TestCatERing.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/businesslogic/kitchenTask/KitchenTaskManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/businesslogic/kitchenTask/KitchenTaskManager.java" afterDir="false" />
     </list>
     <list id="ba9790ac-75d7-4c37-aefe-5d00f5bd2e45" name="Changes by emanu" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -147,7 +148,7 @@
       <workItem from="1686569247007" duration="6827000" />
       <workItem from="1686642942486" duration="8012000" />
       <workItem from="1686664400059" duration="7294000" />
-      <workItem from="1686734158804" duration="1953000" />
+      <workItem from="1686734158804" duration="2869000" />
     </task>
     <servers />
   </component>
