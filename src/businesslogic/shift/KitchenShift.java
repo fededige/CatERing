@@ -39,6 +39,15 @@ public class KitchenShift extends Shift{
         return shifts;
     }
 
+    public static void updateShift(KitchenShift shift) {
+        String upd = "UPDATE kitchenshifts SET isFull = " + shift.isFull() + " AND availableTime = " + shift.getAvailableTime() +" WHERE id = " + shift.getId();
+        PersistenceManager.executeUpdate(upd);
+    }
+
+    private float getAvailableTime() {
+        return this.availableTime;
+    }
+
     public void freeTime(float duration){
         if(availableTime != 0 && duration > 0)
             this.isFull = false;

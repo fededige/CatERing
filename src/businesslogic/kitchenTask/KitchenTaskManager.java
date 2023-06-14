@@ -146,7 +146,7 @@ public class KitchenTaskManager {
             throw new KitchenException();
         }
         CookingJob job = currentSheet.createCookingJob(t, kShift, amount, estimatedTime);
-        this.notifyCookingJobAdded(job, t.getId(), kShift.getId());
+        notifyCookingJobAdded(job, t.getId(), kShift.getId());
         return job;
     }
 
@@ -167,8 +167,15 @@ public class KitchenTaskManager {
             throw new KitchenException();
         }
 
-        currentSheet.deleteCookingJob(t, oldJob);
+        KitchenShift kShift = currentSheet.deleteCookingJob(t, oldJob);
         notifyCookingJobDeleted(oldJob);
+        notifyShiftChanged(kShift);
+    }
+
+    private void notifyShiftChanged(KitchenShift kShift) {
+        for(KitchenTaskEventReceiver er: this.eventReceivers){
+            er.updateShiftChanged(kShift);
+        }
     }
 
     private void notifyCookingJobDeleted(CookingJob oldJob) {

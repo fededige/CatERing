@@ -79,7 +79,7 @@ createNewCookingJob(task, kitchenShift, amount, estimatedTime)</panel_attributes
       <x>1062</x>
       <y>405</y>
       <w>18</w>
-      <h>414</h>
+      <h>432</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -213,11 +213,11 @@ style=wordwrap</panel_attributes>
     <coordinates>
       <x>513</x>
       <y>864</y>
-      <w>234</w>
+      <w>423</w>
       <h>63</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
-notifyCookingJobAdded(job)</panel_attributes>
+notifyCookingJobAdded(job, task.getId(), kitchenShift.getId())</panel_attributes>
     <additional_attributes>10.0;10.0;70.0;10.0;70.0;50.0;20.0;50.0</additional_attributes>
   </element>
   <element>
@@ -234,14 +234,14 @@ notifyCookingJobAdded(job)</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>522</x>
+      <x>486</x>
       <y>963</y>
-      <w>288</w>
+      <w>360</w>
       <h>36</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
-updateCookingJobAdded(job)</panel_attributes>
-    <additional_attributes>300.0;20.0;10.0;20.0</additional_attributes>
+updateCookingJobAdded(job, task.getId(), kitchenShift.getId())</panel_attributes>
+    <additional_attributes>340.0;20.0;50.0;20.0</additional_attributes>
   </element>
   <element>
     <id>UMLGeneric</id>
@@ -321,7 +321,7 @@ style=wordwrap</panel_attributes>
       <w>279</w>
       <h>36</h>
     </coordinates>
-    <panel_attributes>lt=-&gt;&gt;&gt;
+    <panel_attributes>lt=.&gt;&gt;&gt;
 create(kitchenShift, amount, estimatedTime)</panel_attributes>
     <additional_attributes>10.0;20.0;290.0;20.0</additional_attributes>
   </element>
@@ -380,7 +380,7 @@ this.estimatedTime = estimatedTime</panel_attributes>
       <w>342</w>
       <h>36</h>
     </coordinates>
-    <panel_attributes>lt=&lt;..
+    <panel_attributes>lt=&lt;.
 job</panel_attributes>
     <additional_attributes>10.0;20.0;360.0;20.0</additional_attributes>
   </element>
@@ -461,7 +461,7 @@ add(job)</panel_attributes>
       <w>567</w>
       <h>36</h>
     </coordinates>
-    <panel_attributes>lt=&lt;..
+    <panel_attributes>lt=&lt;.
 job</panel_attributes>
     <additional_attributes>10.0;20.0;610.0;20.0</additional_attributes>
   </element>

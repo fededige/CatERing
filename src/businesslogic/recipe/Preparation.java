@@ -39,7 +39,6 @@ public class Preparation extends KitchenProcedure{
         ArrayList<Preparation> preps = new ArrayList<>();
         String query = "SELECT * " +
                 "FROM Preparations WHERE id = " + id;
-        System.out.println(query);
         PersistenceManager.executeQuery(query, new ResultHandler() {
             @Override
             public void handle(ResultSet rs) throws SQLException {

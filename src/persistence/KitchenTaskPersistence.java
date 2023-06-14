@@ -6,6 +6,9 @@ import businesslogic.kitchenTask.SummarySheet;
 import businesslogic.kitchenTask.Task;
 import businesslogic.recipe.KitchenProcedure;
 import businesslogic.recipe.Recipe;
+import businesslogic.shift.KitchenShift;
+import businesslogic.shift.ServiceShift;
+import businesslogic.shift.Shift;
 
 import java.util.ArrayList;
 
@@ -59,5 +62,13 @@ public class KitchenTaskPersistence implements KitchenTaskEventReceiver {
     @Override
     public void updateTaskDeleted(Task task) {
         Task.deleteTask(task);
+    }
+
+    @Override
+    public void updateShiftChanged(Shift shift) {
+        if(shift instanceof KitchenShift)
+            KitchenShift.updateShift((KitchenShift) shift);
+        else if(shift instanceof ServiceShift)
+            ServiceShift.updateShift((ServiceShift) shift);
     }
 }

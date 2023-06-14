@@ -3,6 +3,7 @@ package businesslogic.kitchenTask;
 import businesslogic.recipe.KitchenProcedure;
 import businesslogic.recipe.Preparation;
 import businesslogic.recipe.Recipe;
+import businesslogic.shift.KitchenShift;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import persistence.BatchUpdateHandler;
@@ -177,9 +178,11 @@ public class Task {
         return jobs.contains(oldJob);
     }
 
-    public void deleteCookingJob(CookingJob oldJob) {
-        oldJob.getkShift().freeTime(oldJob.getEstimatedTime());
+    public KitchenShift deleteCookingJob(CookingJob oldJob) {
+        KitchenShift kShift = oldJob.getkShift();
+        kShift.freeTime(oldJob.getEstimatedTime());
         this.jobs.remove(oldJob);
+        return kShift;
     }
 
     public ArrayList<CookingJob> getJobs() {

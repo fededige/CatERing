@@ -172,13 +172,13 @@ public class SummarySheet {
         throw new KitchenException();
     }
 
-    public void deleteCookingJob(Task t, CookingJob oldJob) {
+    public KitchenShift deleteCookingJob(Task t, CookingJob oldJob) throws KitchenException {
         for(Task task: tasks){
             if(task.equals(t)){
-                task.deleteCookingJob(oldJob);
-                return;
+                return task.deleteCookingJob(oldJob);
             }
         }
+        throw new KitchenException();
     }
 
     public void modifyCookingJob(Task t, CookingJob c, Integer amount, Float estimatedTime) {
