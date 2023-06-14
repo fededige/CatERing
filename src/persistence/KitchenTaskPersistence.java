@@ -55,4 +55,9 @@ public class KitchenTaskPersistence implements KitchenTaskEventReceiver {
     public void updateTasksAdded(int sheet_id, ArrayList<Task> newTasks) {
         Task.saveAllNewTasks(sheet_id, newTasks);
     }
+
+    @Override
+    public void updateTaskDeleted(Task task) {
+        Task.deleteTask(task);
+    }
 }

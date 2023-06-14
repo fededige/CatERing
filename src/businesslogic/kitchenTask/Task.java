@@ -150,7 +150,7 @@ public class Task {
     }
 
     public String toString() {
-        return "Task: " + id + " position: " + position + " sheetId: " + summarySheetId + " recipe: " + procedure + " quantità: " + amount + "tempo stimato: " + estimatedTime + (toDo ? " da " : "da non ") +
+        return "Task: " + id + " position: " + position + " sheetId: " + summarySheetId + " recipe: " + procedure.getId() + " " + procedure + " quantità: " + amount + "tempo stimato: " + estimatedTime + (toDo ? " da " : "da non ") +
                 "farsi";
     }
 
@@ -200,5 +200,9 @@ public class Task {
 
     public void setPosition(int newPos) {
         this.position = newPos;
+    }
+
+    public void setSummarySheetId(int summarySheetId) {
+        this.summarySheetId = summarySheetId;
     }
 }

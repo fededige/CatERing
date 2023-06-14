@@ -110,10 +110,8 @@ public class KitchenTaskManager {
             throw new UseCaseLogicException();
         }
 
-        ArrayList<KitchenProcedure> newKProcs = new ArrayList<>();
-        newKProcs.add(newKProc);
-        newKProcs.addAll(((Recipe) newKProc).getProcedures());
-        ArrayList<Task> newTasks = currentSheet.addProcedure(newKProcs);
+
+        ArrayList<Task> newTasks = currentSheet.addProcedure(newKProc);
         notifyTasksAdded(currentSheet.getId(), newTasks);
         return currentSheet;
     }
@@ -259,14 +257,21 @@ public class KitchenTaskManager {
         if(currentSheet == null){
             throw new UseCaseLogicException();
         }
+        Task deletedTask;
         try {
-            currentSheet.removeProcedure(oldProc);
+            deletedTask = currentSheet.removeProcedure(oldProc);
         } catch (KitchenException e) {
             System.err.println("procedura non trovata");
             throw new KitchenException();
         }
-        notifyKitchenProcedureRemoved(oldProc);
+        notifyTaskDeleted(deletedTask);
         return currentSheet;
+    }
+
+    private void notifyTaskDeleted(Task task) {
+        for(KitchenTaskEventReceiver er: this.eventReceivers){
+            er.updateTaskDeleted(task);
+        }
     }
 
     private void notifyKitchenProcedureRemoved(KitchenProcedure oldProc) {

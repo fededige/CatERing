@@ -27,10 +27,10 @@ public class TestCatERing {
         SummarySheet s = CatERing.getInstance().getKitchenTaskManager().createSummarySheet(service, event);
         System.out.println(s.testString());
 
-//        System.out.println("\nTEST ADD PROCEDURE");
-//        KitchenProcedure newKProc = Recipe.loadRecipeById(2);
-//        CatERing.getInstance().getKitchenTaskManager().addProcedure(newKProc);
-//        System.out.println(s.testString());
+        System.out.println("\nTEST ADD PROCEDURE");
+        KitchenProcedure newKProc = Recipe.loadRecipeById(2);
+        CatERing.getInstance().getKitchenTaskManager().addProcedure(newKProc);
+        System.out.println(s.testString());
 
 //        System.out.println("TEST GET SHIFT TABLE");
 //        ArrayList<KitchenShift> sTable = CatERing.getInstance().getKitchenTaskManager().getShiftTable();

@@ -140,11 +140,15 @@ public class SummarySheet {
         return this.id;
     }
 
-    public ArrayList<Task> addProcedure(ArrayList<KitchenProcedure> newKProcs) {
+    public ArrayList<Task> addProcedure(KitchenProcedure newKProc) {
+        ArrayList<KitchenProcedure> newKProcs = new ArrayList<>();
+        newKProcs.add(newKProc);
+        newKProcs.addAll(((Recipe) newKProc).getProcedures());
         ArrayList<Task> newTasks = new ArrayList<>();
         int pos = tasks.get(tasks.size() - 1).getPosition() + 1;
-        for(KitchenProcedure newKProc: newKProcs){
-            Task newTask = new Task(newKProc, pos);
+        for(KitchenProcedure proc: newKProcs){
+            Task newTask = new Task(proc, pos);
+            newTask.setSummarySheetId(this.id);
             newTasks.add(newTask);
             pos++;
         }
@@ -231,15 +235,15 @@ public class SummarySheet {
         throw new KitchenException();
     }
 
-    public void removeProcedure(KitchenProcedure oldProc) throws KitchenException {
+    public Task removeProcedure(KitchenProcedure oldProc) throws KitchenException {
         for(Task t: tasks){
             if(t.getProcedure().equals(oldProc)){
                 for(CookingJob j: t.getJobs()){
                     t.deleteCookingJob(j);
                 }
                 tasks.remove(t);
-                Task.deleteTask(t);
-                return;
+//                Task.deleteTask(t);
+                return t;
             }
         }
         throw new KitchenException();

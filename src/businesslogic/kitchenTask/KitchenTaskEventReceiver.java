@@ -22,4 +22,6 @@ public interface KitchenTaskEventReceiver {
     void updateKitchenProcedureRemoved(KitchenProcedure oldProc);
 
     void updateTasksAdded(int sheet_id, ArrayList<Task> newTasks);
+
+    void updateTaskDeleted(Task task);
 }
