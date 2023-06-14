@@ -28,7 +28,7 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>774</x>
+      <x>630</x>
       <y>0</y>
       <w>252</w>
       <h>24</h>
@@ -43,7 +43,7 @@ fontsize=25
   <element>
     <id>UMLPackage</id>
     <coordinates>
-      <x>198</x>
+      <x>54</x>
       <y>60</y>
       <w>54</w>
       <h>42</h>
@@ -54,7 +54,7 @@ fontsize=25
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>216</x>
+      <x>72</x>
       <y>96</y>
       <w>18</w>
       <h>960</h>
@@ -65,7 +65,7 @@ fontsize=25
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>732</x>
+      <x>588</x>
       <y>72</y>
       <w>102</w>
       <h>24</h>
@@ -77,7 +77,7 @@ style=wordwrap</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>774</x>
+      <x>630</x>
       <y>90</y>
       <w>18</w>
       <h>966</h>
@@ -88,7 +88,7 @@ style=wordwrap</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>402</x>
+      <x>258</x>
       <y>216</y>
       <w>390</w>
       <h>24</h>
@@ -100,7 +100,7 @@ addProcedure(newProcedure)</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>774</x>
+      <x>630</x>
       <y>228</y>
       <w>12</w>
       <h>576</h>
@@ -111,7 +111,7 @@ addProcedure(newProcedure)</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>144</x>
+      <x>0</x>
       <y>132</y>
       <w>1338</w>
       <h>894</h>
@@ -127,7 +127,7 @@ addProcedure(newProcedure)</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>216</x>
+      <x>72</x>
       <y>150</y>
       <w>204</w>
       <h>24</h>
@@ -139,7 +139,7 @@ throw UseCaseLogicException</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>924</x>
+      <x>780</x>
       <y>264</y>
       <w>96</w>
       <h>24</h>
@@ -151,7 +151,7 @@ style=wordwrap</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>780</x>
+      <x>636</x>
       <y>264</y>
       <w>156</w>
       <h>24</h>
@@ -163,7 +163,7 @@ create()</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>966</x>
+      <x>822</x>
       <y>282</y>
       <w>18</w>
       <h>774</h>
@@ -174,7 +174,7 @@ create()</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>966</x>
+      <x>822</x>
       <y>288</y>
       <w>12</w>
       <h>24</h>
@@ -185,7 +185,7 @@ create()</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>780</x>
+      <x>636</x>
       <y>288</y>
       <w>198</w>
       <h>24</h>
@@ -197,7 +197,7 @@ kProcs</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>780</x>
+      <x>636</x>
       <y>312</y>
       <w>198</w>
       <h>24</h>
@@ -209,7 +209,7 @@ add(newProcedure)</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>966</x>
+      <x>822</x>
       <y>324</y>
       <w>12</w>
       <h>18</h>
@@ -220,7 +220,7 @@ add(newProcedure)</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>762</x>
+      <x>618</x>
       <y>378</y>
       <w>300</w>
       <h>60</h>
@@ -231,7 +231,7 @@ add(newProcedure)</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>780</x>
+      <x>636</x>
       <y>390</y>
       <w>204</w>
       <h>24</h>
@@ -243,7 +243,7 @@ add(subProc)</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>966</x>
+      <x>822</x>
       <y>402</y>
       <w>12</w>
       <h>18</h>
@@ -254,7 +254,7 @@ add(subProc)</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>780</x>
+      <x>636</x>
       <y>336</y>
       <w>474</w>
       <h>24</h>
@@ -266,19 +266,19 @@ getProcedures()</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>780</x>
+      <x>636</x>
       <y>360</y>
       <w>474</w>
       <h>24</h>
     </coordinates>
-    <panel_attributes>lt=&lt;&lt;&lt;..
+    <panel_attributes>lt=&lt;&lt;&lt;.
 subProcedures</panel_attributes>
     <additional_attributes>10.0;20.0;770.0;20.0</additional_attributes>
   </element>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1194</x>
+      <x>1050</x>
       <y>72</y>
       <w>96</w>
       <h>24</h>
@@ -290,7 +290,7 @@ style=wordwrap</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1236</x>
+      <x>1092</x>
       <y>90</y>
       <w>18</w>
       <h>966</h>
@@ -301,7 +301,7 @@ style=wordwrap</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>732</x>
+      <x>588</x>
       <y>576</y>
       <w>552</w>
       <h>216</h>
@@ -312,7 +312,7 @@ style=wordwrap</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1110</x>
+      <x>966</x>
       <y>606</y>
       <w>96</w>
       <h>24</h>
@@ -324,7 +324,7 @@ style=wordwrap</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1152</x>
+      <x>1008</x>
       <y>624</y>
       <w>18</w>
       <h>432</h>
@@ -335,7 +335,7 @@ style=wordwrap</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>780</x>
+      <x>636</x>
       <y>606</y>
       <w>342</w>
       <h>24</h>
@@ -347,7 +347,7 @@ create()</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1158</x>
+      <x>1014</x>
       <y>636</y>
       <w>96</w>
       <h>30</h>
@@ -359,7 +359,7 @@ this.amount = 0</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1158</x>
+      <x>1014</x>
       <y>660</y>
       <w>126</w>
       <h>30</h>
@@ -371,7 +371,7 @@ this.estimatedTime = 0</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1158</x>
+      <x>1014</x>
       <y>684</y>
       <w>96</w>
       <h>30</h>
@@ -383,7 +383,7 @@ this.toDo = true</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1158</x>
+      <x>1014</x>
       <y>708</y>
       <w>120</w>
       <h>30</h>
@@ -395,7 +395,7 @@ this.procedure = proc</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1152</x>
+      <x>1008</x>
       <y>630</y>
       <w>12</w>
       <h>114</h>
@@ -406,19 +406,19 @@ this.procedure = proc</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>780</x>
+      <x>636</x>
       <y>720</y>
       <w>384</w>
       <h>24</h>
     </coordinates>
-    <panel_attributes>lt=&lt;&lt;&lt;..
+    <panel_attributes>lt=&lt;&lt;&lt;.
 task</panel_attributes>
     <additional_attributes>10.0;20.0;620.0;20.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>780</x>
+      <x>636</x>
       <y>744</y>
       <w>630</w>
       <h>24</h>
@@ -430,7 +430,7 @@ add(task)</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>360</x>
+      <x>216</x>
       <y>78</y>
       <w>96</w>
       <h>24</h>
@@ -442,7 +442,7 @@ style=wordwrap</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>402</x>
+      <x>258</x>
       <y>96</y>
       <w>18</w>
       <h>960</h>
@@ -453,7 +453,7 @@ style=wordwrap</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>216</x>
+      <x>72</x>
       <y>108</y>
       <w>204</w>
       <h>24</h>
@@ -465,7 +465,7 @@ addProcedure(newProcedure)</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>348</x>
+      <x>204</x>
       <y>864</y>
       <w>270</w>
       <h>90</h>
@@ -476,7 +476,7 @@ addProcedure(newProcedure)</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>546</x>
+      <x>402</x>
       <y>72</y>
       <w>102</w>
       <h>24</h>
@@ -488,7 +488,7 @@ style=wordwrap</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>588</x>
+      <x>444</x>
       <y>90</y>
       <w>18</w>
       <h>966</h>
@@ -499,19 +499,19 @@ style=wordwrap</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>408</x>
+      <x>264</x>
       <y>786</y>
       <w>378</w>
       <h>24</h>
     </coordinates>
-    <panel_attributes>lt=&lt;&lt;&lt;..
+    <panel_attributes>lt=&lt;&lt;&lt;.
 newTasks</panel_attributes>
     <additional_attributes>10.0;20.0;610.0;20.0</additional_attributes>
   </element>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>402</x>
+      <x>258</x>
       <y>120</y>
       <w>12</w>
       <h>900</h>
@@ -522,19 +522,19 @@ newTasks</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>408</x>
+      <x>264</x>
       <y>822</y>
-      <w>162</w>
+      <w>240</w>
       <h>42</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
-notifyTasksAdded(newTasks)</panel_attributes>
+notifyTasksAdded(currentSheet.getId(), newTasks)</panel_attributes>
     <additional_attributes>10.0;10.0;70.0;10.0;70.0;50.0;20.0;50.0</additional_attributes>
   </element>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>408</x>
+      <x>264</x>
       <y>852</y>
       <w>12</w>
       <h>144</h>
@@ -545,19 +545,19 @@ notifyTasksAdded(newTasks)</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>414</x>
+      <x>264</x>
       <y>900</y>
-      <w>192</w>
+      <w>204</w>
       <h>24</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
-updateTasksAdded(newTasks)</panel_attributes>
-    <additional_attributes>300.0;20.0;10.0;20.0</additional_attributes>
+updateTasksAdded(currentSheet.getId(), newTasks)</panel_attributes>
+    <additional_attributes>310.0;20.0;20.0;20.0</additional_attributes>
   </element>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>588</x>
+      <x>444</x>
       <y>912</y>
       <w>12</w>
       <h>30</h>
@@ -568,7 +568,7 @@ updateTasksAdded(newTasks)</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>216</x>
+      <x>72</x>
       <y>1002</y>
       <w>198</w>
       <h>24</h>
@@ -580,7 +580,7 @@ currentSheet</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1236</x>
+      <x>1092</x>
       <y>348</y>
       <w>12</w>
       <h>24</h>
@@ -591,7 +591,7 @@ currentSheet</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1350</x>
+      <x>1206</x>
       <y>72</y>
       <w>96</w>
       <h>24</h>
@@ -603,7 +603,7 @@ style=wordwrap</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1392</x>
+      <x>1248</x>
       <y>90</y>
       <w>18</w>
       <h>966</h>
@@ -614,7 +614,7 @@ style=wordwrap</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1392</x>
+      <x>1248</x>
       <y>756</y>
       <w>12</w>
       <h>18</h>
@@ -625,7 +625,7 @@ style=wordwrap</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1014</x>
+      <x>870</x>
       <y>468</y>
       <w>96</w>
       <h>24</h>
@@ -637,7 +637,7 @@ style=wordwrap</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1056</x>
+      <x>912</x>
       <y>486</y>
       <w>18</w>
       <h>570</h>
@@ -648,7 +648,7 @@ style=wordwrap</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>780</x>
+      <x>636</x>
       <y>468</y>
       <w>246</w>
       <h>24</h>
@@ -660,7 +660,7 @@ create()</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>780</x>
+      <x>636</x>
       <y>756</y>
       <w>294</w>
       <h>24</h>
@@ -672,7 +672,7 @@ add(task)</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1056</x>
+      <x>912</x>
       <y>768</y>
       <w>12</w>
       <h>18</h>
@@ -683,7 +683,7 @@ add(task)</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>780</x>
+      <x>636</x>
       <y>498</y>
       <w>288</w>
       <h>24</h>
@@ -695,7 +695,7 @@ newTasks</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1056</x>
+      <x>912</x>
       <y>492</y>
       <w>12</w>
       <h>24</h>

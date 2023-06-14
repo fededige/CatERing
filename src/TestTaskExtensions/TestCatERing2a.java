@@ -26,13 +26,12 @@ public class TestCatERing2a {
         System.out.println("TEST REMOVE PROCEDURE");
         KitchenProcedure oldKProc = Recipe.loadRecipeById(2);
         try {
-            CatERing.getInstance().getKitchenTaskManager().removeProcedure(oldKProc);
+            s = CatERing.getInstance().getKitchenTaskManager().removeProcedure(oldKProc);
         } catch (UseCaseLogicException | KitchenException e) {
             e.printStackTrace();
             throw new RuntimeException(e);
         }
 
-        s = CatERing.getInstance().getKitchenTaskManager().createSummarySheet(service, event);
         System.out.println(s.testString());
     }
 }

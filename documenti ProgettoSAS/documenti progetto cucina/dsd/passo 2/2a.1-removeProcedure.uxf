@@ -33,14 +33,14 @@
 
 
 </help_text>
-  <zoom_level>9</zoom_level>
+  <zoom_level>3</zoom_level>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>945</x>
-      <y>0</y>
-      <w>378</w>
-      <h>36</h>
+      <x>387</x>
+      <y>432</y>
+      <w>126</w>
+      <h>12</h>
     </coordinates>
     <panel_attributes>halign=center
 *2a.1-removeProcedure*
@@ -52,10 +52,10 @@ fontsize=25
   <element>
     <id>UMLPackage</id>
     <coordinates>
-      <x>81</x>
-      <y>90</y>
-      <w>81</w>
-      <h>63</h>
+      <x>99</x>
+      <y>462</y>
+      <w>27</w>
+      <h>21</h>
     </coordinates>
     <panel_attributes>UI</panel_attributes>
     <additional_attributes/>
@@ -64,9 +64,9 @@ fontsize=25
     <id>Relation</id>
     <coordinates>
       <x>108</x>
-      <y>144</y>
-      <w>27</w>
-      <h>1035</h>
+      <y>480</y>
+      <w>9</w>
+      <h>345</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;1130.0</additional_attributes>
@@ -74,10 +74,10 @@ fontsize=25
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>882</x>
-      <y>108</y>
-      <w>153</w>
-      <h>36</h>
+      <x>366</x>
+      <y>468</y>
+      <w>51</w>
+      <h>12</h>
     </coordinates>
     <panel_attributes>kTaskMgr.currentSheet: SummarySheet
 style=wordwrap</panel_attributes>
@@ -86,10 +86,10 @@ style=wordwrap</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>945</x>
-      <y>135</y>
-      <w>27</w>
-      <h>1044</h>
+      <x>387</x>
+      <y>477</y>
+      <w>9</w>
+      <h>348</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;1140.0</additional_attributes>
@@ -97,10 +97,10 @@ style=wordwrap</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>387</x>
-      <y>324</y>
-      <w>585</w>
-      <h>36</h>
+      <x>201</x>
+      <y>540</y>
+      <w>195</w>
+      <h>12</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
 removeProcedure(oldProcedure)</panel_attributes>
@@ -109,10 +109,10 @@ removeProcedure(oldProcedure)</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>945</x>
-      <y>342</y>
-      <w>18</w>
-      <h>387</h>
+      <x>387</x>
+      <y>546</y>
+      <w>6</w>
+      <h>129</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -120,10 +120,10 @@ removeProcedure(oldProcedure)</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>0</x>
-      <y>198</y>
-      <w>1818</w>
-      <h>882</h>
+      <x>72</x>
+      <y>498</y>
+      <w>606</w>
+      <h>294</h>
     </coordinates>
     <panel_attributes>*alt [ kTaskMgr.currentSheet == null ]*
 --
@@ -137,9 +137,9 @@ removeProcedure(oldProcedure)</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>108</x>
-      <y>225</y>
-      <w>306</w>
-      <h>36</h>
+      <y>507</y>
+      <w>102</w>
+      <h>12</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 throw UseCaseLogicException</panel_attributes>
@@ -148,10 +148,10 @@ throw UseCaseLogicException</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1224</x>
-      <y>135</y>
-      <w>27</w>
-      <h>1044</h>
+      <x>480</x>
+      <y>477</y>
+      <w>9</w>
+      <h>348</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;1140.0</additional_attributes>
@@ -159,10 +159,10 @@ throw UseCaseLogicException</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>324</x>
-      <y>117</y>
-      <w>144</w>
-      <h>36</h>
+      <x>180</x>
+      <y>471</y>
+      <w>48</w>
+      <h>12</h>
     </coordinates>
     <panel_attributes>kTaskMgr: KitchenTaskManager
 style=wordwrap</panel_attributes>
@@ -171,10 +171,10 @@ style=wordwrap</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>387</x>
-      <y>144</y>
-      <w>27</w>
-      <h>1035</h>
+      <x>201</x>
+      <y>480</y>
+      <w>9</w>
+      <h>345</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;1130.0</additional_attributes>
@@ -183,9 +183,9 @@ style=wordwrap</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>108</x>
-      <y>162</y>
-      <w>306</w>
-      <h>36</h>
+      <y>486</y>
+      <w>102</w>
+      <h>12</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
 removeProcedure(oldProcedure)</panel_attributes>
@@ -194,10 +194,10 @@ removeProcedure(oldProcedure)</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>288</x>
-      <y>819</y>
-      <w>423</w>
-      <h>180</h>
+      <x>168</x>
+      <y>705</y>
+      <w>141</w>
+      <h>60</h>
     </coordinates>
     <panel_attributes>for kTaskReceiver in kTaskReceivers</panel_attributes>
     <additional_attributes/>
@@ -205,10 +205,10 @@ removeProcedure(oldProcedure)</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>603</x>
-      <y>108</y>
-      <w>153</w>
-      <h>36</h>
+      <x>273</x>
+      <y>468</y>
+      <w>51</w>
+      <h>12</h>
     </coordinates>
     <panel_attributes>kTaskReceiver: KitcheTaskEventReceiver
 style=wordwrap</panel_attributes>
@@ -217,10 +217,10 @@ style=wordwrap</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>666</x>
-      <y>135</y>
-      <w>27</w>
-      <h>1044</h>
+      <x>294</x>
+      <y>477</y>
+      <w>9</w>
+      <h>348</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;1140.0</additional_attributes>
@@ -228,10 +228,10 @@ style=wordwrap</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>387</x>
-      <y>180</y>
-      <w>18</w>
-      <h>891</h>
+      <x>201</x>
+      <y>492</y>
+      <w>6</w>
+      <h>297</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -239,22 +239,22 @@ style=wordwrap</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>396</x>
-      <y>756</y>
-      <w>351</w>
-      <h>63</h>
+      <x>204</x>
+      <y>684</y>
+      <w>72</w>
+      <h>21</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
-notifyKitchenProcedureRemoved(oldProcedure)</panel_attributes>
+notifyTaskDeleted(task)</panel_attributes>
     <additional_attributes>10.0;10.0;70.0;10.0;70.0;50.0;20.0;50.0</additional_attributes>
   </element>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>396</x>
-      <y>801</y>
-      <w>18</w>
-      <h>216</h>
+      <x>204</x>
+      <y>699</y>
+      <w>6</w>
+      <h>72</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -262,22 +262,22 @@ notifyKitchenProcedureRemoved(oldProcedure)</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>405</x>
-      <y>855</y>
-      <w>288</w>
-      <h>36</h>
+      <x>207</x>
+      <y>717</y>
+      <w>96</w>
+      <h>12</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
-updateKitchenProcedureRemoved(oldProcedure)</panel_attributes>
+updateTaskDeleted(task)</panel_attributes>
     <additional_attributes>300.0;20.0;10.0;20.0</additional_attributes>
   </element>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>666</x>
-      <y>873</y>
-      <w>18</w>
-      <h>45</h>
+      <x>294</x>
+      <y>723</y>
+      <w>6</w>
+      <h>15</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -285,10 +285,10 @@ updateKitchenProcedureRemoved(oldProcedure)</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>774</x>
-      <y>378</y>
-      <w>1026</w>
-      <h>270</h>
+      <x>330</x>
+      <y>558</y>
+      <w>342</w>
+      <h>90</h>
     </coordinates>
     <panel_attributes>for task in tasks</panel_attributes>
     <additional_attributes/>
@@ -296,10 +296,10 @@ updateKitchenProcedureRemoved(oldProcedure)</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>783</x>
-      <y>405</y>
-      <w>999</w>
-      <h>216</h>
+      <x>333</x>
+      <y>567</y>
+      <w>333</w>
+      <h>72</h>
     </coordinates>
     <panel_attributes>alt [ task.getKitchenProcedure() == oldProcedure]
 lw=2
@@ -309,10 +309,10 @@ lw=2
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>954</x>
-      <y>549</y>
-      <w>810</w>
-      <h>36</h>
+      <x>390</x>
+      <y>615</y>
+      <w>270</w>
+      <h>12</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
 remove(task)</panel_attributes>
@@ -322,21 +322,21 @@ remove(task)</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>108</x>
-      <y>1026</y>
-      <w>297</w>
-      <h>36</h>
+      <y>774</y>
+      <w>99</w>
+      <h>12</h>
     </coordinates>
-    <panel_attributes>lt=&lt;&lt;&lt;..
+    <panel_attributes>lt=&lt;&lt;&lt;.
 currentSheet</panel_attributes>
     <additional_attributes>10.0;20.0;310.0;20.0</additional_attributes>
   </element>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1674</x>
-      <y>108</y>
-      <w>153</w>
-      <h>36</h>
+      <x>630</x>
+      <y>468</y>
+      <w>51</w>
+      <h>12</h>
     </coordinates>
     <panel_attributes>currentSheet.tasks: Arraylist&lt;Task&gt;
 style=wordwrap</panel_attributes>
@@ -345,10 +345,10 @@ style=wordwrap</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1737</x>
-      <y>135</y>
-      <w>27</w>
-      <h>1044</h>
+      <x>651</x>
+      <y>477</y>
+      <w>9</w>
+      <h>348</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;1140.0</additional_attributes>
@@ -356,10 +356,10 @@ style=wordwrap</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1737</x>
-      <y>567</y>
-      <w>18</w>
-      <h>36</h>
+      <x>651</x>
+      <y>621</y>
+      <w>6</w>
+      <h>12</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -367,10 +367,10 @@ style=wordwrap</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>792</x>
-      <y>432</y>
-      <w>486</w>
-      <h>108</h>
+      <x>336</x>
+      <y>576</y>
+      <w>162</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes>for job in task.jobs</panel_attributes>
     <additional_attributes/>
@@ -378,10 +378,10 @@ style=wordwrap</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>954</x>
-      <y>441</y>
-      <w>297</w>
-      <h>36</h>
+      <x>390</x>
+      <y>579</y>
+      <w>99</w>
+      <h>12</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
 deleteCookingJob(job)</panel_attributes>
@@ -390,10 +390,10 @@ deleteCookingJob(job)</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1224</x>
-      <y>459</y>
-      <w>18</w>
-      <h>36</h>
+      <x>480</x>
+      <y>585</y>
+      <w>6</w>
+      <h>12</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -401,10 +401,10 @@ deleteCookingJob(job)</panel_attributes>
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>1305</x>
-      <y>450</y>
-      <w>144</w>
-      <h>54</h>
+      <x>507</x>
+      <y>582</y>
+      <w>48</w>
+      <h>18</h>
     </coordinates>
     <panel_attributes>deleteCookingJOb è specificata nel dsd 5a
 style=wordwrap</panel_attributes>
@@ -413,13 +413,25 @@ style=wordwrap</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1152</x>
-      <y>108</y>
-      <w>153</w>
-      <h>36</h>
+      <x>456</x>
+      <y>468</y>
+      <w>51</w>
+      <h>12</h>
     </coordinates>
     <panel_attributes>task: Task
 style=wordwrap</panel_attributes>
     <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>204</x>
+      <y>627</y>
+      <w>189</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;.
+task</panel_attributes>
+    <additional_attributes>10.0;20.0;610.0;20.0</additional_attributes>
   </element>
 </diagram>

@@ -242,7 +242,6 @@ public class SummarySheet {
                     t.deleteCookingJob(j);
                 }
                 tasks.remove(t);
-//                Task.deleteTask(t);
                 return t;
             }
         }
