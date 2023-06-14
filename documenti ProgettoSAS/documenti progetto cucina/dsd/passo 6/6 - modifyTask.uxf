@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <diagram program="umlet" version="15.1">
-  <zoom_level>4</zoom_level>
+  <zoom_level>7</zoom_level>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>268</x>
-      <y>252</y>
-      <w>176</w>
-      <h>16</h>
+      <x>665</x>
+      <y>0</y>
+      <w>308</w>
+      <h>28</h>
     </coordinates>
     <panel_attributes>halign=center
 *6 - modifyTask*
@@ -19,10 +19,10 @@ fontsize=25
   <element>
     <id>UMLPackage</id>
     <coordinates>
-      <x>20</x>
-      <y>292</y>
-      <w>36</w>
-      <h>28</h>
+      <x>231</x>
+      <y>70</y>
+      <w>63</w>
+      <h>49</h>
     </coordinates>
     <panel_attributes>UI</panel_attributes>
     <additional_attributes/>
@@ -30,21 +30,21 @@ fontsize=25
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>32</x>
-      <y>316</y>
-      <w>12</w>
-      <h>356</h>
+      <x>252</x>
+      <y>112</y>
+      <w>21</w>
+      <h>707</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;870.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;990.0</additional_attributes>
   </element>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>440</x>
-      <y>300</y>
-      <w>68</w>
-      <h>16</h>
+      <x>966</x>
+      <y>84</y>
+      <w>119</w>
+      <h>28</h>
     </coordinates>
     <panel_attributes>kTaskMgr.currentSheet: SummarySheet
 style=wordwrap</panel_attributes>
@@ -53,50 +53,21 @@ style=wordwrap</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>468</x>
-      <y>312</y>
-      <w>12</w>
-      <h>360</h>
+      <x>1015</x>
+      <y>105</y>
+      <w>21</w>
+      <h>714</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;880.0</additional_attributes>
-  </element>
-  <element>
-    <id>UMLFrame</id>
-    <coordinates>
-      <x>0</x>
-      <y>348</y>
-      <w>708</w>
-      <h>304</h>
-    </coordinates>
-    <panel_attributes>*alt [ !currentSheet.hasTask(task) ]*
---
-
-
-
--.
-</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>32</x>
-      <y>360</y>
-      <w>196</w>
-      <h>16</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;.
-throw UseCaseLogicException</panel_attributes>
-    <additional_attributes>10.0;20.0;470.0;20.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;1000.0</additional_attributes>
   </element>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>192</x>
-      <y>300</y>
-      <w>64</w>
-      <h>16</h>
+      <x>532</x>
+      <y>84</y>
+      <w>112</w>
+      <h>28</h>
     </coordinates>
     <panel_attributes>kTaskMgr: KitchenTaskManager
 style=wordwrap</panel_attributes>
@@ -105,21 +76,21 @@ style=wordwrap</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>220</x>
-      <y>312</y>
-      <w>12</w>
-      <h>360</h>
+      <x>581</x>
+      <y>105</y>
+      <w>21</w>
+      <h>714</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;880.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;1000.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>32</x>
-      <y>324</y>
-      <w>200</w>
-      <h>16</h>
+      <x>252</x>
+      <y>126</y>
+      <w>350</w>
+      <h>28</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
 modifyTask(task, amount, estimatedTime)</panel_attributes>
@@ -128,10 +99,10 @@ modifyTask(task, amount, estimatedTime)</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>176</x>
-      <y>576</y>
-      <w>188</w>
-      <h>52</h>
+      <x>504</x>
+      <y>630</y>
+      <w>329</w>
+      <h>91</h>
     </coordinates>
     <panel_attributes>for kTaskReceiver in kTaskReceivers</panel_attributes>
     <additional_attributes/>
@@ -139,10 +110,10 @@ modifyTask(task, amount, estimatedTime)</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>316</x>
-      <y>300</y>
-      <w>68</w>
-      <h>16</h>
+      <x>749</x>
+      <y>84</y>
+      <w>119</w>
+      <h>28</h>
     </coordinates>
     <panel_attributes>kTaskReceiver: KitcheTaskEventReceiver
 style=wordwrap</panel_attributes>
@@ -151,21 +122,21 @@ style=wordwrap</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>344</x>
-      <y>312</y>
-      <w>12</w>
-      <h>360</h>
+      <x>798</x>
+      <y>105</y>
+      <w>21</w>
+      <h>714</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;880.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;1000.0</additional_attributes>
   </element>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>220</x>
-      <y>332</y>
-      <w>8</w>
-      <h>316</h>
+      <x>581</x>
+      <y>140</y>
+      <w>14</w>
+      <h>623</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -173,10 +144,10 @@ style=wordwrap</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>224</x>
-      <y>548</y>
-      <w>88</w>
-      <h>28</h>
+      <x>588</x>
+      <y>581</y>
+      <w>154</w>
+      <h>49</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
 notifyTaskChanged(t)</panel_attributes>
@@ -185,10 +156,10 @@ notifyTaskChanged(t)</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>224</x>
-      <y>568</y>
-      <w>8</w>
-      <h>68</h>
+      <x>588</x>
+      <y>616</y>
+      <w>14</w>
+      <h>119</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -196,10 +167,10 @@ notifyTaskChanged(t)</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>228</x>
-      <y>592</y>
-      <w>128</w>
-      <h>16</h>
+      <x>595</x>
+      <y>658</y>
+      <w>224</w>
+      <h>28</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
 updateTaskChanged(t)</panel_attributes>
@@ -208,10 +179,10 @@ updateTaskChanged(t)</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>344</x>
-      <y>600</y>
-      <w>8</w>
-      <h>20</h>
+      <x>798</x>
+      <y>672</y>
+      <w>14</w>
+      <h>35</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -219,21 +190,21 @@ updateTaskChanged(t)</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>588</x>
-      <y>312</y>
-      <w>12</w>
-      <h>360</h>
+      <x>1225</x>
+      <y>105</y>
+      <w>21</w>
+      <h>714</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;880.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;1000.0</additional_attributes>
   </element>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>560</x>
-      <y>300</y>
-      <w>68</w>
-      <h>16</h>
+      <x>1176</x>
+      <y>84</y>
+      <w>119</w>
+      <h>28</h>
     </coordinates>
     <panel_attributes>t: Task
 style=wordwrap</panel_attributes>
@@ -242,10 +213,10 @@ style=wordwrap</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>224</x>
-      <y>384</y>
-      <w>256</w>
-      <h>16</h>
+      <x>588</x>
+      <y>294</y>
+      <w>448</w>
+      <h>28</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
 modifyTask(task, amount, estimatedTime)</panel_attributes>
@@ -254,10 +225,10 @@ modifyTask(task, amount, estimatedTime)</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>408</x>
-      <y>400</y>
-      <w>296</w>
-      <h>136</h>
+      <x>910</x>
+      <y>322</y>
+      <w>518</w>
+      <h>238</h>
     </coordinates>
     <panel_attributes>for t in currenSheet.tasks</panel_attributes>
     <additional_attributes/>
@@ -265,10 +236,10 @@ modifyTask(task, amount, estimatedTime)</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>412</x>
-      <y>412</y>
-      <w>288</w>
-      <h>120</h>
+      <x>917</x>
+      <y>343</y>
+      <w>504</w>
+      <h>210</h>
     </coordinates>
     <panel_attributes>*alt [ t == task ]*</panel_attributes>
     <additional_attributes/>
@@ -276,10 +247,10 @@ modifyTask(task, amount, estimatedTime)</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>224</x>
-      <y>516</y>
-      <w>256</w>
-      <h>16</h>
+      <x>588</x>
+      <y>525</y>
+      <w>448</w>
+      <h>28</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 *t*</panel_attributes>
@@ -288,10 +259,10 @@ modifyTask(task, amount, estimatedTime)</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>588</x>
-      <y>444</y>
-      <w>8</w>
-      <h>20</h>
+      <x>1225</x>
+      <y>399</y>
+      <w>14</w>
+      <h>35</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -299,10 +270,10 @@ modifyTask(task, amount, estimatedTime)</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>592</x>
-      <y>444</y>
-      <w>76</w>
-      <h>20</h>
+      <x>1232</x>
+      <y>399</y>
+      <w>133</w>
+      <h>35</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
 this.amount = amount</panel_attributes>
@@ -311,10 +282,10 @@ this.amount = amount</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>592</x>
-      <y>488</y>
-      <w>112</w>
-      <h>20</h>
+      <x>1232</x>
+      <y>476</y>
+      <w>196</w>
+      <h>35</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
 this.estimatedTime = estimatedTime</panel_attributes>
@@ -323,10 +294,10 @@ this.estimatedTime = estimatedTime</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>588</x>
-      <y>488</y>
-      <w>8</w>
-      <h>20</h>
+      <x>1225</x>
+      <y>476</y>
+      <w>14</w>
+      <h>35</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -334,10 +305,10 @@ this.estimatedTime = estimatedTime</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>472</x>
-      <y>436</y>
-      <w>124</w>
-      <h>16</h>
+      <x>1022</x>
+      <y>385</y>
+      <w>217</w>
+      <h>28</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
 setAmount(amount)</panel_attributes>
@@ -346,10 +317,10 @@ setAmount(amount)</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>472</x>
-      <y>480</y>
-      <w>124</w>
-      <h>16</h>
+      <x>1022</x>
+      <y>462</y>
+      <w>217</w>
+      <h>28</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
 setEstimatedTime(estimatedTime)</panel_attributes>
@@ -358,10 +329,10 @@ setEstimatedTime(estimatedTime)</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>428</x>
-      <y>424</y>
-      <w>260</w>
-      <h>44</h>
+      <x>945</x>
+      <y>364</y>
+      <w>455</w>
+      <h>77</h>
     </coordinates>
     <panel_attributes>*alt [ amount != null ]*</panel_attributes>
     <additional_attributes/>
@@ -369,10 +340,10 @@ setEstimatedTime(estimatedTime)</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>428</x>
-      <y>472</y>
-      <w>260</w>
-      <h>44</h>
+      <x>945</x>
+      <y>448</y>
+      <w>455</w>
+      <h>77</h>
     </coordinates>
     <panel_attributes>*alt [ estimatedTime != null ]*</panel_attributes>
     <additional_attributes/>
@@ -380,12 +351,74 @@ setEstimatedTime(estimatedTime)</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>468</x>
-      <y>392</y>
-      <w>8</w>
-      <h>148</h>
+      <x>1015</x>
+      <y>308</y>
+      <w>14</w>
+      <h>259</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>189</x>
+      <y>224</y>
+      <w>343</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>*alt [ !currentSheet.hasTask(task) ]*
+style=wordwrap
+group=group-3</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLFrame</id>
+    <coordinates>
+      <x>182</x>
+      <y>161</y>
+      <w>1267</w>
+      <h>623</h>
+    </coordinates>
+    <panel_attributes>*alt [ curresntSheet == null ]*
+--
+
+
+
+-.
+
+
+
+
+
+-.
+group=group-3</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>252</x>
+      <y>182</y>
+      <w>343</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+throw UseCaseLogicException
+group=group-3</panel_attributes>
+    <additional_attributes>10.0;20.0;470.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>252</x>
+      <y>238</y>
+      <w>343</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+throw KitchenException
+group=group-3</panel_attributes>
+    <additional_attributes>10.0;20.0;470.0;20.0</additional_attributes>
   </element>
 </diagram>
