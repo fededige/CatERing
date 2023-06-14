@@ -3,17 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="0937ec8d-40ed-4369-a5ac-483e61b54cb6" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documenti ProgettoSAS/documenti progetto cucina/dsd/passo 5/5 - createNewCookingJob.uxf" beforeDir="false" afterPath="$PROJECT_DIR$/documenti ProgettoSAS/documenti progetto cucina/dsd/passo 5/5 - createNewCookingJob.uxf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/documenti ProgettoSAS/documenti progetto cucina/dsd/passo 5/5a - deleteCookingJob.uxf" beforeDir="false" afterPath="$PROJECT_DIR$/documenti ProgettoSAS/documenti progetto cucina/dsd/passo 5/5a - deleteCookingJob.uxf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TestTaskExtensions/TestCatERing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TestTaskExtensions/TestCatERing.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TestTaskExtensions/TestCatERing5a.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TestTaskExtensions/TestCatERing5a.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/businesslogic/kitchenTask/KitchenTaskEventReceiver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/businesslogic/kitchenTask/KitchenTaskEventReceiver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/businesslogic/kitchenTask/KitchenTaskManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/businesslogic/kitchenTask/KitchenTaskManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/businesslogic/kitchenTask/SummarySheet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/businesslogic/kitchenTask/SummarySheet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/businesslogic/kitchenTask/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/businesslogic/kitchenTask/Task.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/businesslogic/recipe/Preparation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/businesslogic/recipe/Preparation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/businesslogic/shift/KitchenShift.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/businesslogic/shift/KitchenShift.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/businesslogic/shift/ServiceShift.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/businesslogic/shift/ServiceShift.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/persistence/KitchenTaskPersistence.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/persistence/KitchenTaskPersistence.java" afterDir="false" />
     </list>
     <list id="ba9790ac-75d7-4c37-aefe-5d00f5bd2e45" name="Changes by emanu" comment="" />

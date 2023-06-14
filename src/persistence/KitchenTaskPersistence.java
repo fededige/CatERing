@@ -34,15 +34,6 @@ public class KitchenTaskPersistence implements KitchenTaskEventReceiver {
         CookingJob.saveNewCookingJob(job, task_id, shift_id);
     }
 
-    @Override
-    public void updateCookingJobDeleted(CookingJob oldJob) {
-        CookingJob.deleteCookingJob(oldJob);
-    }
-
-    @Override
-    public void updateCookingJobChanged(CookingJob c) {
-        CookingJob.updateCookingJob(c);
-    }
 
     @Override
     public void updateTaskChanged(Task t) {
@@ -64,6 +55,15 @@ public class KitchenTaskPersistence implements KitchenTaskEventReceiver {
         Task.deleteTask(task);
     }
 
+    @Override
+    public void updateCookingJobDeleted(CookingJob oldJob) {
+        CookingJob.deleteCookingJob(oldJob);
+    }
+
+    @Override
+    public void updateCookingJobChanged(CookingJob c) {
+        CookingJob.updateCookingJob(c);
+    }
     @Override
     public void updateShiftChanged(Shift shift) {
         if(shift instanceof KitchenShift)

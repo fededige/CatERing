@@ -182,11 +182,9 @@ public class SummarySheet {
     }
 
     public void modifyCookingJob(Task t, CookingJob c, Integer amount, Float estimatedTime) {
-        int i = 0;
         for(Task task : tasks){
             if(task.equals(t)){
                 for(CookingJob job: t.getJobs()){
-                    i++;
                     if(job.equals(c)){
                         if(amount != null)
                             c.setAmount(amount);
