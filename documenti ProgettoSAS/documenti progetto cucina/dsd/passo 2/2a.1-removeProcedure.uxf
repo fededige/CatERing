@@ -33,17 +33,17 @@
 
 
 </help_text>
-  <zoom_level>3</zoom_level>
+  <zoom_level>7</zoom_level>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>387</x>
-      <y>432</y>
-      <w>126</w>
-      <h>12</h>
+      <x>735</x>
+      <y>28</y>
+      <w>294</w>
+      <h>28</h>
     </coordinates>
     <panel_attributes>halign=center
-*2a.1-removeProcedure*
+*2a.1 - removeProcedure*
 lw=0
 fontsize=25
 </panel_attributes>
@@ -52,10 +52,10 @@ fontsize=25
   <element>
     <id>UMLPackage</id>
     <coordinates>
-      <x>99</x>
-      <y>462</y>
-      <w>27</w>
-      <h>21</h>
+      <x>63</x>
+      <y>98</y>
+      <w>63</w>
+      <h>49</h>
     </coordinates>
     <panel_attributes>UI</panel_attributes>
     <additional_attributes/>
@@ -63,10 +63,10 @@ fontsize=25
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>108</x>
-      <y>480</y>
-      <w>9</w>
-      <h>345</h>
+      <x>84</x>
+      <y>140</y>
+      <w>21</w>
+      <h>805</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;1130.0</additional_attributes>
@@ -74,10 +74,10 @@ fontsize=25
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>366</x>
-      <y>468</y>
-      <w>51</w>
-      <h>12</h>
+      <x>686</x>
+      <y>112</y>
+      <w>119</w>
+      <h>28</h>
     </coordinates>
     <panel_attributes>kTaskMgr.currentSheet: SummarySheet
 style=wordwrap</panel_attributes>
@@ -86,10 +86,10 @@ style=wordwrap</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>387</x>
-      <y>477</y>
-      <w>9</w>
-      <h>348</h>
+      <x>735</x>
+      <y>133</y>
+      <w>21</w>
+      <h>812</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;1140.0</additional_attributes>
@@ -97,10 +97,10 @@ style=wordwrap</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>201</x>
-      <y>540</y>
-      <w>195</w>
-      <h>12</h>
+      <x>301</x>
+      <y>280</y>
+      <w>455</w>
+      <h>28</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
 removeProcedure(oldProcedure)</panel_attributes>
@@ -109,10 +109,10 @@ removeProcedure(oldProcedure)</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>387</x>
-      <y>546</y>
-      <w>6</w>
-      <h>129</h>
+      <x>735</x>
+      <y>294</y>
+      <w>14</w>
+      <h>301</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -120,10 +120,10 @@ removeProcedure(oldProcedure)</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>72</x>
-      <y>498</y>
-      <w>606</w>
-      <h>294</h>
+      <x>0</x>
+      <y>182</y>
+      <w>1414</w>
+      <h>686</h>
     </coordinates>
     <panel_attributes>*alt [ kTaskMgr.currentSheet == null ]*
 --
@@ -136,10 +136,10 @@ removeProcedure(oldProcedure)</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>108</x>
-      <y>507</y>
-      <w>102</w>
-      <h>12</h>
+      <x>84</x>
+      <y>203</y>
+      <w>238</w>
+      <h>28</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 throw UseCaseLogicException</panel_attributes>
@@ -148,10 +148,10 @@ throw UseCaseLogicException</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>480</x>
-      <y>477</y>
-      <w>9</w>
-      <h>348</h>
+      <x>952</x>
+      <y>133</y>
+      <w>21</w>
+      <h>812</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;1140.0</additional_attributes>
@@ -159,10 +159,10 @@ throw UseCaseLogicException</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>180</x>
-      <y>471</y>
-      <w>48</w>
-      <h>12</h>
+      <x>252</x>
+      <y>119</y>
+      <w>112</w>
+      <h>28</h>
     </coordinates>
     <panel_attributes>kTaskMgr: KitchenTaskManager
 style=wordwrap</panel_attributes>
@@ -171,10 +171,10 @@ style=wordwrap</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>201</x>
-      <y>480</y>
-      <w>9</w>
-      <h>345</h>
+      <x>301</x>
+      <y>140</y>
+      <w>21</w>
+      <h>805</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;1130.0</additional_attributes>
@@ -182,10 +182,10 @@ style=wordwrap</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>108</x>
-      <y>486</y>
-      <w>102</w>
-      <h>12</h>
+      <x>84</x>
+      <y>154</y>
+      <w>238</w>
+      <h>28</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
 removeProcedure(oldProcedure)</panel_attributes>
@@ -194,10 +194,10 @@ removeProcedure(oldProcedure)</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>168</x>
-      <y>705</y>
-      <w>141</w>
-      <h>60</h>
+      <x>224</x>
+      <y>665</y>
+      <w>329</w>
+      <h>140</h>
     </coordinates>
     <panel_attributes>for kTaskReceiver in kTaskReceivers</panel_attributes>
     <additional_attributes/>
@@ -205,10 +205,10 @@ removeProcedure(oldProcedure)</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>273</x>
-      <y>468</y>
-      <w>51</w>
-      <h>12</h>
+      <x>469</x>
+      <y>112</y>
+      <w>119</w>
+      <h>28</h>
     </coordinates>
     <panel_attributes>kTaskReceiver: KitcheTaskEventReceiver
 style=wordwrap</panel_attributes>
@@ -217,10 +217,10 @@ style=wordwrap</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>294</x>
-      <y>477</y>
-      <w>9</w>
-      <h>348</h>
+      <x>518</x>
+      <y>133</y>
+      <w>21</w>
+      <h>812</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;1140.0</additional_attributes>
@@ -228,10 +228,10 @@ style=wordwrap</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>201</x>
-      <y>492</y>
-      <w>6</w>
-      <h>297</h>
+      <x>301</x>
+      <y>168</y>
+      <w>14</w>
+      <h>693</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -239,10 +239,10 @@ style=wordwrap</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>204</x>
-      <y>684</y>
-      <w>72</w>
-      <h>21</h>
+      <x>308</x>
+      <y>616</y>
+      <w>168</w>
+      <h>49</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
 notifyTaskDeleted(task)</panel_attributes>
@@ -251,10 +251,10 @@ notifyTaskDeleted(task)</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>204</x>
-      <y>699</y>
-      <w>6</w>
-      <h>72</h>
+      <x>308</x>
+      <y>651</y>
+      <w>14</w>
+      <h>168</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -262,10 +262,10 @@ notifyTaskDeleted(task)</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>207</x>
-      <y>717</y>
-      <w>96</w>
-      <h>12</h>
+      <x>315</x>
+      <y>693</y>
+      <w>224</w>
+      <h>28</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
 updateTaskDeleted(task)</panel_attributes>
@@ -274,10 +274,10 @@ updateTaskDeleted(task)</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>294</x>
-      <y>723</y>
-      <w>6</w>
-      <h>15</h>
+      <x>518</x>
+      <y>707</y>
+      <w>14</w>
+      <h>35</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -285,10 +285,10 @@ updateTaskDeleted(task)</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>330</x>
-      <y>558</y>
-      <w>342</w>
-      <h>90</h>
+      <x>602</x>
+      <y>322</y>
+      <w>798</w>
+      <h>210</h>
     </coordinates>
     <panel_attributes>for task in tasks</panel_attributes>
     <additional_attributes/>
@@ -296,10 +296,10 @@ updateTaskDeleted(task)</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>333</x>
-      <y>567</y>
-      <w>333</w>
-      <h>72</h>
+      <x>609</x>
+      <y>343</y>
+      <w>777</w>
+      <h>168</h>
     </coordinates>
     <panel_attributes>alt [ task.getKitchenProcedure() == oldProcedure]
 lw=2
@@ -309,10 +309,10 @@ lw=2
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>390</x>
-      <y>615</y>
-      <w>270</w>
-      <h>12</h>
+      <x>742</x>
+      <y>455</y>
+      <w>630</w>
+      <h>28</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
 remove(task)</panel_attributes>
@@ -321,10 +321,10 @@ remove(task)</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>108</x>
-      <y>774</y>
-      <w>99</w>
-      <h>12</h>
+      <x>84</x>
+      <y>826</y>
+      <w>231</w>
+      <h>28</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;.
 currentSheet</panel_attributes>
@@ -333,10 +333,10 @@ currentSheet</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>630</x>
-      <y>468</y>
-      <w>51</w>
-      <h>12</h>
+      <x>1302</x>
+      <y>112</y>
+      <w>119</w>
+      <h>28</h>
     </coordinates>
     <panel_attributes>currentSheet.tasks: Arraylist&lt;Task&gt;
 style=wordwrap</panel_attributes>
@@ -345,10 +345,10 @@ style=wordwrap</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>651</x>
-      <y>477</y>
-      <w>9</w>
-      <h>348</h>
+      <x>1351</x>
+      <y>133</y>
+      <w>21</w>
+      <h>812</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;1140.0</additional_attributes>
@@ -356,10 +356,10 @@ style=wordwrap</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>651</x>
-      <y>621</y>
-      <w>6</w>
-      <h>12</h>
+      <x>1351</x>
+      <y>469</y>
+      <w>14</w>
+      <h>28</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -367,10 +367,10 @@ style=wordwrap</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>336</x>
-      <y>576</y>
-      <w>162</w>
-      <h>36</h>
+      <x>616</x>
+      <y>364</y>
+      <w>378</w>
+      <h>84</h>
     </coordinates>
     <panel_attributes>for job in task.jobs</panel_attributes>
     <additional_attributes/>
@@ -378,10 +378,10 @@ style=wordwrap</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>390</x>
-      <y>579</y>
-      <w>99</w>
-      <h>12</h>
+      <x>742</x>
+      <y>371</y>
+      <w>231</w>
+      <h>28</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
 deleteCookingJob(job)</panel_attributes>
@@ -390,10 +390,10 @@ deleteCookingJob(job)</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>480</x>
-      <y>585</y>
-      <w>6</w>
-      <h>12</h>
+      <x>952</x>
+      <y>385</y>
+      <w>14</w>
+      <h>28</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -401,10 +401,10 @@ deleteCookingJob(job)</panel_attributes>
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>507</x>
-      <y>582</y>
-      <w>48</w>
-      <h>18</h>
+      <x>1015</x>
+      <y>378</y>
+      <w>112</w>
+      <h>42</h>
     </coordinates>
     <panel_attributes>deleteCookingJOb è specificata nel dsd 5a
 style=wordwrap</panel_attributes>
@@ -413,10 +413,10 @@ style=wordwrap</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>456</x>
-      <y>468</y>
-      <w>51</w>
-      <h>12</h>
+      <x>896</x>
+      <y>112</y>
+      <w>119</w>
+      <h>28</h>
     </coordinates>
     <panel_attributes>task: Task
 style=wordwrap</panel_attributes>
@@ -425,10 +425,10 @@ style=wordwrap</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>204</x>
-      <y>627</y>
-      <w>189</w>
-      <h>12</h>
+      <x>308</x>
+      <y>483</y>
+      <w>441</w>
+      <h>28</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;.
 task</panel_attributes>

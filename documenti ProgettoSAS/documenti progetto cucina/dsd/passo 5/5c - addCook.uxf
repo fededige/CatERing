@@ -4,13 +4,13 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>732</x>
+      <x>438</x>
       <y>108</y>
       <w>288</w>
       <h>24</h>
     </coordinates>
     <panel_attributes>halign=center
-*5c - addCook(task, cookingJob, cook)*
+*5c - addCook(cookingJob, cook)*
 lw=0
 fontsize=25
 </panel_attributes>
@@ -19,7 +19,7 @@ fontsize=25
   <element>
     <id>UMLPackage</id>
     <coordinates>
-      <x>318</x>
+      <x>24</x>
       <y>174</y>
       <w>54</w>
       <h>42</h>
@@ -30,7 +30,7 @@ fontsize=25
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>336</x>
+      <x>42</x>
       <y>210</y>
       <w>18</w>
       <h>516</h>
@@ -41,7 +41,7 @@ fontsize=25
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>948</x>
+      <x>654</x>
       <y>186</y>
       <w>102</w>
       <h>24</h>
@@ -53,7 +53,7 @@ style=wordwrap</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>990</x>
+      <x>696</x>
       <y>204</y>
       <w>18</w>
       <h>522</h>
@@ -64,7 +64,7 @@ style=wordwrap</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>576</x>
+      <x>282</x>
       <y>186</y>
       <w>96</w>
       <h>24</h>
@@ -76,7 +76,7 @@ style=wordwrap</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>618</x>
+      <x>324</x>
       <y>204</y>
       <w>18</w>
       <h>522</h>
@@ -87,7 +87,7 @@ style=wordwrap</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>336</x>
+      <x>42</x>
       <y>222</y>
       <w>300</w>
       <h>24</h>
@@ -99,7 +99,7 @@ addCook(cookingJob, cook)</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>552</x>
+      <x>258</x>
       <y>588</y>
       <w>282</w>
       <h>78</h>
@@ -110,7 +110,7 @@ addCook(cookingJob, cook)</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>762</x>
+      <x>468</x>
       <y>186</y>
       <w>102</w>
       <h>24</h>
@@ -122,7 +122,7 @@ style=wordwrap</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>804</x>
+      <x>510</x>
       <y>204</y>
       <w>18</w>
       <h>522</h>
@@ -133,7 +133,7 @@ style=wordwrap</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>618</x>
+      <x>324</x>
       <y>234</y>
       <w>12</w>
       <h>456</h>
@@ -144,7 +144,7 @@ style=wordwrap</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>624</x>
+      <x>330</x>
       <y>546</y>
       <w>168</w>
       <h>42</h>
@@ -156,7 +156,7 @@ notifyCookingJobChanged(job)</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>624</x>
+      <x>330</x>
       <y>576</y>
       <w>12</w>
       <h>102</h>
@@ -167,7 +167,7 @@ notifyCookingJobChanged(job)</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>630</x>
+      <x>336</x>
       <y>612</y>
       <w>192</w>
       <h>24</h>
@@ -179,7 +179,7 @@ updateCookingJobChanged(job)</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>804</x>
+      <x>510</x>
       <y>624</y>
       <w>12</w>
       <h>30</h>
@@ -190,7 +190,7 @@ updateCookingJobChanged(job)</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1170</x>
+      <x>876</x>
       <y>204</y>
       <w>18</w>
       <h>522</h>
@@ -201,7 +201,7 @@ updateCookingJobChanged(job)</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1128</x>
+      <x>834</x>
       <y>186</y>
       <w>102</w>
       <h>24</h>
@@ -213,7 +213,7 @@ style=wordwrap</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>624</x>
+      <x>330</x>
       <y>354</y>
       <w>384</w>
       <h>24</h>
@@ -225,7 +225,7 @@ addCook(cookingJob, cook)</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>906</x>
+      <x>612</x>
       <y>384</y>
       <w>378</w>
       <h>132</h>
@@ -236,7 +236,7 @@ addCook(cookingJob, cook)</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>912</x>
+      <x>618</x>
       <y>402</y>
       <w>366</w>
       <h>108</h>
@@ -247,7 +247,7 @@ addCook(cookingJob, cook)</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1170</x>
+      <x>876</x>
       <y>444</y>
       <w>12</w>
       <h>36</h>
@@ -258,7 +258,7 @@ addCook(cookingJob, cook)</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>918</x>
+      <x>624</x>
       <y>420</y>
       <w>354</w>
       <h>84</h>
@@ -269,7 +269,7 @@ addCook(cookingJob, cook)</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1176</x>
+      <x>882</x>
       <y>450</y>
       <w>96</w>
       <h>30</h>
@@ -281,7 +281,7 @@ this.cook = cook</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>624</x>
+      <x>330</x>
       <y>480</y>
       <w>378</w>
       <h>24</h>
@@ -293,7 +293,7 @@ this.cook = cook</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>990</x>
+      <x>696</x>
       <y>438</y>
       <w>192</w>
       <h>24</h>
@@ -305,7 +305,7 @@ setCook(cook)</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>990</x>
+      <x>696</x>
       <y>366</y>
       <w>12</w>
       <h>168</h>
@@ -316,7 +316,7 @@ setCook(cook)</panel_attributes>
   <element>
     <id>Text</id>
     <coordinates>
-      <x>294</x>
+      <x>0</x>
       <y>294</y>
       <w>294</w>
       <h>18</h>
@@ -329,7 +329,7 @@ group=group-0</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>294</x>
+      <x>0</x>
       <y>246</y>
       <w>1086</w>
       <h>456</h>
@@ -352,7 +352,7 @@ group=group-0</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>336</x>
+      <x>42</x>
       <y>264</y>
       <w>294</w>
       <h>24</h>
@@ -365,7 +365,7 @@ group=group-0</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>336</x>
+      <x>42</x>
       <y>312</y>
       <w>294</w>
       <h>24</h>

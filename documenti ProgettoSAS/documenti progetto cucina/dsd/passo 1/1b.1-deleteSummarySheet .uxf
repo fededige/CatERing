@@ -4,13 +4,13 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>336</x>
+      <x>328</x>
       <y>144</y>
       <w>336</w>
       <h>32</h>
     </coordinates>
     <panel_attributes>halign=center
-*1a.1 - deleteSummarySheet*
+*1b.1 - deleteSummarySheet*
 lw=0
 fontsize=25
 </panel_attributes>
@@ -19,7 +19,7 @@ fontsize=25
   <element>
     <id>UMLPackage</id>
     <coordinates>
-      <x>96</x>
+      <x>88</x>
       <y>208</y>
       <w>72</w>
       <h>56</h>
@@ -30,7 +30,7 @@ fontsize=25
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>120</x>
+      <x>112</x>
       <y>256</y>
       <w>24</w>
       <h>312</h>
@@ -41,7 +41,7 @@ fontsize=25
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>312</x>
+      <x>304</x>
       <y>232</y>
       <w>128</w>
       <h>32</h>
@@ -53,7 +53,7 @@ style=wordwrap</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>368</x>
+      <x>360</x>
       <y>256</y>
       <w>24</w>
       <h>312</h>
@@ -64,7 +64,7 @@ style=wordwrap</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>120</x>
+      <x>112</x>
       <y>272</y>
       <w>272</w>
       <h>32</h>
@@ -76,7 +76,7 @@ deleteSummarySheet(event, sumSheet)</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>368</x>
+      <x>360</x>
       <y>288</y>
       <w>16</w>
       <h>248</h>
@@ -87,7 +87,7 @@ deleteSummarySheet(event, sumSheet)</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>56</x>
+      <x>48</x>
       <y>336</y>
       <w>848</w>
       <h>176</h>
@@ -103,7 +103,7 @@ deleteSummarySheet(event, sumSheet)</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>560</x>
+      <x>552</x>
       <y>232</y>
       <w>128</w>
       <h>32</h>
@@ -115,7 +115,7 @@ style=wordwrap</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>616</x>
+      <x>608</x>
       <y>256</y>
       <w>24</w>
       <h>312</h>
@@ -126,7 +126,7 @@ style=wordwrap</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>376</x>
+      <x>368</x>
       <y>280</y>
       <w>264</w>
       <h>32</h>
@@ -138,7 +138,7 @@ getCurrentUser()</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>376</x>
+      <x>368</x>
       <y>304</y>
       <w>256</w>
       <h>32</h>
@@ -150,7 +150,7 @@ user</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>616</x>
+      <x>608</x>
       <y>296</y>
       <w>16</w>
       <h>32</h>
@@ -161,7 +161,7 @@ user</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>120</x>
+      <x>112</x>
       <y>360</y>
       <w>264</w>
       <h>32</h>
@@ -173,7 +173,7 @@ throw UseCaseLogicException</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>376</x>
+      <x>368</x>
       <y>400</y>
       <w>264</w>
       <h>48</h>
@@ -185,7 +185,7 @@ notifySummarySheetDeleted(sumSheet)</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>376</x>
+      <x>368</x>
       <y>424</y>
       <w>16</w>
       <h>48</h>
@@ -196,7 +196,7 @@ notifySummarySheetDeleted(sumSheet)</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>800</x>
+      <x>792</x>
       <y>232</y>
       <w>128</w>
       <h>32</h>
@@ -208,7 +208,7 @@ style=wordwrap</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>856</x>
+      <x>848</x>
       <y>256</y>
       <w>24</w>
       <h>312</h>
@@ -219,7 +219,7 @@ style=wordwrap</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>384</x>
+      <x>376</x>
       <y>440</y>
       <w>496</w>
       <h>32</h>
@@ -231,9 +231,9 @@ updateSummarySheetDeleted(sumSheet)</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>160</x>
+      <x>216</x>
       <y>440</y>
-      <w>728</w>
+      <w>664</w>
       <h>56</h>
     </coordinates>
     <panel_attributes>for ktr in kTaskReceivers</panel_attributes>

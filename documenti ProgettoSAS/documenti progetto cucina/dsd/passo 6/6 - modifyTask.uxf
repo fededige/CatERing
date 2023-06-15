@@ -4,8 +4,8 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>665</x>
-      <y>0</y>
+      <x>483</x>
+      <y>70</y>
       <w>308</w>
       <h>28</h>
     </coordinates>
@@ -19,8 +19,8 @@ fontsize=25
   <element>
     <id>UMLPackage</id>
     <coordinates>
-      <x>231</x>
-      <y>70</y>
+      <x>49</x>
+      <y>140</y>
       <w>63</w>
       <h>49</h>
     </coordinates>
@@ -30,8 +30,8 @@ fontsize=25
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>252</x>
-      <y>112</y>
+      <x>70</x>
+      <y>182</y>
       <w>21</w>
       <h>707</h>
     </coordinates>
@@ -41,8 +41,8 @@ fontsize=25
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>966</x>
-      <y>84</y>
+      <x>784</x>
+      <y>154</y>
       <w>119</w>
       <h>28</h>
     </coordinates>
@@ -53,8 +53,8 @@ style=wordwrap</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1015</x>
-      <y>105</y>
+      <x>833</x>
+      <y>175</y>
       <w>21</w>
       <h>714</h>
     </coordinates>
@@ -64,8 +64,8 @@ style=wordwrap</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>532</x>
-      <y>84</y>
+      <x>350</x>
+      <y>154</y>
       <w>112</w>
       <h>28</h>
     </coordinates>
@@ -76,8 +76,8 @@ style=wordwrap</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>581</x>
-      <y>105</y>
+      <x>399</x>
+      <y>175</y>
       <w>21</w>
       <h>714</h>
     </coordinates>
@@ -87,8 +87,8 @@ style=wordwrap</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>252</x>
-      <y>126</y>
+      <x>70</x>
+      <y>196</y>
       <w>350</w>
       <h>28</h>
     </coordinates>
@@ -99,8 +99,8 @@ modifyTask(task, amount, estimatedTime)</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>504</x>
-      <y>630</y>
+      <x>322</x>
+      <y>700</y>
       <w>329</w>
       <h>91</h>
     </coordinates>
@@ -110,8 +110,8 @@ modifyTask(task, amount, estimatedTime)</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>749</x>
-      <y>84</y>
+      <x>567</x>
+      <y>154</y>
       <w>119</w>
       <h>28</h>
     </coordinates>
@@ -122,8 +122,8 @@ style=wordwrap</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>798</x>
-      <y>105</y>
+      <x>616</x>
+      <y>175</y>
       <w>21</w>
       <h>714</h>
     </coordinates>
@@ -133,8 +133,8 @@ style=wordwrap</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>581</x>
-      <y>140</y>
+      <x>399</x>
+      <y>210</y>
       <w>14</w>
       <h>623</h>
     </coordinates>
@@ -144,8 +144,8 @@ style=wordwrap</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>588</x>
-      <y>581</y>
+      <x>406</x>
+      <y>651</y>
       <w>154</w>
       <h>49</h>
     </coordinates>
@@ -156,8 +156,8 @@ notifyTaskChanged(t)</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>588</x>
-      <y>616</y>
+      <x>406</x>
+      <y>686</y>
       <w>14</w>
       <h>119</h>
     </coordinates>
@@ -167,8 +167,8 @@ notifyTaskChanged(t)</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>595</x>
-      <y>658</y>
+      <x>413</x>
+      <y>728</y>
       <w>224</w>
       <h>28</h>
     </coordinates>
@@ -179,8 +179,8 @@ updateTaskChanged(t)</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>798</x>
-      <y>672</y>
+      <x>616</x>
+      <y>742</y>
       <w>14</w>
       <h>35</h>
     </coordinates>
@@ -190,8 +190,8 @@ updateTaskChanged(t)</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1225</x>
-      <y>105</y>
+      <x>1043</x>
+      <y>175</y>
       <w>21</w>
       <h>714</h>
     </coordinates>
@@ -201,8 +201,8 @@ updateTaskChanged(t)</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1176</x>
-      <y>84</y>
+      <x>994</x>
+      <y>154</y>
       <w>119</w>
       <h>28</h>
     </coordinates>
@@ -213,8 +213,8 @@ style=wordwrap</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>588</x>
-      <y>294</y>
+      <x>406</x>
+      <y>364</y>
       <w>448</w>
       <h>28</h>
     </coordinates>
@@ -225,8 +225,8 @@ modifyTask(task, amount, estimatedTime)</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>910</x>
-      <y>322</y>
+      <x>728</x>
+      <y>392</y>
       <w>518</w>
       <h>238</h>
     </coordinates>
@@ -236,8 +236,8 @@ modifyTask(task, amount, estimatedTime)</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>917</x>
-      <y>343</y>
+      <x>735</x>
+      <y>413</y>
       <w>504</w>
       <h>210</h>
     </coordinates>
@@ -247,8 +247,8 @@ modifyTask(task, amount, estimatedTime)</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>588</x>
-      <y>525</y>
+      <x>406</x>
+      <y>595</y>
       <w>448</w>
       <h>28</h>
     </coordinates>
@@ -259,8 +259,8 @@ modifyTask(task, amount, estimatedTime)</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1225</x>
-      <y>399</y>
+      <x>1043</x>
+      <y>469</y>
       <w>14</w>
       <h>35</h>
     </coordinates>
@@ -270,8 +270,8 @@ modifyTask(task, amount, estimatedTime)</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1232</x>
-      <y>399</y>
+      <x>1050</x>
+      <y>469</y>
       <w>133</w>
       <h>35</h>
     </coordinates>
@@ -282,8 +282,8 @@ this.amount = amount</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1232</x>
-      <y>476</y>
+      <x>1050</x>
+      <y>546</y>
       <w>196</w>
       <h>35</h>
     </coordinates>
@@ -294,8 +294,8 @@ this.estimatedTime = estimatedTime</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1225</x>
-      <y>476</y>
+      <x>1043</x>
+      <y>546</y>
       <w>14</w>
       <h>35</h>
     </coordinates>
@@ -305,8 +305,8 @@ this.estimatedTime = estimatedTime</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1022</x>
-      <y>385</y>
+      <x>840</x>
+      <y>455</y>
       <w>217</w>
       <h>28</h>
     </coordinates>
@@ -317,8 +317,8 @@ setAmount(amount)</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1022</x>
-      <y>462</y>
+      <x>840</x>
+      <y>532</y>
       <w>217</w>
       <h>28</h>
     </coordinates>
@@ -329,8 +329,8 @@ setEstimatedTime(estimatedTime)</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>945</x>
-      <y>364</y>
+      <x>763</x>
+      <y>434</y>
       <w>455</w>
       <h>77</h>
     </coordinates>
@@ -340,8 +340,8 @@ setEstimatedTime(estimatedTime)</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>945</x>
-      <y>448</y>
+      <x>763</x>
+      <y>518</y>
       <w>455</w>
       <h>77</h>
     </coordinates>
@@ -351,8 +351,8 @@ setEstimatedTime(estimatedTime)</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1015</x>
-      <y>308</y>
+      <x>833</x>
+      <y>378</y>
       <w>14</w>
       <h>259</h>
     </coordinates>
@@ -362,8 +362,8 @@ setEstimatedTime(estimatedTime)</panel_attributes>
   <element>
     <id>Text</id>
     <coordinates>
-      <x>189</x>
-      <y>224</y>
+      <x>7</x>
+      <y>294</y>
       <w>343</w>
       <h>21</h>
     </coordinates>
@@ -375,10 +375,10 @@ group=group-3</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>182</x>
-      <y>161</y>
+      <x>0</x>
+      <y>231</y>
       <w>1267</w>
-      <h>623</h>
+      <h>609</h>
     </coordinates>
     <panel_attributes>*alt [ curresntSheet == null ]*
 --
@@ -398,8 +398,8 @@ group=group-3</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>252</x>
-      <y>182</y>
+      <x>70</x>
+      <y>252</y>
       <w>343</w>
       <h>28</h>
     </coordinates>
@@ -411,8 +411,8 @@ group=group-3</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>252</x>
-      <y>238</y>
+      <x>70</x>
+      <y>308</y>
       <w>343</w>
       <h>28</h>
     </coordinates>
