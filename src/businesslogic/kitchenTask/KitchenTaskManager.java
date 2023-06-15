@@ -60,11 +60,6 @@ public class KitchenTaskManager {
         return currentSheet;
     }
 
-    private void notifySummarySheetCreated(SummarySheet currentSheet) {
-        for(KitchenTaskEventReceiver kTaskReceiver: eventReceivers){
-            kTaskReceiver.updateSheetCreated(currentSheet);
-        }
-    }
 
     public void addEventReceiver(KitchenTaskEventReceiver rec) {
         this.eventReceivers.add(rec);
@@ -99,11 +94,7 @@ public class KitchenTaskManager {
         this.notifySummarySheetDeleted(summarySheet);
     }
 
-    private void notifySummarySheetDeleted(SummarySheet summarySheet) {
-        for(KitchenTaskEventReceiver er: this.eventReceivers){
-            er.updateSheetDeleted(summarySheet);
-        }
-    }
+
 
     public SummarySheet addProcedure(KitchenProcedure newKProc) throws UseCaseLogicException {
         if(currentSheet == null){
@@ -116,27 +107,6 @@ public class KitchenTaskManager {
         return currentSheet;
     }
 
-    private void notifyTasksAdded(int sheet_id, ArrayList<Task> newTasks) {
-        for(KitchenTaskEventReceiver er: this.eventReceivers){
-            er.updateTasksAdded(sheet_id, newTasks);
-        }
-    }
-
-//    public SummarySheet removeProcedure(KitchenProcedure oldKProc) throws UseCaseLogicException {
-//        if(currentSheet == null){
-//            throw new UseCaseLogicException();
-//        }
-//        currentSheet.removeProcedure(oldKProc);
-//        return currentSheet;
-//    }
-
-    private void notifyKitchenProceduresAdded(ArrayList<KitchenProcedure> newKProcs) {
-        for(KitchenTaskEventReceiver er: this.eventReceivers){
-            for(KitchenProcedure kProc: newKProcs){
-                er.updateKitchenProcedureAdded(kProc);
-            }
-        }
-    }
 
     public CookingJob createNewCookingJob(Task t, KitchenShift kShift, int amount, float estimatedTime) throws UseCaseLogicException, KitchenException {
         if(currentSheet == null){
@@ -150,11 +120,7 @@ public class KitchenTaskManager {
         return job;
     }
 
-    private void notifyCookingJobAdded(CookingJob job, int task_id, int shift_id) {
-        for(KitchenTaskEventReceiver er: this.eventReceivers){
-            er.updateCookingJobAdded(job, task_id, shift_id);
-        }
-    }
+
 
     public void deleteCookingJob(Task t, CookingJob oldJob) throws KitchenException, UseCaseLogicException {
         if(currentSheet == null){
@@ -172,17 +138,7 @@ public class KitchenTaskManager {
         notifyShiftChanged(kShift);
     }
 
-    private void notifyShiftChanged(KitchenShift kShift) {
-        for(KitchenTaskEventReceiver er: this.eventReceivers){
-            er.updateShiftChanged(kShift);
-        }
-    }
 
-    private void notifyCookingJobDeleted(CookingJob oldJob) {
-        for(KitchenTaskEventReceiver er: this.eventReceivers){
-            er.updateCookingJobDeleted(oldJob);
-        }
-    }
 
     public void modifyCookingJob(Task t, CookingJob c, Integer amount, Float estimatedTime) throws UseCaseLogicException, KitchenException {
         if(currentSheet == null){
@@ -204,11 +160,7 @@ public class KitchenTaskManager {
         modifyCookingJob(t, c, null, estimatedTime);
     }
 
-    private void notifyCookingJobChanged(CookingJob c) {
-        for(KitchenTaskEventReceiver er: this.eventReceivers){
-            er.updateCookingJobChanged(c);
-        }
-    }
+
 
     public void addCook(CookingJob c, User cook) throws UseCaseLogicException, KitchenException {
         if(currentSheet == null){
@@ -250,11 +202,7 @@ public class KitchenTaskManager {
         this.modifyTask(t, null, estimatedTime);
     }
 
-    private void notifyTaskChanged(Task t) {
-        for(KitchenTaskEventReceiver er: this.eventReceivers){
-            er.updateTaskChanged(t);
-        }
-    }
+
 
     public ArrayList<KitchenShift> getShiftTable(){
         return CatERing.getInstance().getShiftManager().getShiftTable();
@@ -275,18 +223,6 @@ public class KitchenTaskManager {
         return currentSheet;
     }
 
-    private void notifyTaskDeleted(Task task) {
-        for(KitchenTaskEventReceiver er: this.eventReceivers){
-            er.updateTaskDeleted(task);
-        }
-    }
-
-    private void notifyKitchenProcedureRemoved(KitchenProcedure oldProc) {
-        for(KitchenTaskEventReceiver er: this.eventReceivers){
-            er.updateKitchenProcedureRemoved(oldProc);
-        }
-    }
-
     public void moveTask(Task t, int pos) throws UseCaseLogicException, KitchenException {
         if(currentSheet == null){
             throw new UseCaseLogicException();
@@ -302,12 +238,77 @@ public class KitchenTaskManager {
         System.out.println(changedTask);
         notifyTasksChanged(changedTask);
     }
+    private void notifyCookingJobChanged(CookingJob c) {
+        for(KitchenTaskEventReceiver er: this.eventReceivers){
+            er.updateCookingJobChanged(c);
+        }
+    }
 
+    private void notifyTaskChanged(Task t) {
+        for(KitchenTaskEventReceiver er: this.eventReceivers){
+            er.updateTaskChanged(t);
+        }
+    }
+
+
+    private void notifyShiftChanged(KitchenShift kShift) {
+        for(KitchenTaskEventReceiver er: this.eventReceivers){
+            er.updateShiftChanged(kShift);
+        }
+    }
+
+    private void notifyCookingJobDeleted(CookingJob oldJob) {
+        for(KitchenTaskEventReceiver er: this.eventReceivers){
+            er.updateCookingJobDeleted(oldJob);
+        }
+    }
+
+    private void notifyTaskDeleted(Task task) {
+        for(KitchenTaskEventReceiver er: this.eventReceivers){
+            er.updateTaskDeleted(task);
+        }
+    }
     private void notifyTasksChanged(ArrayList<Task> changedTask) {
         for(KitchenTaskEventReceiver er: this.eventReceivers){
             for(Task t: changedTask){
                 er.updateTaskChanged(t);
             }
+        }
+    }
+    private void notifyKitchenProcedureRemoved(KitchenProcedure oldProc) {
+        for(KitchenTaskEventReceiver er: this.eventReceivers){
+            er.updateKitchenProcedureRemoved(oldProc);
+        }
+    }
+    private void notifySummarySheetCreated(SummarySheet currentSheet) {
+        for(KitchenTaskEventReceiver kTaskReceiver: eventReceivers){
+            kTaskReceiver.updateSheetCreated(currentSheet);
+        }
+    }
+
+    private void notifyTasksAdded(int sheet_id, ArrayList<Task> newTasks) {
+        for(KitchenTaskEventReceiver er: this.eventReceivers){
+            er.updateTasksAdded(sheet_id, newTasks);
+        }
+    }
+
+    private void notifyKitchenProceduresAdded(ArrayList<KitchenProcedure> newKProcs) {
+        for(KitchenTaskEventReceiver er: this.eventReceivers){
+            for(KitchenProcedure kProc: newKProcs){
+                er.updateKitchenProcedureAdded(kProc);
+            }
+        }
+    }
+
+    private void notifyCookingJobAdded(CookingJob job, int task_id, int shift_id) {
+        for(KitchenTaskEventReceiver er: this.eventReceivers){
+            er.updateCookingJobAdded(job, task_id, shift_id);
+        }
+    }
+
+    private void notifySummarySheetDeleted(SummarySheet summarySheet) {
+        for(KitchenTaskEventReceiver er: this.eventReceivers){
+            er.updateSheetDeleted(summarySheet);
         }
     }
 }
