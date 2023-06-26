@@ -14,9 +14,7 @@ import persistence.ResultHandler;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.sql.SQLOutput;
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.Map;
 
 public class SummarySheet {
@@ -218,7 +216,7 @@ public class SummarySheet {
         throw new KitchenException();
     }
 
-    public Task modifyTask(Task t, Integer amount, Float estimatedTime) throws KitchenException {
+    public Task changeTask(Task t, Integer amount, Float estimatedTime) throws KitchenException {
         for(Task task: tasks){
             if(task.equals(t)){
                 if(amount != null){
@@ -268,12 +266,4 @@ public class SummarySheet {
         }
         return changeTasks;
     }
-
-//    public void removeProcedure(KitchenProcedure oldKProc) {
-//        for(Task task: tasks){
-//            if(task.getProcedure().equals(oldKProc)){
-//                for()
-//            }
-//        }
-//    }
 }

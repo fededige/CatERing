@@ -6,7 +6,6 @@ import businesslogic.UseCaseLogicException;
 import businesslogic.event.EventInfo;
 import businesslogic.event.ServiceInfo;
 import businesslogic.recipe.KitchenProcedure;
-import businesslogic.recipe.Recipe;
 import businesslogic.shift.KitchenShift;
 import businesslogic.user.User;
 
@@ -186,7 +185,7 @@ public class KitchenTaskManager {
             throw new KitchenException();
         }
         try {
-            t = currentSheet.modifyTask(t, amount, estimatedTime);
+            t = currentSheet.changeTask(t, amount, estimatedTime);
         } catch (KitchenException e) {
             System.err.println("task non trovato");
             throw new KitchenException();
@@ -292,14 +291,6 @@ public class KitchenTaskManager {
         }
     }
 
-    private void notifyKitchenProceduresAdded(ArrayList<KitchenProcedure> newKProcs) {
-        for(KitchenTaskEventReceiver er: this.eventReceivers){
-            for(KitchenProcedure kProc: newKProcs){
-                er.updateKitchenProcedureAdded(kProc);
-            }
-        }
-    }
-
     private void notifyCookingJobAdded(CookingJob job, int task_id, int shift_id) {
         for(KitchenTaskEventReceiver er: this.eventReceivers){
             er.updateCookingJobAdded(job, task_id, shift_id);
@@ -309,6 +300,13 @@ public class KitchenTaskManager {
     private void notifySummarySheetDeleted(SummarySheet summarySheet) {
         for(KitchenTaskEventReceiver er: this.eventReceivers){
             er.updateSheetDeleted(summarySheet);
+        }
+    }
+    private void notifyKitchenProceduresAdded(ArrayList<KitchenProcedure> newKProcs) {
+        for(KitchenTaskEventReceiver er: this.eventReceivers){
+            for(KitchenProcedure kProc: newKProcs){
+                er.updateKitchenProcedureAdded(kProc);
+            }
         }
     }
 }
