@@ -4,8 +4,8 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>225</x>
-      <y>207</y>
+      <x>414</x>
+      <y>216</y>
       <w>378</w>
       <h>36</h>
     </coordinates>
@@ -19,8 +19,8 @@ fontsize=25
   <element>
     <id>UMLPackage</id>
     <coordinates>
-      <x>81</x>
-      <y>261</y>
+      <x>270</x>
+      <y>270</y>
       <w>81</w>
       <h>63</h>
     </coordinates>
@@ -30,8 +30,8 @@ fontsize=25
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>108</x>
-      <y>315</y>
+      <x>297</x>
+      <y>324</y>
       <w>27</w>
       <h>414</h>
     </coordinates>
@@ -41,8 +41,8 @@ fontsize=25
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>324</x>
-      <y>288</y>
+      <x>513</x>
+      <y>297</y>
       <w>144</w>
       <h>36</h>
     </coordinates>
@@ -53,8 +53,8 @@ style=wordwrap</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>387</x>
-      <y>315</y>
+      <x>576</x>
+      <y>324</y>
       <w>27</w>
       <h>414</h>
     </coordinates>
@@ -64,8 +64,8 @@ style=wordwrap</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>108</x>
-      <y>333</y>
+      <x>297</x>
+      <y>342</y>
       <w>306</w>
       <h>36</h>
     </coordinates>
@@ -76,8 +76,8 @@ openSummarySheet(event, service)</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>387</x>
-      <y>351</y>
+      <x>576</x>
+      <y>360</y>
       <w>18</w>
       <h>333</h>
     </coordinates>
@@ -87,8 +87,8 @@ openSummarySheet(event, service)</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>36</x>
-      <y>405</y>
+      <x>225</x>
+      <y>414</y>
       <w>666</w>
       <h>288</h>
     </coordinates>
@@ -110,8 +110,8 @@ openSummarySheet(event, service)</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>603</x>
-      <y>288</y>
+      <x>792</x>
+      <y>297</y>
       <w>144</w>
       <h>36</h>
     </coordinates>
@@ -122,8 +122,8 @@ style=wordwrap</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>666</x>
-      <y>315</y>
+      <x>855</x>
+      <y>324</y>
       <w>27</w>
       <h>432</h>
     </coordinates>
@@ -133,8 +133,8 @@ style=wordwrap</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>396</x>
-      <y>342</y>
+      <x>585</x>
+      <y>351</y>
       <w>297</w>
       <h>36</h>
     </coordinates>
@@ -145,8 +145,8 @@ getCurrentUser()</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>396</x>
-      <y>369</y>
+      <x>585</x>
+      <y>378</y>
       <w>288</w>
       <h>36</h>
     </coordinates>
@@ -157,8 +157,8 @@ user</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>666</x>
-      <y>360</y>
+      <x>855</x>
+      <y>369</y>
       <w>18</w>
       <h>36</h>
     </coordinates>
@@ -168,8 +168,8 @@ user</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>108</x>
-      <y>432</y>
+      <x>297</x>
+      <y>441</y>
       <w>297</w>
       <h>36</h>
     </coordinates>
@@ -180,8 +180,8 @@ throw UseCaseLogicException</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>396</x>
-      <y>603</y>
+      <x>585</x>
+      <y>612</y>
       <w>324</w>
       <h>54</h>
     </coordinates>
@@ -192,8 +192,8 @@ setCurrentSheet(service.getSummarySheet())</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>108</x>
-      <y>639</y>
+      <x>297</x>
+      <y>648</y>
       <w>297</w>
       <h>36</h>
     </coordinates>
@@ -204,8 +204,8 @@ currentSheet</panel_attributes>
   <element>
     <id>Text</id>
     <coordinates>
-      <x>36</x>
-      <y>477</y>
+      <x>225</x>
+      <y>486</y>
       <w>315</w>
       <h>27</h>
     </coordinates>
@@ -216,8 +216,8 @@ style=wordwrap</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>108</x>
-      <y>504</y>
+      <x>297</x>
+      <y>513</y>
       <w>297</w>
       <h>36</h>
     </coordinates>

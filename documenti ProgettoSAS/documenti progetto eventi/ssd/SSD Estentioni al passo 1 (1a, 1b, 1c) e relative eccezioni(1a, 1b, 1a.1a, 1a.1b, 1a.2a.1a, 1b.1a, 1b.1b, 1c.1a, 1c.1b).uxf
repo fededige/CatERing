@@ -4,8 +4,8 @@
   <element>
     <id>UMLActor</id>
     <coordinates>
-      <x>136</x>
-      <y>0</y>
+      <x>208</x>
+      <y>144</y>
       <w>48</w>
       <h>88</h>
     </coordinates>
@@ -15,8 +15,8 @@
   <element>
     <id>UMLDeployment</id>
     <coordinates>
-      <x>488</x>
-      <y>40</y>
+      <x>560</x>
+      <y>184</y>
       <w>88</w>
       <h>40</h>
     </coordinates>
@@ -26,8 +26,8 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>152</x>
-      <y>72</y>
+      <x>224</x>
+      <y>216</y>
       <w>24</w>
       <h>1560</h>
     </coordinates>
@@ -37,8 +37,8 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>528</x>
-      <y>72</y>
+      <x>600</x>
+      <y>216</y>
       <w>24</w>
       <h>1568</h>
     </coordinates>
@@ -48,8 +48,8 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>152</x>
-      <y>152</y>
+      <x>224</x>
+      <y>296</y>
       <w>400</w>
       <h>32</h>
     </coordinates>
@@ -61,20 +61,20 @@ Evento creato</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>152</x>
-      <y>120</y>
+      <x>224</x>
+      <y>264</y>
       <w>400</w>
       <h>32</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
-1.creaEvento(nome, datainizio, cliente, periodicità, n°ripetizioni, datafine)</panel_attributes>
+1.creaEvento(nome, datainizio, cliente, periodicità)</panel_attributes>
     <additional_attributes>10.0;20.0;480.0;20.0</additional_attributes>
   </element>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>144</x>
-      <y>144</y>
+      <x>216</x>
+      <y>288</y>
       <w>408</w>
       <h>120</h>
     </coordinates>
@@ -94,8 +94,8 @@ layer=0</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>152</x>
-      <y>184</y>
+      <x>224</x>
+      <y>328</y>
       <w>392</w>
       <h>32</h>
     </coordinates>
@@ -108,8 +108,8 @@ fg=red
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>152</x>
-      <y>232</y>
+      <x>224</x>
+      <y>376</y>
       <w>392</w>
       <h>32</h>
     </coordinates>
@@ -122,8 +122,8 @@ fg=red
   <element>
     <id>UMLSpecialState</id>
     <coordinates>
-      <x>528</x>
-      <y>192</y>
+      <x>600</x>
+      <y>336</y>
       <w>16</w>
       <h>16</h>
     </coordinates>
@@ -136,8 +136,8 @@ layer=1</panel_attributes>
   <element>
     <id>UMLSpecialState</id>
     <coordinates>
-      <x>528</x>
-      <y>240</y>
+      <x>600</x>
+      <y>384</y>
       <w>16</w>
       <h>16</h>
     </coordinates>
@@ -150,8 +150,8 @@ layer=1</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>120</x>
-      <y>120</y>
+      <x>192</x>
+      <y>264</y>
       <w>456</w>
       <h>1016</h>
     </coordinates>
@@ -233,8 +233,8 @@ lw=2
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>152</x>
-      <y>280</y>
+      <x>224</x>
+      <y>424</y>
       <w>400</w>
       <h>32</h>
     </coordinates>
@@ -245,8 +245,8 @@ lw=2
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>152</x>
-      <y>312</y>
+      <x>224</x>
+      <y>456</y>
       <w>400</w>
       <h>32</h>
     </coordinates>
@@ -258,8 +258,8 @@ layer=3</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>152</x>
-      <y>472</y>
+      <x>224</x>
+      <y>616</y>
       <w>400</w>
       <h>32</h>
     </coordinates>
@@ -271,8 +271,8 @@ layer=2
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>152</x>
-      <y>496</y>
+      <x>224</x>
+      <y>640</y>
       <w>400</w>
       <h>32</h>
     </coordinates>
@@ -284,8 +284,8 @@ Evento annullato</panel_attributes>
   <element>
     <id>UMLSpecialState</id>
     <coordinates>
-      <x>528</x>
-      <y>504</y>
+      <x>600</x>
+      <y>648</y>
       <w>16</w>
       <h>16</h>
     </coordinates>
@@ -297,8 +297,8 @@ layer=2</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>136</x>
-      <y>464</y>
+      <x>208</x>
+      <y>608</y>
       <w>424</w>
       <h>296</h>
     </coordinates>
@@ -327,8 +327,8 @@ layer=2
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>152</x>
-      <y>536</y>
+      <x>224</x>
+      <y>680</y>
       <w>400</w>
       <h>32</h>
     </coordinates>
@@ -340,8 +340,8 @@ layer=3
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>152</x>
-      <y>560</y>
+      <x>224</x>
+      <y>704</y>
       <w>400</w>
       <h>32</h>
     </coordinates>
@@ -353,8 +353,8 @@ Evento terminato</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>152</x>
-      <y>656</y>
+      <x>224</x>
+      <y>800</y>
       <w>400</w>
       <h>32</h>
     </coordinates>
@@ -366,8 +366,8 @@ layer=3
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>152</x>
-      <y>688</y>
+      <x>224</x>
+      <y>832</y>
       <w>400</w>
       <h>32</h>
     </coordinates>
@@ -379,8 +379,8 @@ Evento eliminato</panel_attributes>
   <element>
     <id>UMLSpecialState</id>
     <coordinates>
-      <x>528</x>
-      <y>696</y>
+      <x>600</x>
+      <y>840</y>
       <w>16</w>
       <h>16</h>
     </coordinates>
@@ -392,8 +392,8 @@ layer=3</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>152</x>
-      <y>1176</y>
+      <x>224</x>
+      <y>1320</y>
       <w>400</w>
       <h>32</h>
     </coordinates>
@@ -407,8 +407,8 @@ bg=LIGHT_GRAY</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>152</x>
-      <y>1208</y>
+      <x>224</x>
+      <y>1352</y>
       <w>400</w>
       <h>32</h>
     </coordinates>
@@ -422,63 +422,7 @@ bg=LIGHT_GRAY</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>152</x>
-      <y>1168</y>
-      <w>392</w>
-      <h>64</h>
-    </coordinates>
-    <panel_attributes>OPT
-fg=BLACK
-bg=LIGHT_GRAY</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLFrame</id>
-    <coordinates>
-      <x>152</x>
-      <y>1240</y>
-      <w>392</w>
-      <h>64</h>
-    </coordinates>
-    <panel_attributes>OPT
-fg=BLACK
-bg=LIGHT_GRAY</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>152</x>
-      <y>1280</y>
-      <w>400</w>
-      <h>32</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;.
-layer=3
-Evento aggiornato
-fg=BLACK
-bg=LIGHT_GRAY</panel_attributes>
-    <additional_attributes>10.0;20.0;480.0;20.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>152</x>
-      <y>1248</y>
-      <w>400</w>
-      <h>32</h>
-    </coordinates>
-    <panel_attributes>lt=-&gt;&gt;&gt;
-layer=3
-3. compilaEvento(note)
-fg=BLACK
-bg=LIGHT_GRAY</panel_attributes>
-    <additional_attributes>10.0;20.0;480.0;20.0</additional_attributes>
-  </element>
-  <element>
-    <id>UMLFrame</id>
-    <coordinates>
-      <x>152</x>
+      <x>224</x>
       <y>1312</y>
       <w>392</w>
       <h>64</h>
@@ -489,39 +433,9 @@ bg=LIGHT_GRAY</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>152</x>
-      <y>1352</y>
-      <w>400</w>
-      <h>32</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;.
-layer=3
-Evento aggiornato
-fg=BLACK
-bg=LIGHT_GRAY</panel_attributes>
-    <additional_attributes>10.0;20.0;480.0;20.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>144</x>
-      <y>1320</y>
-      <w>416</w>
-      <h>32</h>
-    </coordinates>
-    <panel_attributes>lt=-&gt;&gt;&gt;
-layer=3
-4.creaServizio(evento, dataInizio, orario, dettagli, luogo, n°Commensali, opzione)
-fg=BLACK
-bg=LIGHT_GRAY</panel_attributes>
-    <additional_attributes>20.0;20.0;490.0;20.0</additional_attributes>
-  </element>
-  <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>152</x>
+      <x>224</x>
       <y>1384</y>
       <w>392</w>
       <h>64</h>
@@ -534,7 +448,7 @@ bg=LIGHT_GRAY</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>152</x>
+      <x>224</x>
       <y>1424</y>
       <w>400</w>
       <h>32</h>
@@ -549,8 +463,94 @@ bg=LIGHT_GRAY</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>152</x>
+      <x>224</x>
       <y>1392</y>
+      <w>400</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;&gt;&gt;
+layer=3
+3. compilaEvento(note)
+fg=BLACK
+bg=LIGHT_GRAY</panel_attributes>
+    <additional_attributes>10.0;20.0;480.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLFrame</id>
+    <coordinates>
+      <x>224</x>
+      <y>1456</y>
+      <w>392</w>
+      <h>64</h>
+    </coordinates>
+    <panel_attributes>OPT
+fg=BLACK
+bg=LIGHT_GRAY</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>224</x>
+      <y>1496</y>
+      <w>400</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+layer=3
+Evento aggiornato
+fg=BLACK
+bg=LIGHT_GRAY</panel_attributes>
+    <additional_attributes>10.0;20.0;480.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>216</x>
+      <y>1464</y>
+      <w>416</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;&gt;&gt;
+layer=3
+4.creaServizio(evento, dataInizio, orario, dettagli, luogo, n°Commensali, opzione)
+fg=BLACK
+bg=LIGHT_GRAY</panel_attributes>
+    <additional_attributes>20.0;20.0;490.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLFrame</id>
+    <coordinates>
+      <x>224</x>
+      <y>1528</y>
+      <w>392</w>
+      <h>64</h>
+    </coordinates>
+    <panel_attributes>OPT
+fg=BLACK
+bg=LIGHT_GRAY</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>224</x>
+      <y>1568</y>
+      <w>400</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+layer=3
+Evento aggiornato
+fg=BLACK
+bg=LIGHT_GRAY</panel_attributes>
+    <additional_attributes>10.0;20.0;480.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>224</x>
+      <y>1536</y>
       <w>400</w>
       <h>32</h>
     </coordinates>
@@ -564,14 +564,14 @@ bg=LIGHT_GRAY</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>152</x>
-      <y>1464</y>
+      <x>224</x>
+      <y>1608</y>
       <w>400</w>
       <h>32</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
 layer=3
-6.confermaMenù(menu)
+6.confermaMenù(evento, servizio)
 fg=BLACK
 bg=LIGHT_GRAY</panel_attributes>
     <additional_attributes>10.0;20.0;480.0;20.0</additional_attributes>
@@ -579,8 +579,8 @@ bg=LIGHT_GRAY</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>152</x>
-      <y>1496</y>
+      <x>224</x>
+      <y>1640</y>
       <w>400</w>
       <h>32</h>
     </coordinates>
@@ -594,8 +594,8 @@ bg=LIGHT_GRAY</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>152</x>
-      <y>1456</y>
+      <x>224</x>
+      <y>1600</y>
       <w>392</w>
       <h>64</h>
     </coordinates>
@@ -607,8 +607,8 @@ bg=LIGHT_GRAY</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>152</x>
-      <y>1536</y>
+      <x>224</x>
+      <y>1680</y>
       <w>400</w>
       <h>32</h>
     </coordinates>
@@ -622,8 +622,8 @@ bg=LIGHT_GRAY</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>152</x>
-      <y>1568</y>
+      <x>224</x>
+      <y>1712</y>
       <w>400</w>
       <h>32</h>
     </coordinates>
@@ -637,8 +637,8 @@ bg=LIGHT_GRAY</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>152</x>
-      <y>1528</y>
+      <x>224</x>
+      <y>1672</y>
       <w>392</w>
       <h>64</h>
     </coordinates>
@@ -650,8 +650,8 @@ bg=LIGHT_GRAY</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>144</x>
-      <y>1144</y>
+      <x>216</x>
+      <y>1288</y>
       <w>408</w>
       <h>456</h>
     </coordinates>
@@ -663,8 +663,8 @@ bg=LIGHT_GRAY</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>128</x>
-      <y>448</y>
+      <x>200</x>
+      <y>592</y>
       <w>440</w>
       <h>320</h>
     </coordinates>
@@ -677,8 +677,8 @@ layer=2</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>144</x>
-      <y>304</y>
+      <x>216</x>
+      <y>448</y>
       <w>408</w>
       <h>136</h>
     </coordinates>
@@ -698,8 +698,8 @@ layer=2
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>152</x>
-      <y>352</y>
+      <x>224</x>
+      <y>496</y>
       <w>400</w>
       <h>32</h>
     </coordinates>
@@ -712,8 +712,8 @@ fg=red</panel_attributes>
   <element>
     <id>UMLSpecialState</id>
     <coordinates>
-      <x>528</x>
-      <y>360</y>
+      <x>600</x>
+      <y>504</y>
       <w>16</w>
       <h>16</h>
     </coordinates>
@@ -726,8 +726,8 @@ layer=3</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>152</x>
-      <y>392</y>
+      <x>224</x>
+      <y>536</y>
       <w>400</w>
       <h>32</h>
     </coordinates>
@@ -740,8 +740,8 @@ fg=red</panel_attributes>
   <element>
     <id>UMLSpecialState</id>
     <coordinates>
-      <x>528</x>
-      <y>400</y>
+      <x>600</x>
+      <y>544</y>
       <w>16</w>
       <h>16</h>
     </coordinates>
@@ -754,8 +754,8 @@ layer=3</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>144</x>
-      <y>680</y>
+      <x>216</x>
+      <y>824</y>
       <w>408</w>
       <h>72</h>
     </coordinates>
@@ -771,8 +771,8 @@ layer=3
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>152</x>
-      <y>720</y>
+      <x>224</x>
+      <y>864</y>
       <w>400</w>
       <h>32</h>
     </coordinates>
@@ -785,8 +785,8 @@ fg=red</panel_attributes>
   <element>
     <id>UMLSpecialState</id>
     <coordinates>
-      <x>528</x>
-      <y>728</y>
+      <x>600</x>
+      <y>872</y>
       <w>16</w>
       <h>16</h>
     </coordinates>
@@ -799,8 +799,8 @@ layer=4</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>152</x>
-      <y>776</y>
+      <x>224</x>
+      <y>920</y>
       <w>400</w>
       <h>32</h>
     </coordinates>
@@ -811,8 +811,8 @@ layer=4</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>152</x>
-      <y>808</y>
+      <x>224</x>
+      <y>952</y>
       <w>400</w>
       <h>32</h>
     </coordinates>
@@ -824,8 +824,8 @@ layer=3</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>152</x>
-      <y>928</y>
+      <x>224</x>
+      <y>1072</y>
       <w>400</w>
       <h>32</h>
     </coordinates>
@@ -837,8 +837,8 @@ layer=3
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>152</x>
-      <y>952</y>
+      <x>224</x>
+      <y>1096</y>
       <w>400</w>
       <h>32</h>
     </coordinates>
@@ -850,8 +850,8 @@ Scheda evento aggiornata</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>144</x>
-      <y>928</y>
+      <x>216</x>
+      <y>1072</y>
       <w>408</w>
       <h>48</h>
     </coordinates>
@@ -864,8 +864,8 @@ layer=3</panel_attributes>
   <element>
     <id>UMLSpecialState</id>
     <coordinates>
-      <x>528</x>
-      <y>960</y>
+      <x>600</x>
+      <y>1104</y>
       <w>16</w>
       <h>16</h>
     </coordinates>
@@ -877,8 +877,8 @@ layer=4</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>144</x>
-      <y>800</y>
+      <x>216</x>
+      <y>944</y>
       <w>408</w>
       <h>120</h>
     </coordinates>
@@ -898,8 +898,8 @@ layer=3
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>152</x>
-      <y>848</y>
+      <x>224</x>
+      <y>992</y>
       <w>400</w>
       <h>32</h>
     </coordinates>
@@ -912,8 +912,8 @@ fg=red</panel_attributes>
   <element>
     <id>UMLSpecialState</id>
     <coordinates>
-      <x>528</x>
-      <y>856</y>
+      <x>600</x>
+      <y>1000</y>
       <w>16</w>
       <h>16</h>
     </coordinates>
@@ -926,8 +926,8 @@ layer=4</panel_attributes>
   <element>
     <id>UMLSpecialState</id>
     <coordinates>
-      <x>528</x>
-      <y>888</y>
+      <x>600</x>
+      <y>1032</y>
       <w>16</w>
       <h>16</h>
     </coordinates>
@@ -940,8 +940,8 @@ layer=4</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>152</x>
-      <y>880</y>
+      <x>224</x>
+      <y>1024</y>
       <w>400</w>
       <h>32</h>
     </coordinates>
@@ -954,8 +954,8 @@ fg=red</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>152</x>
-      <y>592</y>
+      <x>224</x>
+      <y>736</y>
       <w>400</w>
       <h>32</h>
     </coordinates>
@@ -967,8 +967,8 @@ layer=3
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>152</x>
-      <y>616</y>
+      <x>224</x>
+      <y>760</y>
       <w>400</w>
       <h>32</h>
     </coordinates>
@@ -980,8 +980,8 @@ Scheda evento aggiornata</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>144</x>
-      <y>592</y>
+      <x>216</x>
+      <y>736</y>
       <w>408</w>
       <h>48</h>
     </coordinates>
@@ -994,8 +994,8 @@ layer=3</panel_attributes>
   <element>
     <id>UMLSpecialState</id>
     <coordinates>
-      <x>528</x>
-      <y>624</y>
+      <x>600</x>
+      <y>768</y>
       <w>16</w>
       <h>16</h>
     </coordinates>
@@ -1007,8 +1007,8 @@ layer=4</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>152</x>
-      <y>984</y>
+      <x>224</x>
+      <y>1128</y>
       <w>400</w>
       <h>32</h>
     </coordinates>
@@ -1019,8 +1019,8 @@ layer=4</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>152</x>
-      <y>1008</y>
+      <x>224</x>
+      <y>1152</y>
       <w>400</w>
       <h>32</h>
     </coordinates>
@@ -1032,8 +1032,8 @@ layer=3</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>152</x>
-      <y>1056</y>
+      <x>224</x>
+      <y>1200</y>
       <w>400</w>
       <h>32</h>
     </coordinates>
@@ -1046,8 +1046,8 @@ fg=red</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>152</x>
-      <y>1088</y>
+      <x>224</x>
+      <y>1232</y>
       <w>400</w>
       <h>32</h>
     </coordinates>
@@ -1060,8 +1060,8 @@ fg=red</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>144</x>
-      <y>1008</y>
+      <x>216</x>
+      <y>1152</y>
       <w>408</w>
       <h>120</h>
     </coordinates>
@@ -1076,6 +1076,19 @@ layer=3
 
 
 -.</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>232</x>
+      <y>0</y>
+      <w>400</w>
+      <h>112</h>
+    </coordinates>
+    <panel_attributes>SSD Estentioni al passo 1 (1a, 1b, 1c) e relative eccezioni(1a, 1b, 1a.1a, 1a.1b, 1a.2a.1a, 1b.1a, 1b.1b, 1c.1a, 1c.1b)
+fontsize=30
+style=wordwrap</panel_attributes>
     <additional_attributes/>
   </element>
 </diagram>

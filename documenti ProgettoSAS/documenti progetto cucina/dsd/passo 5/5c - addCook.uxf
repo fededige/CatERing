@@ -4,8 +4,8 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>438</x>
-      <y>108</y>
+      <x>654</x>
+      <y>126</y>
       <w>288</w>
       <h>24</h>
     </coordinates>
@@ -19,8 +19,8 @@ fontsize=25
   <element>
     <id>UMLPackage</id>
     <coordinates>
-      <x>24</x>
-      <y>174</y>
+      <x>300</x>
+      <y>192</y>
       <w>54</w>
       <h>42</h>
     </coordinates>
@@ -30,8 +30,8 @@ fontsize=25
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>42</x>
-      <y>210</y>
+      <x>318</x>
+      <y>228</y>
       <w>18</w>
       <h>516</h>
     </coordinates>
@@ -41,8 +41,8 @@ fontsize=25
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>654</x>
-      <y>186</y>
+      <x>804</x>
+      <y>204</y>
       <w>102</w>
       <h>24</h>
     </coordinates>
@@ -53,8 +53,8 @@ style=wordwrap</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>696</x>
-      <y>204</y>
+      <x>846</x>
+      <y>222</y>
       <w>18</w>
       <h>522</h>
     </coordinates>
@@ -64,8 +64,8 @@ style=wordwrap</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>282</x>
-      <y>186</y>
+      <x>498</x>
+      <y>204</y>
       <w>96</w>
       <h>24</h>
     </coordinates>
@@ -76,8 +76,8 @@ style=wordwrap</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>324</x>
-      <y>204</y>
+      <x>540</x>
+      <y>222</y>
       <w>18</w>
       <h>522</h>
     </coordinates>
@@ -87,20 +87,20 @@ style=wordwrap</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>42</x>
-      <y>222</y>
-      <w>300</w>
+      <x>318</x>
+      <y>240</y>
+      <w>240</w>
       <h>24</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
 addCook(cookingJob, cook)</panel_attributes>
-    <additional_attributes>480.0;20.0;10.0;20.0</additional_attributes>
+    <additional_attributes>380.0;20.0;10.0;20.0</additional_attributes>
   </element>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>258</x>
-      <y>588</y>
+      <x>474</x>
+      <y>606</y>
       <w>282</w>
       <h>78</h>
     </coordinates>
@@ -110,8 +110,8 @@ addCook(cookingJob, cook)</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>468</x>
-      <y>186</y>
+      <x>684</x>
+      <y>204</y>
       <w>102</w>
       <h>24</h>
     </coordinates>
@@ -122,8 +122,8 @@ style=wordwrap</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>510</x>
-      <y>204</y>
+      <x>726</x>
+      <y>222</y>
       <w>18</w>
       <h>522</h>
     </coordinates>
@@ -133,8 +133,8 @@ style=wordwrap</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>324</x>
-      <y>234</y>
+      <x>540</x>
+      <y>252</y>
       <w>12</w>
       <h>456</h>
     </coordinates>
@@ -144,8 +144,8 @@ style=wordwrap</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>330</x>
-      <y>546</y>
+      <x>546</x>
+      <y>564</y>
       <w>168</w>
       <h>42</h>
     </coordinates>
@@ -156,8 +156,8 @@ notifyCookingJobChanged(job)</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>330</x>
-      <y>576</y>
+      <x>546</x>
+      <y>594</y>
       <w>12</w>
       <h>102</h>
     </coordinates>
@@ -167,8 +167,8 @@ notifyCookingJobChanged(job)</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>336</x>
-      <y>612</y>
+      <x>552</x>
+      <y>630</y>
       <w>192</w>
       <h>24</h>
     </coordinates>
@@ -179,8 +179,8 @@ updateCookingJobChanged(job)</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>510</x>
-      <y>624</y>
+      <x>726</x>
+      <y>642</y>
       <w>12</w>
       <h>30</h>
     </coordinates>
@@ -190,8 +190,8 @@ updateCookingJobChanged(job)</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>876</x>
-      <y>204</y>
+      <x>978</x>
+      <y>222</y>
       <w>18</w>
       <h>522</h>
     </coordinates>
@@ -201,8 +201,8 @@ updateCookingJobChanged(job)</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>834</x>
-      <y>186</y>
+      <x>936</x>
+      <y>204</y>
       <w>102</w>
       <h>24</h>
     </coordinates>
@@ -213,21 +213,21 @@ style=wordwrap</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>330</x>
-      <y>354</y>
-      <w>384</w>
+      <x>546</x>
+      <y>372</y>
+      <w>318</w>
       <h>24</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
 addCook(cookingJob, cook)</panel_attributes>
-    <additional_attributes>620.0;20.0;10.0;20.0</additional_attributes>
+    <additional_attributes>510.0;20.0;10.0;20.0</additional_attributes>
   </element>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>612</x>
-      <y>384</y>
-      <w>378</w>
+      <x>762</x>
+      <y>402</y>
+      <w>330</w>
       <h>132</h>
     </coordinates>
     <panel_attributes>for t in currenSheet.tasks</panel_attributes>
@@ -236,9 +236,9 @@ addCook(cookingJob, cook)</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>618</x>
-      <y>402</y>
-      <w>366</w>
+      <x>768</x>
+      <y>420</y>
+      <w>318</w>
       <h>108</h>
     </coordinates>
     <panel_attributes>for job in t.job</panel_attributes>
@@ -247,8 +247,8 @@ addCook(cookingJob, cook)</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>876</x>
-      <y>444</y>
+      <x>978</x>
+      <y>462</y>
       <w>12</w>
       <h>36</h>
     </coordinates>
@@ -258,9 +258,9 @@ addCook(cookingJob, cook)</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>624</x>
-      <y>420</y>
-      <w>354</w>
+      <x>774</x>
+      <y>438</y>
+      <w>306</w>
       <h>84</h>
     </coordinates>
     <panel_attributes>*alt [ job == cookingJob ]*</panel_attributes>
@@ -269,8 +269,8 @@ addCook(cookingJob, cook)</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>882</x>
-      <y>450</y>
+      <x>984</x>
+      <y>468</y>
       <w>96</w>
       <h>30</h>
     </coordinates>
@@ -281,32 +281,32 @@ this.cook = cook</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>330</x>
-      <y>480</y>
-      <w>378</w>
+      <x>546</x>
+      <y>498</y>
+      <w>312</w>
       <h>24</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
-*job*</panel_attributes>
-    <additional_attributes>10.0;20.0;610.0;20.0</additional_attributes>
+job</panel_attributes>
+    <additional_attributes>10.0;20.0;500.0;20.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>696</x>
-      <y>438</y>
-      <w>192</w>
+      <x>846</x>
+      <y>456</y>
+      <w>144</w>
       <h>24</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
 setCook(cook)</panel_attributes>
-    <additional_attributes>10.0;20.0;300.0;20.0</additional_attributes>
+    <additional_attributes>10.0;20.0;220.0;20.0</additional_attributes>
   </element>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>696</x>
-      <y>366</y>
+      <x>846</x>
+      <y>384</y>
       <w>12</w>
       <h>168</h>
     </coordinates>
@@ -316,22 +316,21 @@ setCook(cook)</panel_attributes>
   <element>
     <id>Text</id>
     <coordinates>
-      <x>0</x>
-      <y>294</y>
+      <x>264</x>
+      <y>318</y>
       <w>294</w>
       <h>18</h>
     </coordinates>
     <panel_attributes>*alt [ !currentSheet.hasJob(cookingJob) ]*
-style=wordwrap
-group=group-0</panel_attributes>
+style=wordwrap</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>0</x>
-      <y>246</y>
-      <w>1086</w>
+      <x>264</x>
+      <y>270</y>
+      <w>840</w>
       <h>456</h>
     </coordinates>
     <panel_attributes>*alt [ curresntSheet == null ]*
@@ -345,33 +344,31 @@ group=group-0</panel_attributes>
 
 
 
--.
-group=group-0</panel_attributes>
+-.</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>42</x>
-      <y>264</y>
-      <w>294</w>
+      <x>318</x>
+      <y>288</y>
+      <w>240</w>
       <h>24</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
-throw UseCaseLogicException
-group=group-0</panel_attributes>
-    <additional_attributes>10.0;20.0;470.0;20.0</additional_attributes>
+throw UseCaseLogicException</panel_attributes>
+    <additional_attributes>10.0;20.0;380.0;20.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>42</x>
-      <y>312</y>
-      <w>294</w>
+      <x>318</x>
+      <y>330</y>
+      <w>234</w>
       <h>24</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 throw KitchenException</panel_attributes>
-    <additional_attributes>10.0;20.0;470.0;20.0</additional_attributes>
+    <additional_attributes>10.0;20.0;370.0;20.0</additional_attributes>
   </element>
 </diagram>

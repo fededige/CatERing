@@ -1,11 +1,35 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <diagram program="umlet" version="15.1">
+  <help_text>	// Uncomment the following line to change the fontsize and font:
+// fontsize=14
+// fontfamily=SansSerif //possible: SansSerif,Serif,Monospaced
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+// Welcome to UMLet!
+//
+// Double-click on elements to add them to the diagram, or to copy them
+// Edit elements by modifying the text in this panel
+// Hold Ctrl to select multiple elements
+// Use Ctrl+mouse to select via lasso
+//
+// Use +/- or Ctrl+mouse wheel to zoom
+// Drag a whole relation at its central square icon
+//
+// Press Ctrl+C to copy the whole diagram to the system clipboard (then just paste it to, eg, Word)
+// Edit the files in the "palettes" directory to create your own element palettes
+//
+// Select "Custom Elements &gt; New..." to create new element types
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+
+// This text will be stored with each diagram;  use it for notes.</help_text>
   <zoom_level>8</zoom_level>
   <element>
     <id>UMLActor</id>
     <coordinates>
-      <x>144</x>
-      <y>0</y>
+      <x>304</x>
+      <y>80</y>
       <w>48</w>
       <h>88</h>
     </coordinates>
@@ -15,8 +39,8 @@
   <element>
     <id>UMLDeployment</id>
     <coordinates>
-      <x>496</x>
-      <y>40</y>
+      <x>656</x>
+      <y>120</y>
       <w>88</w>
       <h>40</h>
     </coordinates>
@@ -26,8 +50,8 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>160</x>
-      <y>72</y>
+      <x>320</x>
+      <y>152</y>
       <w>24</w>
       <h>808</h>
     </coordinates>
@@ -37,8 +61,8 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>536</x>
-      <y>72</y>
+      <x>696</x>
+      <y>152</y>
       <w>24</w>
       <h>808</h>
     </coordinates>
@@ -48,8 +72,8 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>160</x>
-      <y>200</y>
+      <x>320</x>
+      <y>280</y>
       <w>400</w>
       <h>32</h>
     </coordinates>
@@ -63,8 +87,8 @@ bg=LIGHT_GRAY</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>160</x>
-      <y>232</y>
+      <x>320</x>
+      <y>312</y>
       <w>400</w>
       <h>32</h>
     </coordinates>
@@ -78,8 +102,8 @@ bg=LIGHT_GRAY</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>160</x>
-      <y>152</y>
+      <x>320</x>
+      <y>232</y>
       <w>400</w>
       <h>32</h>
     </coordinates>
@@ -91,20 +115,20 @@ Evento creato</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>160</x>
-      <y>120</y>
+      <x>320</x>
+      <y>200</y>
       <w>400</w>
       <h>32</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
-1.creaEvento(nome, datainizio, cliente, periodicità, n°ripetizioni, datafine)</panel_attributes>
+1.creaEvento(nome, datainizio, cliente, periodicità)</panel_attributes>
     <additional_attributes>10.0;20.0;480.0;20.0</additional_attributes>
   </element>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>160</x>
-      <y>192</y>
+      <x>320</x>
+      <y>272</y>
       <w>392</w>
       <h>64</h>
     </coordinates>
@@ -116,8 +140,8 @@ bg=LIGHT_GRAY</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>136</x>
-      <y>264</y>
+      <x>296</x>
+      <y>344</y>
       <w>440</w>
       <h>312</h>
     </coordinates>
@@ -129,8 +153,8 @@ bg=#B8E0E0</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>160</x>
-      <y>320</y>
+      <x>320</x>
+      <y>400</y>
       <w>400</w>
       <h>32</h>
     </coordinates>
@@ -142,8 +166,8 @@ Evento aggiornato</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>160</x>
-      <y>288</y>
+      <x>320</x>
+      <y>368</y>
       <w>400</w>
       <h>32</h>
     </coordinates>
@@ -155,8 +179,8 @@ layer=3
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>160</x>
-      <y>584</y>
+      <x>320</x>
+      <y>664</y>
       <w>392</w>
       <h>64</h>
     </coordinates>
@@ -168,8 +192,8 @@ bg=LIGHT_GRAY</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>160</x>
-      <y>624</y>
+      <x>320</x>
+      <y>704</y>
       <w>400</w>
       <h>32</h>
     </coordinates>
@@ -183,8 +207,8 @@ bg=LIGHT_GRAY</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>152</x>
-      <y>600</y>
+      <x>312</x>
+      <y>680</y>
       <w>416</w>
       <h>32</h>
     </coordinates>
@@ -198,8 +222,8 @@ bg=LIGHT_GRAY</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>160</x>
-      <y>656</y>
+      <x>320</x>
+      <y>736</y>
       <w>392</w>
       <h>64</h>
     </coordinates>
@@ -211,8 +235,8 @@ bg=LIGHT_GRAY</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>160</x>
-      <y>696</y>
+      <x>320</x>
+      <y>776</y>
       <w>400</w>
       <h>32</h>
     </coordinates>
@@ -226,8 +250,8 @@ bg=LIGHT_GRAY</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>160</x>
-      <y>664</y>
+      <x>320</x>
+      <y>744</y>
       <w>400</w>
       <h>32</h>
     </coordinates>
@@ -241,14 +265,14 @@ bg=LIGHT_GRAY</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>160</x>
-      <y>736</y>
+      <x>320</x>
+      <y>816</y>
       <w>400</w>
       <h>32</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
 layer=3
-6.confermaMenù(menu)
+6.confermaMenù(evento, servizio)
 fg=BLACK
 bg=LIGHT_GRAY</panel_attributes>
     <additional_attributes>10.0;20.0;480.0;20.0</additional_attributes>
@@ -256,8 +280,8 @@ bg=LIGHT_GRAY</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>160</x>
-      <y>768</y>
+      <x>320</x>
+      <y>848</y>
       <w>400</w>
       <h>32</h>
     </coordinates>
@@ -271,8 +295,8 @@ bg=LIGHT_GRAY</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>160</x>
-      <y>728</y>
+      <x>320</x>
+      <y>808</y>
       <w>392</w>
       <h>64</h>
     </coordinates>
@@ -284,8 +308,8 @@ bg=LIGHT_GRAY</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>160</x>
-      <y>808</y>
+      <x>320</x>
+      <y>888</y>
       <w>400</w>
       <h>32</h>
     </coordinates>
@@ -299,8 +323,8 @@ bg=LIGHT_GRAY</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>160</x>
-      <y>840</y>
+      <x>320</x>
+      <y>920</y>
       <w>400</w>
       <h>32</h>
     </coordinates>
@@ -314,8 +338,8 @@ bg=LIGHT_GRAY</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>160</x>
-      <y>800</y>
+      <x>320</x>
+      <y>880</y>
       <w>392</w>
       <h>64</h>
     </coordinates>
@@ -327,8 +351,8 @@ bg=LIGHT_GRAY</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>128</x>
-      <y>176</y>
+      <x>288</x>
+      <y>256</y>
       <w>456</w>
       <h>696</h>
     </coordinates>
@@ -340,8 +364,8 @@ bg=LIGHT_GRAY</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>152</x>
-      <y>312</y>
+      <x>312</x>
+      <y>392</y>
       <w>408</w>
       <h>120</h>
     </coordinates>
@@ -362,8 +386,8 @@ layer=2
   <element>
     <id>UMLSpecialState</id>
     <coordinates>
-      <x>536</x>
-      <y>360</y>
+      <x>696</x>
+      <y>440</y>
       <w>16</w>
       <h>16</h>
     </coordinates>
@@ -376,8 +400,8 @@ layer=5</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>160</x>
-      <y>352</y>
+      <x>320</x>
+      <y>432</y>
       <w>400</w>
       <h>48</h>
     </coordinates>
@@ -392,8 +416,8 @@ layer=5</panel_attributes>
   <element>
     <id>UMLSpecialState</id>
     <coordinates>
-      <x>536</x>
-      <y>408</y>
+      <x>696</x>
+      <y>488</y>
       <w>16</w>
       <h>16</h>
     </coordinates>
@@ -406,8 +430,8 @@ layer=5</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>160</x>
-      <y>400</y>
+      <x>320</x>
+      <y>480</y>
       <w>400</w>
       <h>48</h>
     </coordinates>
@@ -422,8 +446,8 @@ layer=5</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>144</x>
-      <y>280</y>
+      <x>304</x>
+      <y>360</y>
       <w>424</w>
       <h>288</h>
     </coordinates>
@@ -450,21 +474,21 @@ layer=2
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>160</x>
-      <y>456</y>
+      <x>320</x>
+      <y>536</y>
       <w>400</w>
       <h>32</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
 layer=3
-3a.1 modificaPeriodicità(periodicità?, n°ripetizioni?, data fine?, opzione)</panel_attributes>
+3a.1 modificaPeriodicità(periodicità,opzione)</panel_attributes>
     <additional_attributes>10.0;20.0;480.0;20.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>160</x>
-      <y>488</y>
+      <x>320</x>
+      <y>568</y>
       <w>400</w>
       <h>32</h>
     </coordinates>
@@ -476,8 +500,8 @@ Modifica periodicità</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>152</x>
-      <y>480</y>
+      <x>312</x>
+      <y>560</y>
       <w>408</w>
       <h>80</h>
     </coordinates>
@@ -494,8 +518,8 @@ layer=3
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>160</x>
-      <y>528</y>
+      <x>320</x>
+      <y>608</y>
       <w>400</w>
       <h>48</h>
     </coordinates>
@@ -510,8 +534,8 @@ layer=5</panel_attributes>
   <element>
     <id>UMLSpecialState</id>
     <coordinates>
-      <x>536</x>
-      <y>536</y>
+      <x>696</x>
+      <y>616</y>
       <w>16</w>
       <h>16</h>
     </coordinates>
@@ -519,6 +543,19 @@ layer=5</panel_attributes>
 fg=red
 lw=2
 layer=5</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>352</x>
+      <y>0</y>
+      <w>392</w>
+      <h>88</h>
+    </coordinates>
+    <panel_attributes>SSD Estensioni al passo 3 (3a) e relative eccezioni (3a, 3b, 3a.1a)
+fontsize=30
+style=wordwrap</panel_attributes>
     <additional_attributes/>
   </element>
 </diagram>
