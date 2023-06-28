@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <diagram program="umlet" version="15.1">
-  <zoom_level>3</zoom_level>
+  <zoom_level>5</zoom_level>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>525</x>
-      <y>378</y>
-      <w>96</w>
-      <h>12</h>
+      <x>590</x>
+      <y>85</y>
+      <w>160</w>
+      <h>20</h>
     </coordinates>
     <panel_attributes>halign=center
 *6a changeMenu*
@@ -19,10 +19,10 @@ fontsize=25
   <element>
     <id>UMLPackage</id>
     <coordinates>
-      <x>246</x>
-      <y>408</y>
-      <w>27</w>
-      <h>21</h>
+      <x>125</x>
+      <y>135</y>
+      <w>45</w>
+      <h>35</h>
     </coordinates>
     <panel_attributes>UI</panel_attributes>
     <additional_attributes/>
@@ -30,21 +30,21 @@ fontsize=25
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>255</x>
-      <y>426</y>
-      <w>9</w>
-      <h>372</h>
+      <x>140</x>
+      <y>165</y>
+      <w>15</w>
+      <h>675</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;1220.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;1330.0</additional_attributes>
   </element>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>549</x>
-      <y>411</y>
-      <w>69</w>
-      <h>12</h>
+      <x>630</x>
+      <y>140</y>
+      <w>115</w>
+      <h>20</h>
     </coordinates>
     <panel_attributes>eventMgr.currentTemplateEvent: TemplateEvent
 style=wordwrap</panel_attributes>
@@ -53,24 +53,31 @@ style=wordwrap</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>579</x>
-      <y>420</y>
-      <w>9</w>
-      <h>378</h>
+      <x>680</x>
+      <y>155</y>
+      <w>15</w>
+      <h>685</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;1240.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;1350.0</additional_attributes>
   </element>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>210</x>
-      <y>450</y>
-      <w>840</w>
-      <h>327</h>
+      <x>65</x>
+      <y>205</y>
+      <w>1400</w>
+      <h>600</h>
     </coordinates>
     <panel_attributes>*[ alt eventMgr.currentTemplateEvent.hasEvent(event)]*
 --
+
+
+
+
+
+-.
+
 
 
 
@@ -82,10 +89,10 @@ style=wordwrap</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>255</x>
-      <y>465</y>
-      <w>123</w>
-      <h>12</h>
+      <x>140</x>
+      <y>230</y>
+      <w>205</w>
+      <h>20</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 throw UseCaseLogicException</panel_attributes>
@@ -94,10 +101,10 @@ throw UseCaseLogicException</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>351</x>
-      <y>414</y>
-      <w>48</w>
-      <h>12</h>
+      <x>300</x>
+      <y>145</y>
+      <w>80</w>
+      <h>20</h>
     </coordinates>
     <panel_attributes>eventMgr: EventManager
 style=wordwrap</panel_attributes>
@@ -106,21 +113,21 @@ style=wordwrap</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>372</x>
-      <y>423</y>
-      <w>9</w>
-      <h>375</h>
+      <x>335</x>
+      <y>160</y>
+      <w>15</w>
+      <h>680</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;1230.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;1340.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>255</x>
-      <y>432</y>
-      <w>126</w>
-      <h>12</h>
+      <x>140</x>
+      <y>175</y>
+      <w>210</w>
+      <h>20</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
 changeMenu(event, service, menu, proposal, option)</panel_attributes>
@@ -129,10 +136,10 @@ changeMenu(event, service, menu, proposal, option)</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>441</x>
-      <y>414</y>
-      <w>51</w>
-      <h>12</h>
+      <x>450</x>
+      <y>145</y>
+      <w>85</w>
+      <h>20</h>
     </coordinates>
     <panel_attributes>kTaskReceiver: KitcheTaskEventReceiver
 style=wordwrap</panel_attributes>
@@ -141,21 +148,21 @@ style=wordwrap</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>462</x>
-      <y>423</y>
-      <w>9</w>
-      <h>375</h>
+      <x>485</x>
+      <y>160</y>
+      <w>15</w>
+      <h>680</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;1230.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;1340.0</additional_attributes>
   </element>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>372</x>
-      <y>438</y>
-      <w>6</w>
-      <h>333</h>
+      <x>335</x>
+      <y>185</y>
+      <w>10</w>
+      <h>605</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -163,10 +170,10 @@ style=wordwrap</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>372</x>
-      <y>492</y>
-      <w>213</w>
-      <h>12</h>
+      <x>335</x>
+      <y>325</y>
+      <w>355</w>
+      <h>20</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
 changeMenu(event, service, menu, proposal, option)</panel_attributes>
@@ -175,10 +182,10 @@ changeMenu(event, service, menu, proposal, option)</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>579</x>
-      <y>495</y>
-      <w>6</w>
-      <h>198</h>
+      <x>680</x>
+      <y>330</y>
+      <w>10</w>
+      <h>330</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -186,10 +193,10 @@ changeMenu(event, service, menu, proposal, option)</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>372</x>
-      <y>714</y>
-      <w>102</w>
-      <h>15</h>
+      <x>335</x>
+      <y>695</y>
+      <w>170</w>
+      <h>25</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
 notifyEventMenuChanged(event, service)</panel_attributes>
@@ -198,10 +205,10 @@ notifyEventMenuChanged(event, service)</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>375</x>
-      <y>723</y>
-      <w>6</w>
-      <h>33</h>
+      <x>340</x>
+      <y>710</y>
+      <w>10</w>
+      <h>55</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -209,10 +216,10 @@ notifyEventMenuChanged(event, service)</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>360</x>
-      <y>726</y>
-      <w>114</w>
-      <h>27</h>
+      <x>315</x>
+      <y>715</y>
+      <w>190</w>
+      <h>45</h>
     </coordinates>
     <panel_attributes>for kTaskReceiver in kTaskReceivers</panel_attributes>
     <additional_attributes/>
@@ -220,10 +227,10 @@ notifyEventMenuChanged(event, service)</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>378</x>
-      <y>738</y>
-      <w>93</w>
-      <h>12</h>
+      <x>345</x>
+      <y>735</y>
+      <w>155</w>
+      <h>20</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
 updateEventMenuChanged(event, service)</panel_attributes>
@@ -232,10 +239,10 @@ updateEventMenuChanged(event, service)</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>462</x>
-      <y>744</y>
-      <w>6</w>
-      <h>6</h>
+      <x>485</x>
+      <y>745</y>
+      <w>10</w>
+      <h>10</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -243,10 +250,10 @@ updateEventMenuChanged(event, service)</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>354</x>
-      <y>705</y>
-      <w>123</w>
-      <h>57</h>
+      <x>305</x>
+      <y>680</y>
+      <w>205</w>
+      <h>95</h>
     </coordinates>
     <panel_attributes>for event in changedEvents</panel_attributes>
     <additional_attributes/>
@@ -254,22 +261,22 @@ updateEventMenuChanged(event, service)</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>375</x>
-      <y>681</y>
-      <w>210</w>
-      <h>12</h>
+      <x>340</x>
+      <y>640</y>
+      <w>350</w>
+      <h>20</h>
     </coordinates>
-    <panel_attributes>lt=&lt;..
+    <panel_attributes>lt=&lt;.
 changedEvents</panel_attributes>
     <additional_attributes>10.0;20.0;680.0;20.0</additional_attributes>
   </element>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>513</x>
-      <y>543</y>
-      <w>447</w>
-      <h>135</h>
+      <x>570</x>
+      <y>410</y>
+      <w>745</w>
+      <h>225</h>
     </coordinates>
     <panel_attributes>*for e in this.events*
 --</panel_attributes>
@@ -278,10 +285,10 @@ changedEvents</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>516</x>
-      <y>552</y>
-      <w>441</w>
-      <h>114</h>
+      <x>575</x>
+      <y>425</y>
+      <w>735</w>
+      <h>190</h>
     </coordinates>
     <panel_attributes>*alt [(options == "EveryEvent") || (options == "CurrentAndNext" &amp;&amp; e.startDate &gt; event.startDate ) || e == event ]*
 --</panel_attributes>
@@ -290,10 +297,10 @@ changedEvents</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>672</x>
-      <y>414</y>
-      <w>63</w>
-      <h>12</h>
+      <x>835</x>
+      <y>145</y>
+      <w>105</w>
+      <h>20</h>
     </coordinates>
     <panel_attributes>e: Events
 style=wordwrap</panel_attributes>
@@ -302,21 +309,21 @@ style=wordwrap</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>699</x>
-      <y>423</y>
-      <w>9</w>
-      <h>375</h>
+      <x>880</x>
+      <y>160</y>
+      <w>15</w>
+      <h>680</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;1230.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;1340.0</additional_attributes>
   </element>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>699</x>
-      <y>567</y>
-      <w>6</w>
-      <h>108</h>
+      <x>880</x>
+      <y>450</y>
+      <w>10</w>
+      <h>180</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -324,10 +331,10 @@ style=wordwrap</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>582</x>
-      <y>564</y>
-      <w>123</w>
-      <h>12</h>
+      <x>685</x>
+      <y>445</y>
+      <w>205</w>
+      <h>20</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
 changeMenu(service, menu, proposal)</panel_attributes>
@@ -336,10 +343,10 @@ changeMenu(service, menu, proposal)</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>660</x>
-      <y>585</y>
-      <w>291</w>
-      <h>54</h>
+      <x>815</x>
+      <y>480</y>
+      <w>485</w>
+      <h>90</h>
     </coordinates>
     <panel_attributes>*alt [s == service ]*
 --</panel_attributes>
@@ -348,10 +355,10 @@ changeMenu(service, menu, proposal)</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>657</x>
-      <y>576</y>
-      <w>297</w>
-      <h>72</h>
+      <x>810</x>
+      <y>465</y>
+      <w>495</w>
+      <h>120</h>
     </coordinates>
     <panel_attributes>*for s in this.services*
 --</panel_attributes>
@@ -360,10 +367,10 @@ changeMenu(service, menu, proposal)</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>702</x>
-      <y>603</y>
-      <w>123</w>
-      <h>12</h>
+      <x>885</x>
+      <y>510</y>
+      <w>205</w>
+      <h>20</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
 changeMenu(proposal)</panel_attributes>
@@ -372,10 +379,10 @@ changeMenu(proposal)</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>819</x>
-      <y>603</y>
-      <w>6</w>
-      <h>21</h>
+      <x>1080</x>
+      <y>510</y>
+      <w>10</w>
+      <h>35</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -383,21 +390,21 @@ changeMenu(proposal)</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>819</x>
-      <y>423</y>
-      <w>9</w>
-      <h>375</h>
+      <x>1080</x>
+      <y>160</y>
+      <w>15</w>
+      <h>680</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;1230.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;1340.0</additional_attributes>
   </element>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>792</x>
-      <y>414</y>
-      <w>63</w>
-      <h>12</h>
+      <x>1035</x>
+      <y>145</y>
+      <w>105</w>
+      <h>20</h>
     </coordinates>
     <panel_attributes>s: Service
 style=wordwrap</panel_attributes>
@@ -406,10 +413,10 @@ style=wordwrap</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>663</x>
-      <y>594</y>
-      <w>285</w>
-      <h>42</h>
+      <x>820</x>
+      <y>495</y>
+      <w>475</w>
+      <h>70</h>
     </coordinates>
     <panel_attributes>*alt [s.state == "planned" &amp;&amp; s.getMenu() == menu ]*
 --</panel_attributes>
@@ -418,10 +425,10 @@ style=wordwrap</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>822</x>
-      <y>612</y>
-      <w>120</w>
-      <h>12</h>
+      <x>1085</x>
+      <y>525</y>
+      <w>200</w>
+      <h>20</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
 add(proposal)</panel_attributes>
@@ -430,10 +437,10 @@ add(proposal)</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>909</x>
-      <y>414</y>
-      <w>63</w>
-      <h>12</h>
+      <x>1230</x>
+      <y>145</y>
+      <w>105</w>
+      <h>20</h>
     </coordinates>
     <panel_attributes>s.changes: ArrayList&lt;ChangeProposal&gt;
 style=wordwrap</panel_attributes>
@@ -442,21 +449,21 @@ style=wordwrap</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>936</x>
-      <y>423</y>
-      <w>9</w>
-      <h>375</h>
+      <x>1275</x>
+      <y>160</y>
+      <w>15</w>
+      <h>680</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;1230.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;1340.0</additional_attributes>
   </element>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>936</x>
-      <y>615</y>
-      <w>6</w>
-      <h>12</h>
+      <x>1275</x>
+      <y>530</y>
+      <w>10</w>
+      <h>20</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -464,21 +471,21 @@ style=wordwrap</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1020</x>
-      <y>510</y>
-      <w>9</w>
-      <h>288</h>
+      <x>1415</x>
+      <y>355</y>
+      <w>15</w>
+      <h>485</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;940.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;950.0</additional_attributes>
   </element>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1020</x>
-      <y>513</y>
-      <w>6</w>
-      <h>18</h>
+      <x>1415</x>
+      <y>360</y>
+      <w>10</w>
+      <h>30</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -486,10 +493,10 @@ style=wordwrap</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1020</x>
-      <y>657</y>
-      <w>6</w>
-      <h>12</h>
+      <x>1415</x>
+      <y>600</y>
+      <w>10</w>
+      <h>20</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -497,10 +504,10 @@ style=wordwrap</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>999</x>
-      <y>501</y>
-      <w>45</w>
-      <h>12</h>
+      <x>1380</x>
+      <y>340</y>
+      <w>75</w>
+      <h>20</h>
     </coordinates>
     <panel_attributes>changedEvents: ArrayList&lt;Event&gt;
 style=wordwrap</panel_attributes>
@@ -509,37 +516,61 @@ style=wordwrap</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>582</x>
-      <y>501</y>
-      <w>423</w>
-      <h>12</h>
+      <x>685</x>
+      <y>340</y>
+      <w>705</w>
+      <h>20</h>
     </coordinates>
-    <panel_attributes>lt=&lt;&lt;&lt;-
+    <panel_attributes>lt=&lt;.
 create()</panel_attributes>
     <additional_attributes>1390.0;20.0;10.0;20.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>582</x>
-      <y>522</y>
-      <w>444</w>
-      <h>12</h>
+      <x>685</x>
+      <y>375</y>
+      <w>740</w>
+      <h>20</h>
     </coordinates>
-    <panel_attributes>lt=&lt;..
+    <panel_attributes>lt=&lt;.
 changedEvents</panel_attributes>
     <additional_attributes>10.0;20.0;1460.0;20.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>582</x>
-      <y>651</y>
-      <w>447</w>
-      <h>12</h>
+      <x>685</x>
+      <y>590</y>
+      <w>745</w>
+      <h>20</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
 add(e)</panel_attributes>
     <additional_attributes>10.0;20.0;1470.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>65</x>
+      <y>265</y>
+      <w>220</w>
+      <h>15</h>
+    </coordinates>
+    <panel_attributes>*[ alt service.getState() != "planned" || !service.isConfirmed()]*
+style=wordwrap</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>140</x>
+      <y>280</y>
+      <w>205</w>
+      <h>20</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+throw EventException</panel_attributes>
+    <additional_attributes>10.0;20.0;390.0;20.0</additional_attributes>
   </element>
 </diagram>

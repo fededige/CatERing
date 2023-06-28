@@ -481,7 +481,7 @@ layer=2
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;
 layer=3
-3a.1 modificaPeriodicità(periodicità,opzione)</panel_attributes>
+3a.1 modificaPeriodicità(evento, periodicità,opzione)</panel_attributes>
     <additional_attributes>10.0;20.0;480.0;20.0</additional_attributes>
   </element>
   <element>

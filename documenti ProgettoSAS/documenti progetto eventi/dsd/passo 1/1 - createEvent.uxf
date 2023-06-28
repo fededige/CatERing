@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <diagram program="umlet" version="15.1">
-  <zoom_level>6</zoom_level>
+  <zoom_level>4</zoom_level>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>360</x>
-      <y>30</y>
-      <w>366</w>
-      <h>24</h>
+      <x>240</x>
+      <y>276</y>
+      <w>244</w>
+      <h>16</h>
     </coordinates>
     <panel_attributes>halign=center
 *1 - createEvent*
@@ -19,10 +19,10 @@ fontsize=25
   <element>
     <id>UMLPackage</id>
     <coordinates>
-      <x>162</x>
-      <y>78</y>
-      <w>54</w>
-      <h>42</h>
+      <x>108</x>
+      <y>308</y>
+      <w>36</w>
+      <h>28</h>
     </coordinates>
     <panel_attributes>UI</panel_attributes>
     <additional_attributes/>
@@ -30,10 +30,10 @@ fontsize=25
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>180</x>
-      <y>114</y>
-      <w>18</w>
-      <h>768</h>
+      <x>120</x>
+      <y>332</y>
+      <w>12</w>
+      <h>512</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;1260.0</additional_attributes>
@@ -41,10 +41,10 @@ fontsize=25
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>654</x>
-      <y>294</y>
-      <w>138</w>
-      <h>24</h>
+      <x>436</x>
+      <y>452</y>
+      <w>92</w>
+      <h>16</h>
     </coordinates>
     <panel_attributes>tplEvent: TemplateEvent
 style=wordwrap</panel_attributes>
@@ -53,10 +53,10 @@ style=wordwrap</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>720</x>
-      <y>312</y>
-      <w>18</w>
-      <h>570</h>
+      <x>480</x>
+      <y>464</y>
+      <w>12</w>
+      <h>380</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;930.0</additional_attributes>
@@ -64,10 +64,10 @@ style=wordwrap</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>132</x>
-      <y>180</y>
-      <w>1056</w>
-      <h>672</h>
+      <x>88</x>
+      <y>376</y>
+      <w>704</w>
+      <h>448</h>
     </coordinates>
     <panel_attributes>*alt [ !user.isOrganizer() ]*
 --
@@ -86,10 +86,10 @@ style=wordwrap</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>180</x>
-      <y>204</y>
-      <w>162</w>
-      <h>24</h>
+      <x>120</x>
+      <y>392</y>
+      <w>108</w>
+      <h>16</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 throw UseCaseLogicException</panel_attributes>
@@ -98,10 +98,10 @@ throw UseCaseLogicException</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>288</x>
-      <y>90</y>
-      <w>96</w>
-      <h>24</h>
+      <x>192</x>
+      <y>316</y>
+      <w>64</w>
+      <h>16</h>
     </coordinates>
     <panel_attributes>eventMgr: EventManager
 style=wordwrap</panel_attributes>
@@ -110,10 +110,10 @@ style=wordwrap</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>330</x>
-      <y>108</y>
-      <w>18</w>
-      <h>774</h>
+      <x>220</x>
+      <y>328</y>
+      <w>12</w>
+      <h>516</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;1270.0</additional_attributes>
@@ -121,10 +121,10 @@ style=wordwrap</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>168</x>
-      <y>126</y>
-      <w>192</w>
-      <h>24</h>
+      <x>112</x>
+      <y>340</y>
+      <w>128</w>
+      <h>16</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
 createEvent(name, client, startDate, frequency)</panel_attributes>
@@ -133,10 +133,10 @@ createEvent(name, client, startDate, frequency)</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>570</x>
-      <y>90</y>
-      <w>102</w>
-      <h>24</h>
+      <x>380</x>
+      <y>316</y>
+      <w>68</w>
+      <h>16</h>
     </coordinates>
     <panel_attributes>kTaskReceiver: KitcheTaskEventReceiver
 style=wordwrap</panel_attributes>
@@ -145,10 +145,10 @@ style=wordwrap</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>612</x>
-      <y>108</y>
-      <w>18</w>
-      <h>774</h>
+      <x>408</x>
+      <y>328</y>
+      <w>12</w>
+      <h>516</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;1270.0</additional_attributes>
@@ -156,10 +156,10 @@ style=wordwrap</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>330</x>
-      <y>138</y>
-      <w>12</w>
-      <h>708</h>
+      <x>220</x>
+      <y>348</y>
+      <w>8</w>
+      <h>472</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -167,22 +167,22 @@ style=wordwrap</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>336</x>
-      <y>294</y>
-      <w>330</w>
-      <h>24</h>
+      <x>224</x>
+      <y>452</y>
+      <w>220</w>
+      <h>16</h>
     </coordinates>
-    <panel_attributes>lt=&lt;&lt;&lt;-
+    <panel_attributes>lt=&lt;.
 create(name, client, startDate, frequency, user)</panel_attributes>
     <additional_attributes>530.0;20.0;10.0;20.0</additional_attributes>
   </element>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>720</x>
-      <y>318</y>
-      <w>12</w>
-      <h>420</h>
+      <x>480</x>
+      <y>468</y>
+      <w>8</w>
+      <h>280</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -190,10 +190,10 @@ create(name, client, startDate, frequency, user)</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>726</x>
-      <y>324</y>
-      <w>108</w>
-      <h>30</h>
+      <x>484</x>
+      <y>472</y>
+      <w>72</w>
+      <h>20</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
 this.name = name</panel_attributes>
@@ -202,10 +202,10 @@ this.name = name</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>726</x>
-      <y>348</y>
-      <w>108</w>
-      <h>30</h>
+      <x>484</x>
+      <y>488</y>
+      <w>72</w>
+      <h>20</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
 this.client = client</panel_attributes>
@@ -214,10 +214,10 @@ this.client = client</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>726</x>
-      <y>372</y>
-      <w>138</w>
-      <h>30</h>
+      <x>484</x>
+      <y>504</y>
+      <w>92</w>
+      <h>20</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
 this.frequency = frequency</panel_attributes>
@@ -226,10 +226,10 @@ this.frequency = frequency</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>474</x>
-      <y>150</y>
-      <w>12</w>
-      <h>24</h>
+      <x>316</x>
+      <y>356</y>
+      <w>8</w>
+      <h>16</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -237,10 +237,10 @@ this.frequency = frequency</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>336</x>
-      <y>138</y>
-      <w>156</w>
-      <h>24</h>
+      <x>224</x>
+      <y>348</y>
+      <w>104</w>
+      <h>16</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
 getCurrentUser()</panel_attributes>
@@ -249,10 +249,10 @@ getCurrentUser()</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>336</x>
-      <y>162</y>
-      <w>150</w>
-      <h>24</h>
+      <x>224</x>
+      <y>364</y>
+      <w>100</w>
+      <h>16</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 user</panel_attributes>
@@ -261,10 +261,10 @@ user</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>474</x>
-      <y>108</y>
-      <w>18</w>
-      <h>774</h>
+      <x>316</x>
+      <y>328</y>
+      <w>12</w>
+      <h>516</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;1270.0</additional_attributes>
@@ -272,10 +272,10 @@ user</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>432</x>
-      <y>90</y>
-      <w>96</w>
-      <h>24</h>
+      <x>288</x>
+      <y>316</y>
+      <w>64</w>
+      <h>16</h>
     </coordinates>
     <panel_attributes>userMgr: UserManager
 style=wordwrap</panel_attributes>
@@ -284,10 +284,10 @@ style=wordwrap</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>726</x>
-      <y>396</y>
-      <w>120</w>
-      <h>30</h>
+      <x>484</x>
+      <y>520</y>
+      <w>80</w>
+      <h>20</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
 this.organizer = user</panel_attributes>
@@ -296,10 +296,10 @@ this.organizer = user</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>810</x>
-      <y>90</y>
-      <w>120</w>
-      <h>30</h>
+      <x>540</x>
+      <y>316</y>
+      <w>80</w>
+      <h>20</h>
     </coordinates>
     <panel_attributes>tplEvent.frequency: Frequency
 style=wordwrap</panel_attributes>
@@ -308,10 +308,10 @@ style=wordwrap</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>864</x>
-      <y>114</y>
-      <w>18</w>
-      <h>768</h>
+      <x>576</x>
+      <y>332</y>
+      <w>12</w>
+      <h>512</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;1260.0</additional_attributes>
@@ -319,10 +319,10 @@ style=wordwrap</panel_attributes>
   <element>
     <id>Text</id>
     <coordinates>
-      <x>138</x>
-      <y>228</y>
-      <w>132</w>
-      <h>18</h>
+      <x>92</x>
+      <y>408</y>
+      <w>88</w>
+      <h>12</h>
     </coordinates>
     <panel_attributes>*alt [ startDate &gt; currentDate ]*
 style=wordwrap</panel_attributes>
@@ -331,10 +331,10 @@ style=wordwrap</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>180</x>
-      <y>246</y>
-      <w>162</w>
-      <h>24</h>
+      <x>120</x>
+      <y>420</y>
+      <w>108</w>
+      <h>16</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 throw EventException</panel_attributes>
@@ -343,22 +343,22 @@ throw EventException</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>726</x>
-      <y>438</y>
-      <w>156</w>
-      <h>24</h>
+      <x>484</x>
+      <y>548</y>
+      <w>104</w>
+      <h>16</h>
     </coordinates>
-    <panel_attributes>lt=&lt;&lt;&lt;-
+    <panel_attributes>lt=&lt;.
 createRucurrentEvents(startDate)</panel_attributes>
     <additional_attributes>240.0;20.0;10.0;20.0</additional_attributes>
   </element>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>864</x>
-      <y>450</y>
-      <w>12</w>
-      <h>30</h>
+      <x>576</x>
+      <y>556</y>
+      <w>8</w>
+      <h>20</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -366,22 +366,22 @@ createRucurrentEvents(startDate)</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>726</x>
-      <y>462</y>
-      <w>150</w>
-      <h>24</h>
+      <x>484</x>
+      <y>564</y>
+      <w>100</w>
+      <h>16</h>
     </coordinates>
-    <panel_attributes>lt=&lt;..
+    <panel_attributes>lt=&lt;.
 newEvents</panel_attributes>
     <additional_attributes>10.0;20.0;230.0;20.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>726</x>
-      <y>702</y>
-      <w>132</w>
-      <h>30</h>
+      <x>484</x>
+      <y>724</y>
+      <w>88</w>
+      <h>20</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
 this.events = newEvents</panel_attributes>
@@ -390,10 +390,10 @@ this.events = newEvents</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>336</x>
-      <y>720</y>
-      <w>396</w>
-      <h>24</h>
+      <x>224</x>
+      <y>736</y>
+      <w>264</w>
+      <h>16</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 tplEvent</panel_attributes>
@@ -402,10 +402,10 @@ tplEvent</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>336</x>
-      <y>732</y>
-      <w>174</w>
-      <h>30</h>
+      <x>224</x>
+      <y>744</y>
+      <w>116</w>
+      <h>20</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
 setCurrentTemplateEvent(tplEvent)</panel_attributes>
@@ -414,10 +414,10 @@ setCurrentTemplateEvent(tplEvent)</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>336</x>
-      <y>750</y>
-      <w>234</w>
-      <h>30</h>
+      <x>224</x>
+      <y>756</y>
+      <w>156</w>
+      <h>20</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
 notifyTemplateEventCreated(currentTemplateEvent)</panel_attributes>
@@ -426,10 +426,10 @@ notifyTemplateEventCreated(currentTemplateEvent)</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>336</x>
+      <x>224</x>
       <y>768</y>
-      <w>12</w>
-      <h>66</h>
+      <w>8</w>
+      <h>44</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -437,10 +437,10 @@ notifyTemplateEventCreated(currentTemplateEvent)</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>306</x>
-      <y>774</y>
-      <w>342</w>
-      <h>54</h>
+      <x>204</x>
+      <y>772</y>
+      <w>228</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes>for kTaskReceiver in kTaskReceivers</panel_attributes>
     <additional_attributes/>
@@ -448,10 +448,10 @@ notifyTemplateEventCreated(currentTemplateEvent)</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>342</x>
-      <y>792</y>
-      <w>288</w>
-      <h>24</h>
+      <x>228</x>
+      <y>784</y>
+      <w>192</w>
+      <h>16</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
 updateTemplateEventCreated(currentTemplateEvent)</panel_attributes>
@@ -460,10 +460,10 @@ updateTemplateEventCreated(currentTemplateEvent)</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>612</x>
-      <y>804</y>
-      <w>12</w>
-      <h>18</h>
+      <x>408</x>
+      <y>792</y>
+      <w>8</w>
+      <h>12</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -471,10 +471,10 @@ updateTemplateEventCreated(currentTemplateEvent)</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>180</x>
-      <y>828</y>
-      <w>162</w>
-      <h>24</h>
+      <x>120</x>
+      <y>808</y>
+      <w>108</w>
+      <h>16</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 currentTemplateEvent</panel_attributes>
@@ -484,9 +484,9 @@ currentTemplateEvent</panel_attributes>
     <id>UMLNote</id>
     <coordinates>
       <x>0</x>
-      <y>234</y>
-      <w>84</w>
-      <h>54</h>
+      <y>412</y>
+      <w>56</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes>currentDate viene ricavata dipendentempente dal linguaggio di programmazione
 style=wordwrap</panel_attributes>
@@ -495,10 +495,10 @@ style=wordwrap</panel_attributes>
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>888</x>
-      <y>426</y>
-      <w>108</w>
-      <h>54</h>
+      <x>592</x>
+      <y>540</y>
+      <w>72</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes>il metodo createRecurrentEvents cambia in base al tipo effetivo di frequency, vedere DCD
 style=wordwrap</panel_attributes>
@@ -507,10 +507,10 @@ style=wordwrap</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>702</x>
-      <y>420</y>
-      <w>474</w>
-      <h>282</h>
+      <x>468</x>
+      <y>536</y>
+      <w>316</w>
+      <h>188</h>
     </coordinates>
     <panel_attributes>*alt [ frequency != null ]*
 --
@@ -526,22 +526,22 @@ style=wordwrap</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>726</x>
-      <y>504</y>
-      <w>234</w>
-      <h>24</h>
+      <x>484</x>
+      <y>592</y>
+      <w>156</w>
+      <h>16</h>
     </coordinates>
-    <panel_attributes>lt=&lt;&lt;&lt;-
+    <panel_attributes>lt=&lt;.
 create(startDate)</panel_attributes>
     <additional_attributes>370.0;20.0;10.0;20.0</additional_attributes>
   </element>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>948</x>
-      <y>498</y>
-      <w>72</w>
-      <h>30</h>
+      <x>632</x>
+      <y>588</y>
+      <w>48</w>
+      <h>20</h>
     </coordinates>
     <panel_attributes>newEvent: Event
 style=wordwrap</panel_attributes>
@@ -550,10 +550,10 @@ style=wordwrap</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>978</x>
-      <y>522</y>
-      <w>18</w>
-      <h>360</h>
+      <x>652</x>
+      <y>604</y>
+      <w>12</w>
+      <h>240</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;580.0</additional_attributes>
@@ -561,10 +561,10 @@ style=wordwrap</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>984</x>
-      <y>534</y>
-      <w>132</w>
-      <h>30</h>
+      <x>656</x>
+      <y>612</y>
+      <w>88</w>
+      <h>20</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
 this.startDate = startDate</panel_attributes>
@@ -573,10 +573,10 @@ this.startDate = startDate</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>984</x>
-      <y>558</y>
-      <w>120</w>
-      <h>30</h>
+      <x>656</x>
+      <y>628</y>
+      <w>80</w>
+      <h>20</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
 this.state = "planned"</panel_attributes>
@@ -585,34 +585,34 @@ this.state = "planned"</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>726</x>
-      <y>582</y>
-      <w>264</w>
-      <h>24</h>
+      <x>484</x>
+      <y>644</y>
+      <w>176</w>
+      <h>16</h>
     </coordinates>
-    <panel_attributes>lt=&lt;..
+    <panel_attributes>lt=&lt;.
 newEvent</panel_attributes>
     <additional_attributes>10.0;20.0;420.0;20.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>726</x>
-      <y>612</y>
-      <w>372</w>
-      <h>24</h>
+      <x>484</x>
+      <y>664</y>
+      <w>248</w>
+      <h>16</h>
     </coordinates>
-    <panel_attributes>lt=&lt;&lt;&lt;-
-create(startDate)</panel_attributes>
+    <panel_attributes>lt=&lt;&lt;&lt;.
+create()</panel_attributes>
     <additional_attributes>600.0;20.0;10.0;20.0</additional_attributes>
   </element>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1086</x>
-      <y>606</y>
-      <w>78</w>
-      <h>30</h>
+      <x>724</x>
+      <y>660</y>
+      <w>52</w>
+      <h>20</h>
     </coordinates>
     <panel_attributes>newEvents: ArrayList&lt;Event&gt;
 style=wordwrap</panel_attributes>
@@ -621,10 +621,10 @@ style=wordwrap</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1116</x>
-      <y>630</y>
-      <w>18</w>
-      <h>252</h>
+      <x>744</x>
+      <y>676</y>
+      <w>12</w>
+      <h>168</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;400.0</additional_attributes>
@@ -632,10 +632,10 @@ style=wordwrap</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>978</x>
-      <y>528</y>
-      <w>12</w>
-      <h>72</h>
+      <x>652</x>
+      <y>608</y>
+      <w>8</w>
+      <h>48</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -643,10 +643,10 @@ style=wordwrap</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1116</x>
-      <y>636</y>
-      <w>12</w>
-      <h>24</h>
+      <x>744</x>
+      <y>680</y>
+      <w>8</w>
+      <h>16</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -654,22 +654,22 @@ style=wordwrap</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>726</x>
-      <y>642</y>
-      <w>402</w>
-      <h>24</h>
+      <x>484</x>
+      <y>684</y>
+      <w>268</w>
+      <h>16</h>
     </coordinates>
-    <panel_attributes>lt=&lt;..
+    <panel_attributes>lt=&lt;.
 newEvents</panel_attributes>
     <additional_attributes>10.0;20.0;650.0;20.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>726</x>
-      <y>666</y>
-      <w>402</w>
-      <h>24</h>
+      <x>484</x>
+      <y>700</y>
+      <w>268</w>
+      <h>16</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
 add(newEvent)</panel_attributes>
@@ -678,10 +678,10 @@ add(newEvent)</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1116</x>
-      <y>672</y>
-      <w>12</w>
-      <h>18</h>
+      <x>744</x>
+      <y>704</y>
+      <w>8</w>
+      <h>12</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
