@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0937ec8d-40ed-4369-a5ac-483e61b54cb6" name="Changes" comment="" />
+    <list default="true" id="0937ec8d-40ed-4369-a5ac-483e61b54cb6" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documenti ProgettoSAS/dcd_in_costruzione.uxf" beforeDir="false" afterPath="$PROJECT_DIR$/documenti ProgettoSAS/dcd_in_costruzione.uxf" afterDir="false" />
+    </list>
     <list id="ba9790ac-75d7-4c37-aefe-5d00f5bd2e45" name="Changes by emanu" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -148,6 +151,7 @@
       <workItem from="1686747179647" duration="2801000" />
       <workItem from="1686823867239" duration="887000" />
       <workItem from="1687785715352" duration="2552000" />
+      <workItem from="1687944046090" duration="2111000" />
     </task>
     <servers />
   </component>
