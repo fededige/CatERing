@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0937ec8d-40ed-4369-a5ac-483e61b54cb6" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/documenti ProgettoSAS/UML appuntato.uxf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documenti ProgettoSAS/dcd_in_costruzione.uxf" beforeDir="false" afterPath="$PROJECT_DIR$/documenti ProgettoSAS/dcd_in_costruzione.uxf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documenti ProgettoSAS/UML per ora.uxf" beforeDir="false" afterPath="$PROJECT_DIR$/documenti ProgettoSAS/UML per ora.uxf" afterDir="false" />
     </list>
     <list id="ba9790ac-75d7-4c37-aefe-5d00f5bd2e45" name="Changes by emanu" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,22 +32,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/JavaLibraries/mysql-connector-j-8.0.33/mysql-connector-j-8.0.33.jar&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.27471265&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pathVariables&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "last_opened_file_path": "D:/informatica/anno2023/SAS/CatERing/documenti ProgettoSAS",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.27471265",
+    "settings.editor.selected.configurable": "preferences.pathVariables",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\informatica\anno2023\SAS\CatERing\documenti ProgettoSAS" />
+    </key>
+  </component>
   <component name="RunManager" selected="Application.Test5a">
     <configuration name="Test1a" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="TestTaskExtensions.TestCatERing1a" />
@@ -151,7 +157,7 @@
       <workItem from="1686747179647" duration="2801000" />
       <workItem from="1686823867239" duration="887000" />
       <workItem from="1687785715352" duration="2552000" />
-      <workItem from="1687944046090" duration="2111000" />
+      <workItem from="1687944046090" duration="2894000" />
     </task>
     <servers />
   </component>
