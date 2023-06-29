@@ -11,24 +11,29 @@ import businesslogic.kitchenTask.Task;
 
 public class TestCatERing5a {
     public static void main(String[] args) throws KitchenException, UseCaseLogicException {
-        System.out.println("TEST FAKE LOGIN");
-        CatERing.getInstance().getUserManager().fakeLogin("Marinella"); //Lidia
+        CatERing.getInstance().getUserManager().fakeLogin("Marinella");
         System.out.println(CatERing.getInstance().getUserManager().getCurrentUser());
-
-        System.out.println("\nTEST CREATE SUMMARY SHEET");
         EventInfo event = EventInfo.loadEventById(3);
+        System.out.println(event);
         ServiceInfo service = ServiceInfo.loadServiceInfoForEvent(event.getId()).get(2);
-        service.approveMenu();
-        SummarySheet s = CatERing.getInstance().getKitchenTaskManager().createSummarySheet(service, event);
-        System.out.println(s.testString());
-
-        System.out.println("TEST DELETE COOKING JOB");
-        Task t = Task.loadTasksBySheetId(39).get(0);
-        CookingJob c = CookingJob.loadCookingJobByTaskId(t.getId()).get(0);
+        System.out.println(service);
+        SummarySheet s;
         try {
-            CatERing.getInstance().getKitchenTaskManager().deleteCookingJob(t, c);
-        } catch (UseCaseLogicException e) {
-            throw new RuntimeException(e);
+            s = CatERing.getInstance().getKitchenTaskManager().openSummarySheet(event, service);
+            System.out.println(s.testString());
+            System.out.println("TEST DELETE COOKING JOB");
+            Task t = Task.loadTasksBySheetId(s.getId()).get(0);
+            System.out.println("Task prima della delete: " + t.testString());
+            CookingJob c = CookingJob.loadCookingJobByTaskId(t.getId()).get(0);
+            try {
+                CatERing.getInstance().getKitchenTaskManager().deleteCookingJob(t, c);
+                t = Task.loadTasksBySheetId(s.getId()).get(0);
+                System.out.println("Task prima dopo la delete: " + t.testString());
+            } catch (UseCaseLogicException e) {
+                throw new RuntimeException(e);
+            }
+        } catch (KitchenException e) {
+            System.err.println("SummarySheet inesistente");
         }
     }
 }

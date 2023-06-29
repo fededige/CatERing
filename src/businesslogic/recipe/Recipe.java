@@ -89,6 +89,9 @@ public class Recipe extends KitchenProcedure{
         return rec;
     }
 
+//    Questo metodo non viene mai usato, quindi è approssimato.
+//    Per correggerlo bisognerebbe modificare la firma in : saveNewKitchenProcedure(KitchenProcedure kProc)
+//    e verificare nel corpo del metodo in quale tabella del DB salvare il parametro
     public static void saveNewKitchenProcedure(Recipe kProc){
         String kProcInsert = "INSERT INTO catering.Recipes (name) VALUES (?);";
 

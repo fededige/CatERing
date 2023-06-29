@@ -302,11 +302,16 @@ public class KitchenTaskManager {
             er.updateSheetDeleted(summarySheet);
         }
     }
-    private void notifyKitchenProceduresAdded(ArrayList<KitchenProcedure> newKProcs) {
+    private void notifyKitchenProceduresAdded(ArrayList<KitchenProcedure> newKProcs) { //questo metodo non viene usato, in quanto non abbiamo operazioni che salvano nuove ricette
         for(KitchenTaskEventReceiver er: this.eventReceivers){
             for(KitchenProcedure kProc: newKProcs){
                 er.updateKitchenProcedureAdded(kProc);
             }
         }
+    }
+
+
+    public SummarySheet getCurrentSheet() {
+        return currentSheet;
     }
 }

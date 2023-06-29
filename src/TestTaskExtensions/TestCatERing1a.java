@@ -9,6 +9,7 @@ import businesslogic.kitchenTask.SummarySheet;
 
 public class TestCatERing1a {
     public static void main(String[] args) throws UseCaseLogicException {
+        System.out.println("TEST OPEN SUMMARY SHEET");
         CatERing.getInstance().getUserManager().fakeLogin("Lidia");
         System.out.println(CatERing.getInstance().getUserManager().getCurrentUser());
         EventInfo event = EventInfo.loadEventById(1);

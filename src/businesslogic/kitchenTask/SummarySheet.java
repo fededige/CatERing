@@ -11,10 +11,12 @@ import persistence.BatchUpdateHandler;
 import persistence.PersistenceManager;
 import persistence.ResultHandler;
 
+import java.sql.Array;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Map;
 
 public class SummarySheet {
@@ -163,7 +165,7 @@ public class SummarySheet {
         for(Task task: tasks){
             if(task.equals(t)){
                 CookingJob newJob = new CookingJob(kShift, amount, estimatedTime);
-                t.addJob(newJob);
+                task.addJob(newJob);
                 return newJob;
             }
         }
@@ -234,7 +236,8 @@ public class SummarySheet {
     public Task removeProcedure(KitchenProcedure oldProc) throws KitchenException {
         for(Task t: tasks){
             if(t.getProcedure().equals(oldProc)){
-                for(CookingJob j: t.getJobs()){
+                ArrayList<CookingJob> temp = new ArrayList<>(t.getJobs());
+                for(CookingJob j: temp){
                     t.deleteCookingJob(j);
                 }
                 tasks.remove(t);

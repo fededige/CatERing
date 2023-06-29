@@ -92,7 +92,7 @@ public class KitchenShift extends Shift{
 
     @Override
     public String toString() {
-        return "shift: " + this.id + ", il turno " + (this.isFull ? "non" : "" ) + " è pieno; " + "sono rimaste: " + this.availableTime + " ore" + " si svolge in data: " + this.date + " nelle ore: " + this.shiftHours;
+        return "shift: " + this.id + ", il turno " + (this.isFull ? "" : "non" ) + " è pieno; " + "sono rimaste: " + this.availableTime + " ore" + " si svolge in data: " + this.date + " nelle ore: " + this.shiftHours;
     }
 
     @Override

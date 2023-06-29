@@ -145,6 +145,7 @@ public class CookingJob {
     }
 
     public String testString() {
-        return "Job: " + this.id + " amount: " + this.amount + " estimatedTIme: " + this.estimatedTime + " cook: " + (this.cook != null ? this.cook.toString() : "null");
+        String result =  "Job: " + this.id + " amount: " + this.amount + " estimatedTIme: " + this.estimatedTime + " cook: " + (this.cook != null ? this.cook.toString() : "null");
+        return result + "\n\tQuesto job verrà eseguito nel turno: " + this.kShift;
     }
 }

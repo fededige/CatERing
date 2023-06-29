@@ -119,8 +119,8 @@ public class Task {
                     recipe_id = rs.getInt("preparation_id");
                 }
                 int position = rs.getInt("position");
-                Recipe recipe = Recipe.loadRecipeById(recipe_id);
-                Task t = new Task(recipe, position);
+                KitchenProcedure kProc = Recipe.loadRecipeById(recipe_id);
+                Task t = new Task(kProc, position);
                 t.id = rs.getInt("id");
                 t.summarySheetId = rs.getInt("summarysheet_id");
                 t.amount = rs.getInt("amount");
@@ -142,12 +142,15 @@ public class Task {
     }
 
     public String testString() {
-        String result = this.toString() + "\n";
+        StringBuilder result = new StringBuilder(this.toString() + "\n");
 
-        result += procedure.testString();
-        result += "\n";
+        result.append(procedure.testString());
+        for(CookingJob job: jobs){
+            result.append("\t" + job.testString());
+            result.append("\n");
+        }
 
-        return result;
+        return result.toString() + "\n";
     }
 
     public String toString() {

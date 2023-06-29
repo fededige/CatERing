@@ -35,18 +35,22 @@ public class TestCatERing {
         System.out.println("\nTEST MOVE TASK");
         Task t = Task.loadTaskById(291);
         CatERing.getInstance().getKitchenTaskManager().moveTask(t, 4);
-        System.out.println(s);
+        System.out.println(s.testString());
 
         System.out.println("TEST GET SHIFT TABLE");
         ArrayList<KitchenShift> sTable = CatERing.getInstance().getKitchenTaskManager().getShiftTable();
-        System.out.println(sTable);
+        for(KitchenShift kS: sTable){
+            System.out.println(kS);
+        }
 
         System.out.println("TEST CREATE COOKING JOB");
         Task task = Task.loadTasksBySheetId(s.getId()).get(0);
         CatERing.getInstance().getKitchenTaskManager().createNewCookingJob(task, KitchenShift.loadKitchenShiftById(1), 0, 0);
+        System.out.println(task.testString());
 
         System.out.println("TEST MODIFY TASK");
         CatERing.getInstance().getKitchenTaskManager().modifyTask(task, 32, (float) 4.2);
+        System.out.println(task.testString());
 
     }
 }
