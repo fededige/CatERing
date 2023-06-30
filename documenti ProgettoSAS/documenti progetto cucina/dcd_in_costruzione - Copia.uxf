@@ -4,8 +4,8 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>840</x>
-      <y>15</y>
+      <x>852</x>
+      <y>54</y>
       <w>102</w>
       <h>12</h>
     </coordinates>
@@ -20,8 +20,8 @@ fg=BLACK</panel_attributes>
   <element>
     <id>UMLPackage</id>
     <coordinates>
-      <x>1191</x>
-      <y>282</y>
+      <x>1203</x>
+      <y>321</y>
       <w>90</w>
       <h>132</h>
     </coordinates>
@@ -32,8 +32,8 @@ fg=GRAY</panel_attributes>
   <element>
     <id>UMLPackage</id>
     <coordinates>
-      <x>861</x>
-      <y>192</y>
+      <x>873</x>
+      <y>231</y>
       <w>297</w>
       <h>177</h>
     </coordinates>
@@ -44,8 +44,8 @@ fg=GRAY</panel_attributes>
   <element>
     <id>UMLPackage</id>
     <coordinates>
-      <x>1191</x>
-      <y>153</y>
+      <x>1203</x>
+      <y>192</y>
       <w>231</w>
       <h>114</h>
     </coordinates>
@@ -56,8 +56,8 @@ fg=GRAY</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>888</x>
-      <y>204</y>
+      <x>900</x>
+      <y>243</y>
       <w>105</w>
       <h>87</h>
     </coordinates>
@@ -86,8 +86,8 @@ fg=GRAY</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1026</x>
-      <y>201</y>
+      <x>1038</x>
+      <y>240</y>
       <w>99</w>
       <h>78</h>
     </coordinates>
@@ -114,8 +114,8 @@ fg=GRAY</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>990</x>
-      <y>246</y>
+      <x>1002</x>
+      <y>285</y>
       <w>42</w>
       <h>15</h>
     </coordinates>
@@ -128,8 +128,8 @@ fg=GRAY</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1074</x>
-      <y>324</y>
+      <x>1086</x>
+      <y>363</y>
       <w>78</w>
       <h>30</h>
     </coordinates>
@@ -145,8 +145,8 @@ fg=GRAY</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1197</x>
-      <y>207</y>
+      <x>1209</x>
+      <y>246</y>
       <w>93</w>
       <h>21</h>
     </coordinates>
@@ -160,8 +160,8 @@ fg=GRAY</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1149</x>
-      <y>210</y>
+      <x>1161</x>
+      <y>249</y>
       <w>54</w>
       <h>129</h>
     </coordinates>
@@ -174,8 +174,8 @@ fg=GRAY</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1083</x>
-      <y>276</y>
+      <x>1095</x>
+      <y>315</y>
       <w>27</w>
       <h>54</h>
     </coordinates>
@@ -188,8 +188,8 @@ fg=GRAY</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1008</x>
-      <y>306</y>
+      <x>1020</x>
+      <y>345</y>
       <w>63</w>
       <h>36</h>
     </coordinates>
@@ -206,8 +206,8 @@ fg=GRAY</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1017</x>
-      <y>261</y>
+      <x>1029</x>
+      <y>300</y>
       <w>24</w>
       <h>51</h>
     </coordinates>
@@ -220,8 +220,8 @@ fg=GRAY</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1017</x>
-      <y>339</y>
+      <x>1029</x>
+      <y>378</y>
       <w>63</w>
       <h>18</h>
     </coordinates>
@@ -234,8 +234,8 @@ fg=GRAY</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>867</x>
-      <y>126</y>
+      <x>879</x>
+      <y>129</y>
       <w>66</w>
       <h>21</h>
     </coordinates>
@@ -247,8 +247,8 @@ fg=GRAY</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>969</x>
-      <y>141</y>
+      <x>981</x>
+      <y>156</y>
       <w>39</w>
       <h>21</h>
     </coordinates>
@@ -261,8 +261,8 @@ fg=GRAY</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>885</x>
-      <y>318</y>
+      <x>897</x>
+      <y>357</y>
       <w>117</w>
       <h>45</h>
     </coordinates>
@@ -283,8 +283,8 @@ fg=GRAY</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>930</x>
-      <y>288</y>
+      <x>942</x>
+      <y>327</y>
       <w>36</w>
       <h>36</h>
     </coordinates>
@@ -297,10 +297,10 @@ fg=GRAY</panel_attributes>
   <element>
     <id>UMLPackage</id>
     <coordinates>
-      <x>861</x>
-      <y>108</y>
+      <x>873</x>
+      <y>114</y>
       <w>162</w>
-      <h>72</h>
+      <h>105</h>
     </coordinates>
     <panel_attributes>General module
 fg=GRAY</panel_attributes>
@@ -309,8 +309,8 @@ fg=GRAY</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1197</x>
-      <y>351</y>
+      <x>1209</x>
+      <y>390</y>
       <w>78</w>
       <h>60</h>
     </coordinates>
@@ -330,8 +330,8 @@ fg=GRAY</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1209</x>
-      <y>291</y>
+      <x>1221</x>
+      <y>330</y>
       <w>48</w>
       <h>36</h>
     </coordinates>
@@ -351,8 +351,8 @@ fg=GRAY</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1230</x>
-      <y>324</y>
+      <x>1242</x>
+      <y>363</y>
       <w>30</w>
       <h>33</h>
     </coordinates>
@@ -365,8 +365,8 @@ fg=GRAY</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1113</x>
-      <y>276</y>
+      <x>1125</x>
+      <y>315</y>
       <w>102</w>
       <h>36</h>
     </coordinates>
@@ -379,8 +379,8 @@ fg=GRAY</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1194</x>
-      <y>237</y>
+      <x>1206</x>
+      <y>276</y>
       <w>57</w>
       <h>27</h>
     </coordinates>
@@ -398,8 +398,8 @@ fg=GRAY</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1248</x>
-      <y>225</y>
+      <x>1260</x>
+      <y>264</y>
       <w>36</w>
       <h>30</h>
     </coordinates>
@@ -412,20 +412,20 @@ fg=GRAY</panel_attributes>
   <element>
     <id>UMLPackage</id>
     <coordinates>
-      <x>849</x>
-      <y>480</y>
+      <x>861</x>
+      <y>519</y>
       <w>474</w>
       <h>270</h>
     </coordinates>
     <panel_attributes>KitchenTasksMenagment
-fg=GRAY</panel_attributes>
+fg=BLACK</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1197</x>
-      <y>162</y>
+      <x>1209</x>
+      <y>201</y>
       <w>93</w>
       <h>21</h>
     </coordinates>
@@ -440,8 +440,8 @@ fg=GRAY</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1212</x>
-      <y>180</y>
+      <x>1224</x>
+      <y>219</y>
       <w>36</w>
       <h>33</h>
     </coordinates>
@@ -454,8 +454,8 @@ fg=GRAY</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1287</x>
-      <y>168</y>
+      <x>1299</x>
+      <y>207</y>
       <w>18</w>
       <h>9</h>
     </coordinates>
@@ -466,8 +466,8 @@ fg=GRAY</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1296</x>
-      <y>192</y>
+      <x>1308</x>
+      <y>231</y>
       <w>18</w>
       <h>9</h>
     </coordinates>
@@ -478,8 +478,8 @@ fg=GRAY</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1287</x>
-      <y>216</y>
+      <x>1299</x>
+      <y>255</y>
       <w>18</w>
       <h>9</h>
     </coordinates>
@@ -490,8 +490,8 @@ fg=GRAY</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1296</x>
-      <y>168</y>
+      <x>1308</x>
+      <y>207</y>
       <w>9</w>
       <h>57</h>
     </coordinates>
@@ -502,8 +502,8 @@ fg=GRAY</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1308</x>
-      <y>174</y>
+      <x>1320</x>
+      <y>213</y>
       <w>93</w>
       <h>42</h>
     </coordinates>
@@ -518,8 +518,8 @@ fg=GRAY</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>855</x>
-      <y>600</y>
+      <x>867</x>
+      <y>639</y>
       <w>159</w>
       <h>78</h>
     </coordinates>
@@ -537,14 +537,14 @@ fg=GRAY</panel_attributes>
 +deleteAllCookingJobs()
 +hasJob(j: Job)
 +hasTask(t: Task)
-fg=GRAY</panel_attributes>
+fg=BLACK</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>381</x>
-      <y>234</y>
+      <x>393</x>
+      <y>273</y>
       <w>111</w>
       <h>45</h>
     </coordinates>
@@ -559,14 +559,14 @@ state: boolean
 +cancelService()
 +changeMenu(proposal: ChangeProposal)
 
-fg=BLACK</panel_attributes>
+fg=GRAY</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>522</x>
-      <y>240</y>
+      <x>534</x>
+      <y>279</y>
       <w>69</w>
       <h>33</h>
     </coordinates>
@@ -575,14 +575,14 @@ fg=BLACK</panel_attributes>
 -addition: boolean
 -
 +isAddition()
-fg=BLACK</panel_attributes>
+fg=GRAY</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>336</x>
-      <y>258</y>
+      <x>348</x>
+      <y>297</y>
       <w>606</w>
       <h>537</h>
     </coordinates>
@@ -596,50 +596,50 @@ fg=BLACK</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>489</x>
-      <y>249</y>
+      <x>501</x>
+      <y>288</y>
       <w>39</w>
       <h>15</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 changes
 m1=0..n
-fg=BLACK</panel_attributes>
+fg=GRAY</panel_attributes>
     <additional_attributes>110.0;20.0;10.0;20.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>552</x>
-      <y>45</y>
+      <x>564</x>
+      <y>84</y>
       <w>798</w>
       <h>201</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 kitchenProcedure
 m1=0..1
-fg=BLACK</panel_attributes>
+fg=GRAY</panel_attributes>
     <additional_attributes>2620.0;430.0;2620.0;20.0;10.0;20.0;10.0;650.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>564</x>
-      <y>90</y>
+      <x>576</x>
+      <y>129</y>
       <w>585</w>
       <h>324</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 menuItem
 m1=0..1
-fg=BLACK</panel_attributes>
+fg=GRAY</panel_attributes>
     <additional_attributes>1910.0;880.0;1910.0;1060.0;840.0;1060.0;840.0;10.0;10.0;10.0;10.0;500.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1038</x>
-      <y>600</y>
+      <x>1050</x>
+      <y>639</y>
       <w>105</w>
       <h>60</h>
     </coordinates>
@@ -656,14 +656,14 @@ fg=BLACK</panel_attributes>
 +deleteCookingJob(j: Job)
 +deleteAllCookingJob()
 +hasJob(j: Job)
-fg=GRAY</panel_attributes>
+fg=BLACK</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1191</x>
-      <y>666</y>
+      <x>1203</x>
+      <y>705</y>
       <w>117</w>
       <h>72</h>
     </coordinates>
@@ -682,70 +682,70 @@ fg=GRAY</panel_attributes>
 +updateTaskChanged(j: Job)
 +updateTaskDeleted(t: Task)
 +updateShiftChanged(s: Shift)
-fg=GRAY</panel_attributes>
+fg=BLACK</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>942</x>
-      <y>519</y>
+      <x>954</x>
+      <y>558</y>
       <w>225</w>
       <h>87</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 currentSheet
 m1=0..1
-fg=GRAY</panel_attributes>
+fg=BLACK</panel_attributes>
     <additional_attributes>10.0;270.0;10.0;20.0;730.0;20.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1011</x>
-      <y>618</y>
+      <x>1023</x>
+      <y>657</y>
       <w>33</w>
       <h>15</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 m1=0..n
 tasks
-fg=GRAY</panel_attributes>
+fg=BLACK</panel_attributes>
     <additional_attributes>90.0;20.0;10.0;20.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>444</x>
-      <y>72</y>
+      <x>456</x>
+      <y>111</y>
       <w>684</w>
       <h>324</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 menu
 m1=0..1
-fg=BLACK</panel_attributes>
+fg=GRAY</panel_attributes>
     <additional_attributes>2240.0;940.0;2240.0;1060.0;1340.0;1060.0;1340.0;10.0;10.0;10.0;10.0;540.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1089</x>
-      <y>213</y>
+      <x>1101</x>
+      <y>252</y>
       <w>288</w>
       <h>393</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 m1=1
 kitchenProcedure
-fg=GRAY</panel_attributes>
+fg=BLACK</panel_attributes>
     <additional_attributes>930.0;10.0;930.0;850.0;10.0;850.0;10.0;1290.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1038</x>
-      <y>696</y>
+      <x>1050</x>
+      <y>735</y>
       <w>105</w>
       <h>45</h>
     </coordinates>
@@ -759,28 +759,28 @@ fg=GRAY</panel_attributes>
 +setAmount(aount: int)
 +setEstimatedTime(estimatedTime: float)
 +setCook(cook: Cook)
-fg=GRAY</panel_attributes>
+fg=BLACK</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1089</x>
-      <y>657</y>
+      <x>1101</x>
+      <y>696</y>
       <w>15</w>
       <h>45</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 m1=0..n
 jobs
-fg=GRAY</panel_attributes>
+fg=BLACK</panel_attributes>
     <additional_attributes>10.0;130.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1128</x>
-      <y>798</y>
+      <x>1140</x>
+      <y>837</y>
       <w>39</w>
       <h>24</h>
     </coordinates>
@@ -795,8 +795,8 @@ fg=GRAY</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1110</x>
-      <y>783</y>
+      <x>1122</x>
+      <y>822</y>
       <w>15</w>
       <h>9</h>
     </coordinates>
@@ -807,8 +807,8 @@ fg=GRAY</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1116</x>
-      <y>783</y>
+      <x>1128</x>
+      <y>822</y>
       <w>9</w>
       <h>57</h>
     </coordinates>
@@ -819,8 +819,8 @@ fg=GRAY</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1116</x>
-      <y>807</y>
+      <x>1128</x>
+      <y>846</y>
       <w>18</w>
       <h>9</h>
     </coordinates>
@@ -831,8 +831,8 @@ fg=GRAY</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1107</x>
-      <y>831</y>
+      <x>1119</x>
+      <y>870</y>
       <w>18</w>
       <h>9</h>
     </coordinates>
@@ -843,8 +843,8 @@ fg=GRAY</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1062</x>
-      <y>774</y>
+      <x>1074</x>
+      <y>813</y>
       <w>51</w>
       <h>30</h>
     </coordinates>
@@ -861,8 +861,8 @@ fg=GRAY</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1071</x>
-      <y>822</y>
+      <x>1083</x>
+      <y>861</y>
       <w>39</w>
       <h>24</h>
     </coordinates>
@@ -874,22 +874,22 @@ fg=GRAY</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1086</x>
-      <y>738</y>
+      <x>1098</x>
+      <y>777</y>
       <w>15</w>
       <h>42</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 m1=1
 shift
-fg=GRAY</panel_attributes>
+fg=BLACK</panel_attributes>
     <additional_attributes>10.0;120.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1197</x>
-      <y>804</y>
+      <x>1209</x>
+      <y>843</y>
       <w>39</w>
       <h>12</h>
     </coordinates>
@@ -901,8 +901,8 @@ fg=GRAY</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1164</x>
-      <y>804</y>
+      <x>1176</x>
+      <y>843</y>
       <w>39</w>
       <h>15</h>
     </coordinates>
@@ -915,8 +915,8 @@ fg=GRAY</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1215</x>
-      <y>813</y>
+      <x>1227</x>
+      <y>852</y>
       <w>27</w>
       <h>33</h>
     </coordinates>
@@ -929,8 +929,8 @@ fg=GRAY</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1197</x>
-      <y>840</y>
+      <x>1209</x>
+      <y>879</y>
       <w>36</w>
       <h>15</h>
     </coordinates>
@@ -943,8 +943,8 @@ fg=GRAY</panel_attributes>
   <element>
     <id>UMLPackage</id>
     <coordinates>
-      <x>1041</x>
-      <y>765</y>
+      <x>1053</x>
+      <y>804</y>
       <w>210</w>
       <h>96</h>
     </coordinates>
@@ -955,22 +955,22 @@ fg=GRAY</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1131</x>
-      <y>297</y>
+      <x>1143</x>
+      <y>336</y>
       <w>240</w>
       <h>471</h>
     </coordinates>
     <panel_attributes>lt=-&gt;
 cook
 m2=1
-fg=GRAY</panel_attributes>
+fg=BLACK</panel_attributes>
     <additional_attributes>10.0;1480.0;10.0;1550.0;750.0;1550.0;750.0;10.0;420.0;10.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1161</x>
-      <y>495</y>
+      <x>1173</x>
+      <y>534</y>
       <w>159</w>
       <h>135</h>
     </coordinates>
@@ -1002,40 +1002,40 @@ fg=GRAY</panel_attributes>
 +removeProcedure(k: KitchenProcedures)
 +addCook(c: CookingJob, cook: Cook)
 +addEventReceiver(rec: KitchenTaskReceiver)
-fg=GRAY</panel_attributes>
+fg=BLACK</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1242</x>
-      <y>627</y>
+      <x>1254</x>
+      <y>666</y>
       <w>36</w>
       <h>45</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 event receiver
 m1=0..n
-fg=GRAY</panel_attributes>
+fg=BLACK</panel_attributes>
     <additional_attributes>10.0;130.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>UMLPackage</id>
     <coordinates>
-      <x>366</x>
-      <y>105</y>
+      <x>378</x>
+      <y>144</y>
       <w>438</w>
       <h>612</h>
     </coordinates>
     <panel_attributes>EventMenagment
-fg=BLACK</panel_attributes>
+fg=GRAY</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>594</x>
-      <y>189</y>
+      <x>606</x>
+      <y>228</y>
       <w>198</w>
       <h>78</h>
     </coordinates>
@@ -1055,14 +1055,14 @@ fg=BLACK</panel_attributes>
 +cancelService(event: Event, service: Service, option: string)
 +changeMenu(event: Event, service: Service, menu: Menu, proposal: ChangeProposal, option: string)
 +setCurrentTemplateEvent(tevent: TemplateEvent)
-fg=BLACK</panel_attributes>
+fg=GRAY</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>594</x>
-      <y>390</y>
+      <x>606</x>
+      <y>429</y>
       <w>153</w>
       <h>45</h>
     </coordinates>
@@ -1076,28 +1076,28 @@ fg=BLACK</panel_attributes>
 +createService(event: Event , s: Date, timeSlot: int, details: string, place: string, gC: int, option: string)
 +cancelService(service: Service)
 +changeMenu(service: Service, menu: Menu, proposal: ChangeProposal)
-fg=BLACK</panel_attributes>
+fg=GRAY</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>669</x>
-      <y>264</y>
+      <x>681</x>
+      <y>303</y>
       <w>51</w>
       <h>33</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 currentTemplateEvent
 m1=0..1
-fg=BLACK</panel_attributes>
+fg=GRAY</panel_attributes>
     <additional_attributes>10.0;90.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>594</x>
-      <y>291</y>
+      <x>606</x>
+      <y>330</y>
       <w>189</w>
       <h>72</h>
     </coordinates>
@@ -1116,28 +1116,28 @@ fg=BLACK</panel_attributes>
 +cancelService(event: Event, service: Service, option: string)
 +changeMenu(event: Event, service: Service, menu: Menu, proposal: ChangeProposal, option: string)
 +hasEvent(e: Event)
-fg=BLACK</panel_attributes>
+fg=GRAY</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>669</x>
-      <y>360</y>
+      <x>681</x>
+      <y>399</y>
       <w>21</w>
       <h>36</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 events
 m1=1..n
-fg=BLACK</panel_attributes>
+fg=GRAY</panel_attributes>
     <additional_attributes>10.0;100.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>699</x>
-      <y>546</y>
+      <x>711</x>
+      <y>585</y>
       <w>99</w>
       <h>42</h>
     </coordinates>
@@ -1147,14 +1147,14 @@ fg=BLACK</panel_attributes>
 +createRecurrentEvents(satrtDate: Date)
 +deleteAllEvents(events: ArrayList&lt;events&gt;)
 
-fg=BLACK</panel_attributes>
+fg=GRAY</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>591</x>
-      <y>450</y>
+      <x>603</x>
+      <y>489</y>
       <w>126</w>
       <h>27</h>
     </coordinates>
@@ -1164,14 +1164,14 @@ fg=BLACK</panel_attributes>
 -
 +create(repetitionCount: int, days: ArrayList&lt;Integer&gt;)
 +createRucurrentEvents(startDate: Date)
-fg=BLACK</panel_attributes>
+fg=GRAY</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>426</x>
-      <y>492</y>
+      <x>438</x>
+      <y>531</y>
       <w>126</w>
       <h>27</h>
     </coordinates>
@@ -1181,14 +1181,14 @@ fg=BLACK</panel_attributes>
 -
 +create(repetitionCount: int, days: ArrayList&lt;String&gt;)
 +createRucurrentEvents(startDate: Date)
-fg=BLACK</panel_attributes>
+fg=GRAY</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>591</x>
-      <y>495</y>
+      <x>603</x>
+      <y>534</y>
       <w>126</w>
       <h>24</h>
     </coordinates>
@@ -1198,14 +1198,14 @@ fg=BLACK</panel_attributes>
 -
 +create(repetitionCount: int, days: ArrayList&lt;Date&gt;)
 +createRucurrentEvents(startDate: Date)
-fg=BLACK</panel_attributes>
+fg=GRAY</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>426</x>
-      <y>450</y>
+      <x>438</x>
+      <y>489</y>
       <w>126</w>
       <h>27</h>
     </coordinates>
@@ -1214,94 +1214,94 @@ fg=BLACK</panel_attributes>
 +create(repetitionCount: int)
 +createRucurrentEvents(startDate: Date)
 
-fg=BLACK</panel_attributes>
+fg=GRAY</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>549</x>
-      <y>456</y>
+      <x>561</x>
+      <y>495</y>
       <w>21</w>
       <h>9</h>
     </coordinates>
     <panel_attributes>lt=-
-fg=BLACK</panel_attributes>
+fg=GRAY</panel_attributes>
     <additional_attributes>50.0;10.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>648</x>
-      <y>558</y>
+      <x>660</x>
+      <y>597</y>
       <w>57</w>
       <h>12</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-
 
-fg=BLACK</panel_attributes>
+fg=GRAY</panel_attributes>
     <additional_attributes>170.0;20.0;10.0;20.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>549</x>
-      <y>501</y>
+      <x>561</x>
+      <y>540</y>
       <w>21</w>
       <h>12</h>
     </coordinates>
     <panel_attributes>lt=-
 
-fg=BLACK</panel_attributes>
+fg=GRAY</panel_attributes>
     <additional_attributes>50.0;20.0;10.0;20.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>753</x>
-      <y>360</y>
+      <x>765</x>
+      <y>399</y>
       <w>27</w>
       <h>192</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 frequency
 m1=0..1
-fg=BLACK</panel_attributes>
+fg=GRAY</panel_attributes>
     <additional_attributes>10.0;620.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>762</x>
-      <y>318</y>
+      <x>774</x>
+      <y>357</y>
       <w>579</w>
       <h>105</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 organizer
 m1=1
-fg=BLACK</panel_attributes>
+fg=GRAY</panel_attributes>
     <additional_attributes>1650.0;10.0;1910.0;10.0;1910.0;330.0;10.0;330.0;10.0;150.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>465</x>
-      <y>276</y>
+      <x>477</x>
+      <y>315</y>
       <w>135</w>
       <h>123</h>
     </coordinates>
     <panel_attributes>lt=-&gt;
 services
 m2=0..n
-fg=BLACK</panel_attributes>
+fg=GRAY</panel_attributes>
     <additional_attributes>430.0;390.0;20.0;390.0;20.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>324</x>
-      <y>411</y>
+      <x>336</x>
+      <y>450</y>
       <w>753</w>
       <h>432</h>
     </coordinates>
@@ -1314,35 +1314,35 @@ fg=BLACK</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>414</x>
-      <y>399</y>
+      <x>426</x>
+      <y>438</y>
       <w>48</w>
       <h>27</h>
     </coordinates>
     <panel_attributes>ServiceJob
 -
-fg=BLACK</panel_attributes>
+fg=GRAY</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>417</x>
-      <y>276</y>
+      <x>429</x>
+      <y>315</y>
       <w>30</w>
       <h>129</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 serviceJobs
 m1=0..n
-fg=BLACK</panel_attributes>
+fg=GRAY</panel_attributes>
     <additional_attributes>10.0;410.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>591</x>
-      <y>120</y>
+      <x>603</x>
+      <y>159</y>
       <w>153</w>
       <h>45</h>
     </coordinates>
@@ -1355,102 +1355,102 @@ fg=BLACK</panel_attributes>
 +updateEventServiceAdded(e: Event)
 +updateEventServiceCancelled(e: Event)
 +updateEventMenuChanged(e: Event, s: Service)
-fg=BLACK</panel_attributes>
+fg=GRAY</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>666</x>
-      <y>162</y>
+      <x>678</x>
+      <y>201</y>
       <w>36</w>
       <h>33</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 event receiver
 m1=0..n
-fg=BLACK</panel_attributes>
+fg=GRAY</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;90.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>561</x>
-      <y>456</y>
+      <x>573</x>
+      <y>495</y>
       <w>9</w>
       <h>57</h>
     </coordinates>
     <panel_attributes>lt=-
-fg=BLACK</panel_attributes>
+fg=GRAY</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;170.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>576</x>
-      <y>456</y>
+      <x>588</x>
+      <y>495</y>
       <w>21</w>
       <h>9</h>
     </coordinates>
     <panel_attributes>lt=-
-fg=BLACK</panel_attributes>
+fg=GRAY</panel_attributes>
     <additional_attributes>50.0;10.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>576</x>
-      <y>501</y>
+      <x>588</x>
+      <y>540</y>
       <w>21</w>
       <h>12</h>
     </coordinates>
     <panel_attributes>lt=-
 
-fg=BLACK</panel_attributes>
+fg=GRAY</panel_attributes>
     <additional_attributes>50.0;20.0;10.0;20.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>576</x>
-      <y>456</y>
+      <x>588</x>
+      <y>495</y>
       <w>9</w>
       <h>57</h>
     </coordinates>
     <panel_attributes>lt=-
-fg=BLACK</panel_attributes>
+fg=GRAY</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;170.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>561</x>
-      <y>477</y>
+      <x>573</x>
+      <y>516</y>
       <w>24</w>
       <h>12</h>
     </coordinates>
     <panel_attributes>lt=-
 
-fg=BLACK</panel_attributes>
+fg=GRAY</panel_attributes>
     <additional_attributes>60.0;20.0;10.0;20.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>570</x>
-      <y>480</y>
+      <x>582</x>
+      <y>519</y>
       <w>9</w>
       <h>51</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;
-fg=BLACK</panel_attributes>
+fg=GRAY</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;150.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>513</x>
-      <y>525</y>
+      <x>525</x>
+      <y>564</y>
       <w>126</w>
       <h>33</h>
     </coordinates>
@@ -1461,14 +1461,14 @@ fg=BLACK</panel_attributes>
 -
 +createRucurrentEvents(startDate: Date)
 
-fg=BLACK</panel_attributes>
+fg=GRAY</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>432</x>
-      <y>657</y>
+      <x>444</x>
+      <y>696</y>
       <w>126</w>
       <h>27</h>
     </coordinates>
@@ -1477,14 +1477,14 @@ fg=BLACK</panel_attributes>
 +create(endDate: Date)
 +createRecurrentEvents(satrtDate: Date)
 
-fg=BLACK</panel_attributes>
+fg=GRAY</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>432</x>
-      <y>615</y>
+      <x>444</x>
+      <y>654</y>
       <w>126</w>
       <h>27</h>
     </coordinates>
@@ -1494,113 +1494,113 @@ fg=BLACK</panel_attributes>
 -
 +create(endDate: Date, days: ArrayList&lt;Integer&gt;)
 +createRecurrentEvents(satrtDate: Date)
-fg=BLACK</panel_attributes>
+fg=GRAY</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>555</x>
-      <y>621</y>
+      <x>567</x>
+      <y>660</y>
       <w>21</w>
       <h>9</h>
     </coordinates>
     <panel_attributes>lt=-
-fg=BLACK</panel_attributes>
+fg=GRAY</panel_attributes>
     <additional_attributes>50.0;10.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>555</x>
-      <y>666</y>
+      <x>567</x>
+      <y>705</y>
       <w>21</w>
       <h>12</h>
     </coordinates>
     <panel_attributes>lt=-
 
-fg=BLACK</panel_attributes>
+fg=GRAY</panel_attributes>
     <additional_attributes>50.0;20.0;10.0;20.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>567</x>
-      <y>621</y>
+      <x>579</x>
+      <y>660</y>
       <w>9</w>
       <h>57</h>
     </coordinates>
     <panel_attributes>lt=-
-fg=BLACK</panel_attributes>
+fg=GRAY</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;170.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>582</x>
-      <y>621</y>
+      <x>594</x>
+      <y>660</y>
       <w>21</w>
       <h>9</h>
     </coordinates>
     <panel_attributes>lt=-
-fg=BLACK</panel_attributes>
+fg=GRAY</panel_attributes>
     <additional_attributes>50.0;10.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>582</x>
-      <y>666</y>
+      <x>594</x>
+      <y>705</y>
       <w>21</w>
       <h>12</h>
     </coordinates>
     <panel_attributes>lt=-
 
-fg=BLACK</panel_attributes>
+fg=GRAY</panel_attributes>
     <additional_attributes>50.0;20.0;10.0;20.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>582</x>
-      <y>621</y>
+      <x>594</x>
+      <y>660</y>
       <w>9</w>
       <h>57</h>
     </coordinates>
     <panel_attributes>lt=-
-fg=BLACK</panel_attributes>
+fg=GRAY</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;170.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>567</x>
-      <y>642</y>
+      <x>579</x>
+      <y>681</y>
       <w>24</w>
       <h>12</h>
     </coordinates>
     <panel_attributes>lt=-
 
-fg=BLACK</panel_attributes>
+fg=GRAY</panel_attributes>
     <additional_attributes>60.0;20.0;10.0;20.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>576</x>
-      <y>603</y>
+      <x>588</x>
+      <y>642</y>
       <w>9</w>
       <h>51</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;
-fg=BLACK</panel_attributes>
+fg=GRAY</panel_attributes>
     <additional_attributes>10.0;150.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>513</x>
-      <y>573</y>
+      <x>525</x>
+      <y>612</y>
       <w>126</w>
       <h>33</h>
     </coordinates>
@@ -1611,14 +1611,14 @@ fg=BLACK</panel_attributes>
 -
 +createRecurrentEvents(satrtDate: Date)
 
-fg=BLACK</panel_attributes>
+fg=GRAY</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>597</x>
-      <y>660</y>
+      <x>609</x>
+      <y>699</y>
       <w>126</w>
       <h>24</h>
     </coordinates>
@@ -1628,14 +1628,14 @@ fg=BLACK</panel_attributes>
 -
 +create(endDate: Date, days: ArrayList&lt;String&gt;)
 +createRecurrentEvents(satrtDate: Date)
-fg=BLACK</panel_attributes>
+fg=GRAY</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>597</x>
-      <y>615</y>
+      <x>609</x>
+      <y>654</y>
       <w>126</w>
       <h>27</h>
     </coordinates>
@@ -1645,65 +1645,65 @@ fg=BLACK</panel_attributes>
 -
 +create(endDate: Date, dates: ArrayList&lt;Date&gt;)
 +createRecurrentEvents(satrtDate: Date)
-fg=BLACK</panel_attributes>
+fg=GRAY</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>636</x>
-      <y>537</y>
+      <x>648</x>
+      <y>576</y>
       <w>21</w>
       <h>9</h>
     </coordinates>
     <panel_attributes>lt=-
-fg=BLACK</panel_attributes>
+fg=GRAY</panel_attributes>
     <additional_attributes>50.0;10.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>648</x>
-      <y>537</y>
+      <x>660</x>
+      <y>576</y>
       <w>9</w>
       <h>57</h>
     </coordinates>
     <panel_attributes>lt=-
-fg=BLACK</panel_attributes>
+fg=GRAY</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;170.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>636</x>
-      <y>582</y>
+      <x>648</x>
+      <y>621</y>
       <w>21</w>
       <h>12</h>
     </coordinates>
     <panel_attributes>lt=-
 
-fg=BLACK</panel_attributes>
+fg=GRAY</panel_attributes>
     <additional_attributes>50.0;20.0;10.0;20.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>744</x>
-      <y>306</y>
+      <x>756</x>
+      <y>345</y>
       <w>606</w>
       <h>129</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 chef
 m1=1
-fg=BLACK</panel_attributes>
+fg=GRAY</panel_attributes>
     <additional_attributes>1710.0;10.0;2000.0;10.0;2000.0;410.0;10.0;410.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>867</x>
-      <y>153</y>
+      <x>879</x>
+      <y>156</y>
       <w>66</w>
       <h>21</h>
     </coordinates>
@@ -1715,8 +1715,8 @@ fg=GRAY</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>930</x>
-      <y>135</y>
+      <x>942</x>
+      <y>138</y>
       <w>15</w>
       <h>9</h>
     </coordinates>
@@ -1727,20 +1727,20 @@ fg=GRAY</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>936</x>
-      <y>135</y>
+      <x>948</x>
+      <y>138</y>
       <w>9</w>
-      <h>36</h>
+      <h>63</h>
     </coordinates>
     <panel_attributes>lt=-
 fg=GRAY</panel_attributes>
-    <additional_attributes>10.0;100.0;10.0;10.0</additional_attributes>
+    <additional_attributes>10.0;190.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>930</x>
-      <y>162</y>
+      <x>942</x>
+      <y>165</y>
       <w>15</w>
       <h>9</h>
     </coordinates>
@@ -1751,13 +1751,38 @@ fg=GRAY</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>936</x>
-      <y>150</y>
+      <x>948</x>
+      <y>165</y>
       <w>39</w>
       <h>9</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-
 fg=GRAY</panel_attributes>
     <additional_attributes>110.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>879</x>
+      <y>183</y>
+      <w>66</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>EventException
+--
+fg=GRAY</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>942</x>
+      <y>192</y>
+      <w>15</w>
+      <h>9</h>
+    </coordinates>
+    <panel_attributes>lt=-
+fg=GRAY</panel_attributes>
+    <additional_attributes>30.0;10.0;10.0;10.0</additional_attributes>
   </element>
 </diagram>

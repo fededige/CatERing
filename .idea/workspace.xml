@@ -1,21 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0937ec8d-40ed-4369-a5ac-483e61b54cb6" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TestTaskExtensions/TestCatERing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TestTaskExtensions/TestCatERing.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TestTaskExtensions/TestCatERing1a.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TestTaskExtensions/TestCatERing1a.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TestTaskExtensions/TestCatERing1b.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TestTaskExtensions/TestCatERing1b.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TestTaskExtensions/TestCatERing2a.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TestTaskExtensions/TestCatERing2a.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TestTaskExtensions/TestCatERing5a.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TestTaskExtensions/TestCatERing5a.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TestTaskExtensions/TestCatERing5b.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TestTaskExtensions/TestCatERing5b.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/businesslogic/kitchenTask/CookingJob.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/businesslogic/kitchenTask/CookingJob.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/businesslogic/kitchenTask/KitchenTaskManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/businesslogic/kitchenTask/KitchenTaskManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/businesslogic/kitchenTask/SummarySheet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/businesslogic/kitchenTask/SummarySheet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/businesslogic/kitchenTask/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/businesslogic/kitchenTask/Task.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/businesslogic/recipe/Recipe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/businesslogic/recipe/Recipe.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/businesslogic/shift/KitchenShift.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/businesslogic/shift/KitchenShift.java" afterDir="false" />
-    </list>
+    <list default="true" id="0937ec8d-40ed-4369-a5ac-483e61b54cb6" name="Changes" comment="" />
     <list id="ba9790ac-75d7-4c37-aefe-5d00f5bd2e45" name="Changes by emanu" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,7 +154,7 @@
       <workItem from="1686823867239" duration="887000" />
       <workItem from="1687785715352" duration="2552000" />
       <workItem from="1687944046090" duration="5027000" />
-      <workItem from="1688029855999" duration="4866000" />
+      <workItem from="1688029855999" duration="5249000" />
     </task>
     <servers />
   </component>
