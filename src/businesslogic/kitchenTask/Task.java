@@ -133,6 +133,19 @@ public class Task {
         return tasks.get(0);
     }
 
+    public static ArrayList<Integer> loadTaskId(int summarysheet_id) {
+        ArrayList<Integer> ids = new ArrayList<>();
+        String query = "SELECT id " +
+                "FROM Tasks WHERE summarysheet_id = " + summarysheet_id;
+        PersistenceManager.executeQuery(query, new ResultHandler() {
+            @Override
+            public void handle(ResultSet rs) throws SQLException {
+                ids.add(rs.getInt("id"));
+            }
+        });
+        return ids;
+    }
+
     private float getEstimatedTime() {
         return this.estimatedTime;
     }

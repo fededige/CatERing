@@ -11,12 +11,10 @@ import persistence.BatchUpdateHandler;
 import persistence.PersistenceManager;
 import persistence.ResultHandler;
 
-import java.sql.Array;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.Map;
 
 public class SummarySheet {
@@ -99,11 +97,20 @@ public class SummarySheet {
 
 
     public static void deleteSummarySheet(SummarySheet summarySheet){
-        String delSheet = "DELETE FROM tasks WHERE summarysheet_id = " + summarySheet.getId();
-        PersistenceManager.executeUpdate(delSheet);
+        ArrayList<Integer> tasks_id = Task.loadTaskId(summarySheet.getId());
+        System.out.println(tasks_id);
+        for(int id: tasks_id){
+            String delJobs = "DELETE FROM cookingjobs WHERE task_id = " + id;
+            PersistenceManager.executeUpdate(delJobs);
+        }
 
-        String del = "DELETE FROM SummarySheets WHERE id = " + summarySheet.getId();
-        PersistenceManager.executeUpdate(del);
+
+        String delTasks = "DELETE FROM tasks WHERE summarysheet_id = " + summarySheet.getId();
+        PersistenceManager.executeUpdate(delTasks);
+
+
+        String delSheet = "DELETE FROM SummarySheets WHERE id = " + summarySheet.getId();
+        PersistenceManager.executeUpdate(delSheet);
     }
 
 

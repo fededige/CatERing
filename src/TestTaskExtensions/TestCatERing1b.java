@@ -16,7 +16,7 @@ public class TestCatERing1b {
         System.out.println(event);
         SummarySheet sheet = null;
         try {
-            sheet = SummarySheet.loadSummarySheetById(30);
+            sheet = SummarySheet.loadSummarySheetById(35);
             CatERing.getInstance().getKitchenTaskManager().deleteSummarySheet(event, sheet);
             System.out.println("OPENING DELETE SUMMARY SHEET TO CHECK IF IT WORKED");
             try{
