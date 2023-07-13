@@ -234,7 +234,7 @@ public class KitchenTaskManager {
             throw new KitchenException();
         }
         ArrayList<Task> changedTask = currentSheet.moveTask(t, pos);
-        System.out.println(changedTask);
+        //System.out.println(changedTask);
         notifyTasksChanged(changedTask);
     }
     private void notifyCookingJobChanged(CookingJob c) {

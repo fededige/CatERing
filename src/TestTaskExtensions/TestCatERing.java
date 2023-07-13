@@ -49,7 +49,7 @@ public class TestCatERing {
         System.out.println(task.testString());
 
         System.out.println("TEST MODIFY TASK");
-        CatERing.getInstance().getKitchenTaskManager().modifyTask(task, 32, (float) 4.2);
+        CatERing.getInstance().getKitchenTaskManager().modifyTask(task, 15, (float) 2.2);
         System.out.println(task.testString());
 
     }
