@@ -80,6 +80,7 @@ public class ServiceInfo implements EventItemInfo {
 
     public ArrayList<KitchenProcedure> getRecipies() {
         ArrayList<KitchenProcedure> kProcedures = new ArrayList<>();
+        // Aggiungiamo le ricette da svolgere che non sono contenute nell'array changes
         for(Section section: menu.getSections()){
             for(MenuItem menuItem: section.getItems()){
                 if(changes == null || !toRemove(menuItem)){
@@ -90,7 +91,7 @@ public class ServiceInfo implements EventItemInfo {
             }
         }
 
-
+        // aggiungiamo elementi fuori menu
         for(MenuItem freeItem: menu.getFreeItems()){
             if(changes == null || !toRemove(freeItem)) {
                 kProcedures.add(freeItem.getItemRecipe());
@@ -99,7 +100,7 @@ public class ServiceInfo implements EventItemInfo {
             }
         }
 
-
+        // aggiungiamo ricette con proposta di modifica
         if(changes != null) {
             for (Change change : changes) {
                 if (change.isAddition()) {

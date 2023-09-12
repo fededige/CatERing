@@ -33,6 +33,8 @@ public class KitchenTaskManager {
         if(!service.isActive()){
             throw new KitchenException();
         }
+
+        /*Recuperiamo il folgio riepilogativo già esistente*/
         SummarySheet existingSheet = null;
         try {
             existingSheet = SummarySheet.loadSummarySheetByServiceId(service.getId());
