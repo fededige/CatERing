@@ -10,12 +10,12 @@ import businesslogic.kitchenTask.SummarySheet;
 public class TestCatERing1a {
     public static void main(String[] args) throws UseCaseLogicException {
         System.out.println("TEST OPEN SUMMARY SHEET");
-        CatERing.getInstance().getUserManager().fakeLogin("Lidia");
+        CatERing.getInstance().getUserManager().fakeLogin("Marinella");
         System.out.println(CatERing.getInstance().getUserManager().getCurrentUser());
-        EventInfo event = EventInfo.loadEventById(1);
+        EventInfo event = EventInfo.loadEventById(3);
         System.out.println(event);
-        ServiceInfo service = ServiceInfo.loadServiceInfoForEvent(event.getId()).get(0);
-        System.out.println(service);
+        ServiceInfo service = ServiceInfo.loadServiceInfoForEvent(event.getId()).get(2);
+        System.out.println(service.getId());
         SummarySheet s = null;
         try {
             s = CatERing.getInstance().getKitchenTaskManager().openSummarySheet(event, service);

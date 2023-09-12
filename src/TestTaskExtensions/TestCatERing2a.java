@@ -12,11 +12,11 @@ import businesslogic.recipe.Recipe;
 public class TestCatERing2a {
     public static void main(String[] args) throws KitchenException, UseCaseLogicException {
         System.out.println("TEST OPEN SUMMARY SHEET");
-        CatERing.getInstance().getUserManager().fakeLogin("Lidia");
+        CatERing.getInstance().getUserManager().fakeLogin("Marinella");
         System.out.println(CatERing.getInstance().getUserManager().getCurrentUser());
-        EventInfo event = EventInfo.loadEventById(1);
+        EventInfo event = EventInfo.loadEventById(3);
         System.out.println(event);
-        ServiceInfo service = ServiceInfo.loadServiceInfoForEvent(event.getId()).get(0);
+        ServiceInfo service = ServiceInfo.loadServiceInfoForEvent(event.getId()).get(2);
         System.out.println(service);
         SummarySheet s;
         try {
